@@ -1,0 +1,12 @@
+# Local / scratch
+TEMP/
+
+# Cloned reference repos (nested .git directories)
+docs/resources/
+
+# Cursor AI skills (local tooling)
+.cursor/
+
+# OS / editor
+.DS_Store
+Thumbs.db

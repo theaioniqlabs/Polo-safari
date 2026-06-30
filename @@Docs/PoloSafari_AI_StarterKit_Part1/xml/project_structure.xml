@@ -1,0 +1,5 @@
+<project>
+ <name>Polo Safari</name>
+ <architecture>Next.js + Laravel + PostgreSQL</architecture>
+ <type>Experiential Travel Platform</type>
+</project>

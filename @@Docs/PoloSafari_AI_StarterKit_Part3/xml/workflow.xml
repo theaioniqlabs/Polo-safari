@@ -1,0 +1,8 @@
+<workflow>
+<step>Plan</step>
+<step>Design</step>
+<step>Develop</step>
+<step>Review</step>
+<step>Test</step>
+<step>Deploy</step>
+</workflow>

@@ -1,0 +1,259 @@
+/**
+ * Polo Safari — Reconciled Design Tokens
+ * Version: 1.1.0
+ * Status: Production-ready CSS custom properties
+ *
+ * Sources merged:
+ *   - Logo SVG authoritative colors (02-logo-svg-analysis.md)
+ *   - Design System v1.0 guidelines (03-design-system-v1-review.md, 05-design-system-v1.1-review.md) — structure only
+ *   - UX wireframes locked decisions (00-index.md)
+ *
+ * Rules:
+ *   - Primary interactive color = Polo Blue (logo), NOT guidelines Forest Green
+ *   - Five pillars only: heritage, education, corporate, family, adventure
+ *   - Multi-color swirl palette (--color-logo-*) is logo/mark only — not UI chrome
+ *   - Global header CTA = "Plan Your Visit" → /plan (not "Enquire Now")
+ */
+
+:root {
+  /* ─── Logo canonical (reference — do not use all in UI) ─── */
+  --color-logo-blue: #005ca9;
+  --color-logo-red: #98211e;
+  --color-logo-green: #00963f;
+  --color-logo-lime: #7eaf39;
+  --color-logo-lime-alt: #afca05;
+  --color-logo-sky: #8fd0e1;
+  --color-logo-sun: #e1da10;
+  --color-logo-orange: #ec6602;
+  --color-logo-slate: #346982;
+  --color-logo-teal: #134152;
+
+  /* ─── Primary & secondary (UI) ─── */
+  --color-primary: #005ca9;
+  --color-primary-hover: #004a88;
+  --color-primary-active: #003d70;
+  --color-primary-subtle: #e6f0f8;
+  --color-primary-on: #ffffff;
+
+  --color-secondary: #00963f;
+  --color-secondary-hover: #007a33;
+  --color-secondary-subtle: #e8f5ed;
+  --color-secondary-on: #ffffff;
+
+  /* ─── Neutrals & surfaces ─── */
+  --color-surface: #ffffff;
+  --color-surface-muted: #f9f7f2; /* Warm Ivory — guidelines + editorial */
+  --color-surface-nature: #eef4ed; /* Education / ecology bands */
+  --color-surface-water: #e6f7fb; /* Adventure / river bands — v1.0 03:40 */
+  --color-surface-warm: #ede6d6; /* Wings beige — v1.0 03:40 secondary */
+  --color-surface-alt: #e8ecee; /* Logo JPG background family */
+  --color-surface-dark: #1e2a24; /* Night Forest — footer, gallery */
+  --color-surface-dark-elevated: #14261e; /* Guidelines Dark Experience */
+
+  --color-border: #d4d8dc;
+  --color-border-strong: #b8c0c8;
+
+  --color-text: #2c3e50; /* Temple Slate — body (logo-adjacent) */
+  --color-text-heading: #1f2521; /* Guidelines Charcoal — display */
+  --color-text-muted: #5f6b64; /* Guidelines paragraph */
+  --color-text-subtle: #8a948f; /* Guidelines muted */
+  --color-text-inverse: #ffffff;
+  --color-text-on-dark: #f9f7f2;
+
+  /* ─── Pillar accents (five locked — logo-derived) ─── */
+  --color-pillar-heritage: #98211e;
+  --color-pillar-education: #00963f;
+  --color-pillar-corporate: #346982;
+  --color-pillar-family: #7eaf39;
+  --color-pillar-adventure: #ec6602;
+
+  --color-pillar-heritage-subtle: #f5e8e8;
+  --color-pillar-education-subtle: #e8f5ed;
+  --color-pillar-corporate-subtle: #e8eef2;
+  --color-pillar-family-subtle: #f0f5e8;
+  --color-pillar-adventure-subtle: #fdf0e6;
+
+  /* ─── Semantic UI ─── */
+  --color-success: #00963f;
+  --color-warning: #ec6602;
+  --color-error: #98211e;
+  --color-info: #005ca9;
+
+  --color-disabled-bg: #d1d1d1; /* v1.0 03:40 disabled button */
+  --color-disabled-text: #8a948f;
+
+  /* ─── Water / map modules ─── */
+  --color-accent-water: #8fd0e1;
+  --color-accent-water-subtle: #eef7fb;
+
+  /* ─── Typography ─── */
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Type scale — derived from wireframe roles (guidelines omit sizes) */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.75rem; /* 60px — hero display */
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  --tracking-overline: 0.12em;
+  --tracking-tight: -0.02em;
+
+  /* ─── Layout & grid (guidelines = wireframes) ─── */
+  --grid-columns: 12;
+  --layout-max: 1440px;
+  --layout-content: 1280px;
+  --grid-gutter: 24px;
+  --space-unit: 8px;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-10: 80px;
+  --space-12: 96px;
+  --space-16: 128px;
+
+  --header-height: 72px;
+  --header-height-condensed: 64px;
+
+  /* ─── Radius (v1.0 03:40 scale + legacy aliases) ─── */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-card: var(--radius-lg);
+  --radius-image: 28px;
+  --radius-button: 999px;
+  --radius-input: 12px;
+  --radius-chip: 999px;
+
+  /* ─── Shadow (v1.0 03:40 tiers) ─── */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --shadow-large: 0 16px 40px rgba(0, 0, 0, 0.1);
+  --shadow-card: var(--shadow-medium);
+  --shadow-elevated: var(--shadow-large);
+  --shadow-header: 0 1px 0 rgba(0, 0, 0, 0.06);
+
+  /* ─── Glass (nav + Quick Search only — use sparingly) ─── */
+  --glass-bg: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-blur: 12px;
+
+  /* ─── Motion ─── */
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ─── Icon ─── */
+  --icon-stroke: 2px;
+  --icon-size-sm: 16px;
+  --icon-size-md: 20px;
+  --icon-size-lg: 24px;
+
+  /* ─── Focus ─── */
+  --focus-ring: 0 0 0 3px rgba(0, 92, 169, 0.35);
+  --focus-ring-offset: 2px;
+}
+
+/* ─── Button tokens ─── */
+
+:root {
+  --btn-primary-bg: var(--color-primary);
+  --btn-primary-bg-hover: var(--color-primary-hover);
+  --btn-primary-text: var(--color-primary-on);
+
+  --btn-secondary-bg: var(--color-surface);
+  --btn-secondary-border: var(--color-text-heading);
+  --btn-secondary-bg-hover: var(--color-surface-nature);
+  --btn-secondary-text: var(--color-text-heading);
+
+  --btn-ghost-bg: transparent;
+  --btn-ghost-bg-hover: var(--color-surface-muted);
+  --btn-ghost-text: var(--color-text-heading);
+
+  --btn-disabled-bg: var(--color-disabled-bg);
+  --btn-disabled-text: var(--color-disabled-text);
+
+  --btn-padding-x: 24px;
+  --btn-padding-y: 12px;
+  --btn-font-size: var(--text-sm);
+  --btn-font-weight: var(--font-weight-semibold);
+}
+
+/* ─── Pillar utility classes (badges, card borders) ─── */
+
+[data-pillar="heritage"] {
+  --pillar-color: var(--color-pillar-heritage);
+  --pillar-subtle: var(--color-pillar-heritage-subtle);
+}
+
+[data-pillar="education"] {
+  --pillar-color: var(--color-pillar-education);
+  --pillar-subtle: var(--color-pillar-education-subtle);
+}
+
+[data-pillar="corporate"] {
+  --pillar-color: var(--color-pillar-corporate);
+  --pillar-subtle: var(--color-pillar-corporate-subtle);
+}
+
+[data-pillar="family"] {
+  --pillar-color: var(--color-pillar-family);
+  --pillar-subtle: var(--color-pillar-family-subtle);
+}
+
+[data-pillar="adventure"] {
+  --pillar-color: var(--color-pillar-adventure);
+  --pillar-subtle: var(--color-pillar-adventure-subtle);
+}
+
+/* ─── Section background utilities ─── */
+
+.bg-surface-main {
+  background-color: var(--color-surface-muted);
+}
+
+.bg-surface-nature {
+  background-color: var(--color-surface-nature);
+}
+
+.bg-surface-water {
+  background-color: var(--color-surface-water);
+}
+
+.bg-surface-dark {
+  background-color: var(--color-surface-dark);
+  color: var(--color-text-on-dark);
+}
+
+/* ─── Reduced motion ─── */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+  }
+}

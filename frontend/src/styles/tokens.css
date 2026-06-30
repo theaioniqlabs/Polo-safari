@@ -1,0 +1,161 @@
+/**
+ * Polo Safari — Design Tokens (adapted from docs/brand/04-design-tokens.css)
+ * Version: 1.1.0
+ */
+
+:root {
+  --color-logo-blue: #005ca9;
+  --color-logo-red: #98211e;
+  --color-logo-green: #00963f;
+  --color-logo-lime: #7eaf39;
+  --color-logo-orange: #ec6602;
+  --color-logo-slate: #346982;
+
+  --color-primary: #005ca9;
+  --color-primary-hover: #004a88;
+  --color-primary-active: #003d70;
+  --color-primary-subtle: #e6f0f8;
+  --color-primary-on: #ffffff;
+
+  --color-secondary: #00963f;
+  --color-secondary-hover: #007a33;
+  --color-secondary-subtle: #e8f5ed;
+  --color-secondary-on: #ffffff;
+
+  --color-surface: #ffffff;
+  --color-surface-muted: #f9f7f2;
+  --color-surface-nature: #eef4ed;
+  --color-surface-water: #e6f7fb;
+  --color-surface-warm: #ede6d6;
+  --color-surface-dark: #1e2a24;
+  --color-surface-dark-elevated: #14261e;
+  --color-surface-inverse: #1a1f2e;
+
+  --space-15: 120px;
+
+  --color-border: #d4d8dc;
+  --color-border-strong: #b8c0c8;
+
+  --color-text: #2c3e50;
+  --color-text-heading: #1f2521;
+  --color-text-muted: #5f6b64;
+  --color-text-subtle: #8a948f;
+  --color-text-inverse: #ffffff;
+  --color-text-on-dark: #f9f7f2;
+
+  --color-pillar-heritage: #98211e;
+  --color-pillar-education: #00963f;
+  --color-pillar-corporate: #346982;
+  --color-pillar-family: #7eaf39;
+  --color-pillar-adventure: #ec6602;
+
+  --color-pillar-heritage-subtle: #f5e8e8;
+  --color-pillar-education-subtle: #e8f5ed;
+  --color-pillar-corporate-subtle: #e8eef2;
+  --color-pillar-family-subtle: #f0f5e8;
+  --color-pillar-adventure-subtle: #fdf0e6;
+
+  --color-success: #00963f;
+  --color-warning: #ec6602;
+  --color-error: #98211e;
+  --color-info: #005ca9;
+
+  --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  --layout-max: 1440px;
+  --layout-content: 1280px;
+  --grid-gutter: 24px;
+  --space-unit: 8px;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-10: 80px;
+  --space-12: 96px;
+
+  --header-height: 72px;
+  --header-height-condensed: 64px;
+  --current-header-height: var(--header-height);
+  --announcement-height: 0px;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-button: 999px;
+  --radius-input: 12px;
+
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --shadow-header: 0 1px 0 rgba(0, 0, 0, 0.06);
+
+  --glass-bg: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-blur: 12px;
+
+  --duration-normal: 200ms;
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --focus-ring: 0 0 0 3px rgba(0, 92, 169, 0.35);
+}
+
+[data-pillar="heritage"] {
+  --pillar-color: var(--color-pillar-heritage);
+  --pillar-subtle: var(--color-pillar-heritage-subtle);
+}
+
+[data-pillar="education"] {
+  --pillar-color: var(--color-pillar-education);
+  --pillar-subtle: var(--color-pillar-education-subtle);
+}
+
+[data-pillar="corporate"] {
+  --pillar-color: var(--color-pillar-corporate);
+  --pillar-subtle: var(--color-pillar-corporate-subtle);
+}
+
+[data-pillar="family"] {
+  --pillar-color: var(--color-pillar-family);
+  --pillar-subtle: var(--color-pillar-family-subtle);
+}
+
+[data-pillar="adventure"] {
+  --pillar-color: var(--color-pillar-adventure);
+  --pillar-subtle: var(--color-pillar-adventure-subtle);
+}
+
+.bg-surface-main {
+  background-color: var(--color-surface-muted);
+}
+
+.bg-surface-nature {
+  background-color: var(--color-surface-nature);
+}
+
+.bg-surface-water {
+  background-color: var(--color-surface-water);
+}
+
+.bg-surface-dark {
+  background-color: var(--color-surface-dark);
+  color: var(--color-text-on-dark);
+}
+
+.bg-surface-inverse {
+  background-color: var(--color-surface-inverse);
+  color: var(--color-text-on-dark);
+}

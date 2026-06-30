@@ -1,0 +1,10 @@
+# Cursor Rules v2
+- Read PROJECT_CONSTITUTION.md first.
+- Never invent requirements.
+- Prefer Server Components.
+- TypeScript only.
+- Keep components reusable.
+- Optimize images and fonts.
+- Lighthouse target >90.
+- Accessibility required.
+- Explain architectural tradeoffs before major changes.
