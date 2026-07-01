@@ -4,9 +4,13 @@ import Link from "next/link";
 import { FormEvent, useState } from "react";
 import { Container } from "@/components/layout/Container";
 import { MediaImage } from "@/components/home/MediaImage";
-import { homeImages } from "@/lib/home-images";
+import type { getNewsletterCtaContent } from "@/content/home-content";
 
-export function EmotionalCtaBand() {
+type EmotionalCtaBandProps = {
+  content: ReturnType<typeof getNewsletterCtaContent>;
+};
+
+export function EmotionalCtaBand({ content }: EmotionalCtaBandProps) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
@@ -18,43 +22,35 @@ export function EmotionalCtaBand() {
   return (
     <section className="relative overflow-hidden py-[var(--space-15)]">
       <div className="absolute inset-0">
-        <MediaImage src={homeImages.emotionalCta} alt="" sizes="100vw" />
+        <MediaImage src={content.backgroundImage} alt="" sizes="100vw" />
         <div className="absolute inset-0 bg-[#1e2a24]/75" aria-hidden />
       </div>
 
       <Container className="relative z-10 text-on-dark">
-        <h2 className="max-w-xl font-display text-3xl font-semibold text-text-inverse md:text-5xl">
-          Ready for your next journey?
+        <h2 className="max-w-xl type-display text-3xl text-text-inverse md:text-5xl">
+          {content.heading}
         </h2>
-        <p className="mt-4 max-w-lg text-text-on-dark/90">
-          Plan your Polo Forest escape — book online, request a proposal, or talk to our team.
-        </p>
+        <p className="mt-2 text-sm text-text-on-dark/80">{content.subheading}</p>
+        <p className="mt-4 max-w-lg text-text-on-dark/90">{content.description}</p>
 
         <div className="mt-8 flex flex-wrap gap-3">
-          <Link
-            href="/polo-forest"
-            className="rounded-[var(--radius-button)] bg-primary px-6 py-3 text-sm font-semibold text-text-inverse hover:bg-primary-hover"
-          >
-            Explore Polo Forest
-          </Link>
-          <Link
-            href="/plan/enquire"
-            className="rounded-[var(--radius-button)] border border-white/40 px-6 py-3 text-sm font-semibold text-text-inverse hover:bg-white/10"
-          >
-            Talk to an expert
-          </Link>
-          <Link
-            href="https://wa.me/919876543210"
-            className="rounded-[var(--radius-button)] border border-white/40 px-6 py-3 text-sm font-semibold text-text-inverse hover:bg-white/10"
-          >
-            WhatsApp
-          </Link>
-          <Link
-            href="tel:+919876543210"
-            className="text-sm font-medium text-text-inverse/90 underline-offset-4 hover:underline"
-          >
-            Call us
-          </Link>
+          {content.cta && (
+            <Link
+              href={content.cta.href}
+              className="rounded-[var(--radius-button)] bg-primary px-6 py-3 text-sm font-semibold text-text-inverse hover:bg-primary-hover"
+            >
+              {content.cta.label}
+            </Link>
+          )}
+          {content.secondaryCtas.map((cta) => (
+            <Link
+              key={cta.href}
+              href={cta.href}
+              className="rounded-[var(--radius-button)] border border-white/40 px-6 py-3 text-sm font-semibold text-text-inverse hover:bg-white/10"
+            >
+              {cta.label}
+            </Link>
+          ))}
         </div>
 
         <form onSubmit={handleSubmit} className="mt-10 flex max-w-md flex-col gap-2 sm:flex-row">

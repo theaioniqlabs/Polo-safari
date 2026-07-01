@@ -1,38 +1,43 @@
 @import "tailwindcss";
 @import "../styles/tokens.css";
+@import "../styles/typography.css";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-primary: var(--color-primary);
-  --color-primary-hover: var(--color-primary-hover);
-  --color-primary-subtle: var(--color-primary-subtle);
-  --color-surface: var(--color-surface);
-  --color-surface-muted: var(--color-surface-muted);
-  --color-surface-nature: var(--color-surface-nature);
-  --color-surface-water: var(--color-surface-water);
-  --color-surface-dark: var(--color-surface-dark);
-  --color-surface-dark-elevated: var(--color-surface-dark-elevated);
-  --color-text: var(--color-text);
-  --color-text-heading: var(--color-text-heading);
-  --color-text-muted: var(--color-text-muted);
-  --color-text-subtle: var(--color-text-subtle);
-  --color-text-inverse: var(--color-text-inverse);
-  --color-text-on-dark: var(--color-text-on-dark);
-  --color-border: var(--color-border);
-  --font-display: var(--font-display);
-  --font-body: var(--font-body);
-  --radius-sm: var(--radius-sm);
-  --radius-md: var(--radius-md);
-  --radius-lg: var(--radius-lg);
-  --radius-button: var(--radius-button);
-  --shadow-soft: var(--shadow-soft);
-  --shadow-medium: var(--shadow-medium);
-  --shadow-header: var(--shadow-header);
-  --font-heading: var(--font-sans);
-  --font-sans: var(--font-sans);
+  /* Polo Safari brand tokens (source: tokens.css --ps-*) */
+  --color-primary: var(--ps-primary);
+  --color-primary-hover: var(--ps-primary-hover);
+  --color-primary-subtle: var(--ps-primary-subtle);
+  --color-surface: var(--ps-surface);
+  --color-surface-muted: var(--ps-surface-muted);
+  --color-surface-nature: var(--ps-surface-nature);
+  --color-surface-water: var(--ps-surface-water);
+  --color-surface-dark: var(--ps-surface-dark);
+  --color-surface-dark-elevated: var(--ps-surface-dark-elevated);
+  --color-surface-inverse: var(--ps-surface-inverse);
+  --color-text: var(--ps-text);
+  --color-text-heading: var(--ps-text-heading);
+  --color-text-muted: var(--ps-text-muted);
+  --color-text-subtle: var(--ps-text-subtle);
+  --color-text-inverse: var(--ps-text-inverse);
+  --color-text-on-dark: var(--ps-text-on-dark);
+  --color-border: var(--ps-border);
+  --font-display: var(--ps-font-display);
+  --font-body: var(--ps-font-body);
+  --radius-sm: var(--ps-radius-sm);
+  --radius-md: var(--ps-radius-md);
+  --radius-lg: var(--ps-radius-lg);
+  --radius-button: var(--ps-radius-button);
+  --shadow-soft: var(--ps-shadow-soft);
+  --shadow-medium: var(--ps-shadow-medium);
+  --shadow-header: var(--ps-shadow-header);
+  --font-heading: var(--ps-font-display);
+  --default-font-family: var(--ps-font-body);
+  /* shadcn/ui tokens */
+  --font-sans: var(--ps-font-body);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -76,7 +81,8 @@ body {
   background-color: var(--color-surface-muted);
   color: var(--color-text);
   font-family: var(--font-body);
-  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 @keyframes marquee {
@@ -109,14 +115,6 @@ body {
   }
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-display);
-  color: var(--color-text-heading);
-}
-
 .text-on-dark h1,
 .text-on-dark h2,
 .text-on-dark h3,
@@ -124,7 +122,9 @@ h4 {
 [data-theme="dark-section"] h1,
 [data-theme="dark-section"] h2,
 [data-theme="dark-section"] h3,
-[data-theme="dark-section"] h4 {
+[data-theme="dark-section"] h4,
+[data-theme="dark-section"] h5,
+[data-theme="dark-section"] h6 {
   color: var(--color-text-inverse);
 }
 
@@ -202,9 +202,9 @@ h4 {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-surface-muted text-text font-body;
   }
   html {
-    @apply font-sans;
+    @apply font-body;
   }
 }

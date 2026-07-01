@@ -1,50 +1,31 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { MediaImage } from "@/components/home/MediaImage";
-import { homeImages } from "@/lib/home-images";
-
-const featured = [
-  {
-    slug: "polo-forest-heritage-walk",
-    title: "Polo Forest Heritage Walk",
-    price: "From ₹1,899",
-    badge: "Heritage",
-    image: homeImages.featuredHeritage,
-    large: true,
-  },
-  {
-    slug: "night-safari",
-    title: "Night Safari at Polo Forest",
-    price: "From ₹2,499",
-    badge: "Adventure",
-    image: homeImages.featuredNightSafari,
-    large: false,
-  },
-  {
-    slug: "family-camping-weekend",
-    title: "Family Camping Weekend",
-    price: "From ₹4,999",
-    badge: "Family",
-    image: homeImages.featuredFamily,
-    large: false,
-  },
-];
+import { getFeaturedToursContent } from "@/content/home-content";
 
 export function FeaturedExperiences() {
-  const [hero, ...stacked] = featured;
+  const content = getFeaturedToursContent();
+  const [hero, ...stacked] = content.cards;
+
+  if (!hero) {
+    return null;
+  }
 
   return (
     <section className="bg-surface-muted py-[var(--space-12)]">
       <Container>
-        <p className="text-xs font-semibold uppercase tracking-[0.12em] text-text-subtle">Featured</p>
-        <h2 className="mt-2 font-display text-3xl font-semibold md:text-4xl">
-          Guest favourites at Polo Forest
-        </h2>
+        <p className="text-xs font-semibold uppercase tracking-[0.12em] text-text-subtle">
+          {content.subheading}
+        </p>
+        <h2 className="mt-2 type-display text-3xl md:text-4xl">{content.heading}</h2>
+        {content.description && (
+          <p className="mt-3 max-w-2xl text-text-muted">{content.description}</p>
+        )}
 
         <div className="mt-10 grid gap-6 lg:grid-cols-12">
           <article className="group relative overflow-hidden rounded-[var(--radius-md)] lg:col-span-7">
             <div className="relative aspect-[4/5] w-full">
-              <Link href={`/experiences/${hero.slug}`} className="absolute inset-0">
+              <Link href={hero.href} className="absolute inset-0">
                 <MediaImage src={hero.image} alt={hero.title} sizes="(max-width:1024px) 100vw, 60vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </Link>
@@ -52,15 +33,15 @@ export function FeaturedExperiences() {
                 <span className="text-xs font-semibold uppercase tracking-wide text-white/80">
                   {hero.badge}
                 </span>
-                <h3 className="mt-2 font-display text-2xl font-semibold text-text-inverse">
-                  <Link href={`/experiences/${hero.slug}`}>{hero.title}</Link>
+                <h3 className="mt-2 text-2xl font-semibold text-text-inverse">
+                  <Link href={hero.href}>{hero.title}</Link>
                 </h3>
-                <p className="mt-1 text-sm text-white/85">{hero.price}</p>
+                <p className="mt-1 line-clamp-2 text-sm text-white/85">{hero.summary}</p>
                 <Link
-                  href={`/plan/book/${hero.slug}/dates`}
+                  href={hero.href}
                   className="mt-4 inline-flex rounded-[var(--radius-button)] bg-primary px-5 py-2.5 text-sm font-semibold text-text-inverse hover:bg-primary-hover"
                 >
-                  Book Now
+                  Explore
                 </Link>
               </div>
             </div>
@@ -69,11 +50,11 @@ export function FeaturedExperiences() {
           <div className="flex flex-col gap-6 lg:col-span-5">
             {stacked.map((card) => (
               <article
-                key={card.slug}
+                key={card.id}
                 className="group flex flex-1 overflow-hidden rounded-[var(--radius-md)] bg-surface shadow-[var(--shadow-soft)]"
               >
                 <Link
-                  href={`/experiences/${card.slug}`}
+                  href={card.href}
                   className="relative h-36 w-2/5 shrink-0 sm:h-auto sm:min-h-[140px]"
                 >
                   <MediaImage src={card.image} alt={card.title} sizes="200px" />
@@ -82,17 +63,17 @@ export function FeaturedExperiences() {
                   <span className="text-xs font-semibold uppercase tracking-wide text-text-subtle">
                     {card.badge}
                   </span>
-                  <h3 className="mt-1 font-display text-lg font-semibold">
-                    <Link href={`/experiences/${card.slug}`} className="hover:text-primary">
+                  <h3 className="mt-1 text-lg font-semibold">
+                    <Link href={card.href} className="hover:text-primary">
                       {card.title}
                     </Link>
                   </h3>
-                  <p className="mt-1 text-sm text-text-muted">{card.price}</p>
+                  <p className="mt-1 line-clamp-2 text-sm text-text-muted">{card.summary}</p>
                   <Link
-                    href={`/plan/book/${card.slug}/dates`}
+                    href={card.href}
                     className="mt-3 inline-flex w-fit rounded-[var(--radius-button)] bg-primary px-4 py-2 text-xs font-semibold text-text-inverse hover:bg-primary-hover"
                   >
-                    Book Now
+                    Explore
                   </Link>
                 </div>
               </article>
@@ -100,12 +81,14 @@ export function FeaturedExperiences() {
           </div>
         </div>
 
-        <Link
-          href="/experiences"
-          className="mt-8 inline-block text-sm font-semibold text-primary hover:underline"
-        >
-          Browse all experiences →
-        </Link>
+        {content.cta && (
+          <Link
+            href={content.cta.href}
+            className="mt-8 inline-block text-sm font-semibold text-primary hover:underline"
+          >
+            {content.cta.label} →
+          </Link>
+        )}
       </Container>
     </section>
   );

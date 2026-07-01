@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter, Geist } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import { AppProviders } from "@/components/providers/AppProviders";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
   display: "swap",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 const inter = Inter({
@@ -33,8 +32,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("font-sans", geist.variable)}>
-      <body className={`${playfair.variable} ${inter.variable} antialiased`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <body className="font-body antialiased">
         <AppProviders>{children}</AppProviders>
       </body>
     </html>

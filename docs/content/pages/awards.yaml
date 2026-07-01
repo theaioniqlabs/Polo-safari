@@ -1,0 +1,274 @@
+$schema: ../schema/content-model.schema.json
+id: awards
+slug: awards
+route: /awards
+title: Awards & Recognition
+status: review
+seo:
+  title: Polo Safari Awards | Gujarat Tourism Honours
+  metaDescription: Gujarat Tourism Season 7 triple winner and Swiftnlift Best Corporate Tour Operator—eleven years of award-backed experiential travel from Ahmedabad.
+  slug: awards
+  primaryKeyword: polo safari awards gujarat tourism
+  secondaryKeywords:
+    - gujarat tourism season 7 winner
+    - best corporate tour operator gujarat
+    - adventure trekking award ahmedabad
+    - swiftnlift business magazine award
+    - polo safari certificates
+  internalLinks:
+    - label: About Polo Safari
+      href: /about
+    - label: Corporate Retreats
+      href: /corporate
+    - label: Our Clients
+      href: /clients
+    - label: India Tours
+      href: /india
+    - label: Contact Us
+      href: /contact
+  ctaSuggestions:
+    - label: Request Corporate Proposal
+      href: /corporate
+    - label: View Our Clients
+      href: /clients
+    - label: Plan Your Trip
+      href: /contact
+
+sections:
+  - id: hero
+    heading: Recognition earned on the ground
+    subheading: Gujarat Tourism honours · Industry trust · Eleven years of delivery
+    description: |
+      Awards are not marketing wallpaper for Polo Safari—they reflect repeat corporate bookings, safe educational programs, and adventure itineraries executed with the discipline HR teams and principals expect. From Gujarat Tourism Season 7 to Swiftnlift industry recognition, our credentials mirror what clients already know from working with us.
+    cta:
+      label: See Our Clients
+      href: /clients
+    contentNotes: |
+      Premium storytelling hero—not a trophy shelf. Breadcrumb Home → Awards. Optional subtle certificate texture in background. Link founder story on /about.
+    seoNotes: |
+      Single H1 polo safari awards gujarat tourism. E-E-A-T signals in opening paragraph.
+    stockImage:
+      keywords:
+        - tourism award ceremony stage india
+        - business recognition trophy presentation
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Polo Safari team at Gujarat Tourism award ceremony or certificate display.
+
+  - id: recognition-intro
+    heading: Why recognition matters to your decision
+    subheading: Third-party validation for HR, principals, and family planners
+    description: |
+      When you shortlist a tour operator, marketing claims are easy—state tourism awards and industry magazine honours are harder to earn. Polo Safari's recognitions span corporate inbound programs, adventure and trekking, and sustained excellence across multiple Gujarat Tourism seasons. They sit alongside MSME registration, GST certification, and thousands of travellers served since 2014.
+    entityRefs:
+      - entityType: company
+        entityId: polo-safari
+    contentNotes: |
+      Editorial intro band—two-column layout with credentials list from company entity. Tone: confident, factual. No superlatives like "best in India."
+    seoNotes: |
+      H2 gujarat tourism award tour operator. Company credentials for trust.
+    stockImage:
+      keywords:
+        - professional certificate frame office wall
+        - business trust credibility handshake
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari office wall with framed certificates—authentic scan quality.
+
+  - id: government-recognition
+    heading: Government recognition
+    subheading: Gujarat Tourism — Seasons 6 and 7
+    description: |
+      Gujarat Tourism has recognised Polo Safari across multiple award seasons—most recently Season 7 (2025) with honours for inbound corporate tour operations at state and Ahmedabad levels, plus adventure and trekking leadership in Ahmedabad. Prior-season Season 6 recognition affirms continuity, not a one-year spike.
+    entityRefs:
+      - entityType: award
+        entityId: gt-season7-inbound-corporate-gujarat
+      - entityType: award
+        entityId: gt-season7-inbound-corporate-ahmedabad
+      - entityType: award
+        entityId: gt-season7-adventure-ahmedabad
+      - entityType: award
+        entityId: gt-season6-award
+    contentNotes: |
+      Narrative block—not flat list. Three Season 7 cards with scope badges (Gujarat / Ahmedabad). Season 6 card flagged "details to verify from certificate." Link /corporate for corporate award context.
+    seoNotes: |
+      H2 gujarat tourism season 7 polo safari. Award titles as H3s.
+    stockImage:
+      keywords:
+        - gujarat tourism award certificate
+        - government tourism recognition india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: High-res scans of Gujarat Tourism certificates—Season 7 trio plus Season 6.
+
+  - id: industry-trust
+    heading: Industry trust
+    subheading: Swiftnlift Business Magazine
+    description: |
+      Swiftnlift Business Magazine named Polo Safari Best Corporate Tour Operator in Gujarat—presented by actor Bhagyashree. The honour reflects client retention, professional execution, and reputation among Gujarat enterprises who book repeat offsites season after season.
+    entityRefs:
+      - entityType: award
+        entityId: swiftnlift-best-corporate-gujarat
+    contentNotes: |
+      Feature layout with ceremony photo placeholder. Quote optional from event. Cross-link /clients corporate logos.
+    seoNotes: |
+      H2 best corporate tour operator gujarat swiftnlift.
+    stockImage:
+      keywords:
+        - business magazine award ceremony celebrity
+        - corporate excellence trophy gujarat
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Swiftnlift award presentation photo with Bhagyashree and Polo Safari representative.
+
+  - id: tourism-awards-grid
+    heading: Tourism awards at a glance
+    subheading: Season, category, and scope—summarised for quick reference
+    description: |
+      A consolidated view of Polo Safari's Gujarat Tourism and industry honours—useful for procurement teams, school boards, and family planners comparing operators on verified recognition, not slogans.
+    entityRefs:
+      - entityType: award
+        entityId: gt-season7-inbound-corporate-gujarat
+      - entityType: award
+        entityId: gt-season7-inbound-corporate-ahmedabad
+      - entityType: award
+        entityId: gt-season7-adventure-ahmedabad
+      - entityType: award
+        entityId: gt-season6-award
+      - entityType: award
+        entityId: swiftnlift-best-corporate-gujarat
+    contentNotes: |
+      Responsive grid—columns: Award title | Issuer | Year/Season | Scope. Filter chips optional (Government / Industry). Each row links to certificate modal.
+    seoNotes: |
+      H2 polo safari tourism awards list. Structured data candidate when certificate images live.
+    stockImage:
+      keywords:
+        - award trophy collection display
+        - tourism operator accolades grid
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Composite of certificate thumbnails from entity imagePlaceholder assets.
+
+  - id: certificates
+    heading: Certificates
+    subheading: Scanned credentials for your records
+    description: |
+      High-resolution certificate images for Gujarat Tourism Seasons 6 and 7 and the Swiftnlift honour—available for HR vendor folders, school administration files, and RFP appendices.
+    contentNotes: |
+      Lightbox gallery mapped to placeholders: [Certificate_01] gt-season7-inbound-corporate-gujarat, [Certificate_02] ahmedabad corporate, [Certificate_03] adventure ahmedabad, [Certificate_04] season 6, [Certificate_05] swiftnlift. Download PDF option per certificate when assets ready.
+    seoNotes: |
+      H2 polo safari certificates gujarat tourism. Alt text from award entity titles.
+    stockImage:
+      keywords:
+        - official certificate document scan
+        - tourism award certificate close up
+      orientation: portrait
+      aspectRatio: "4:5"
+      usage: gallery
+    replacementNote: Replace each [Certificate_01] through [Certificate_05] with verified scans from PDF pages 8–15.
+
+  - id: memberships-placeholder
+    heading: Memberships & associations
+    subheading: Industry affiliations — assets pending
+    description: |
+      Polo Safari maintains relationships with tourism and industry associations that support professional standards and peer accountability. Membership logos and affiliation details will be published here once confirmed with issuing bodies.
+    contentNotes: |
+      Placeholder grid for association logos—pattern [Gov_Association_01] and partner association slots from partners entity if applicable. Flag TBC in CMS. Do not invent affiliation names.
+    seoNotes: |
+      H2 tour operator memberships gujarat. Placeholder section—noindex not required; mark draft badges until verified.
+    stockImage:
+      keywords:
+        - industry association logo placeholder
+        - professional membership badge travel
+      orientation: square
+      aspectRatio: "1:1"
+      usage: card
+    replacementNote: Verified association membership certificates and logos when client supplies.
+
+  - id: media-recognition-placeholder
+    heading: Media recognition
+    subheading: Press and features — coming soon
+    description: |
+      Media coverage, magazine features, and press mentions that spotlight Polo Safari's corporate, educational, and heritage work will be curated here. Until assets are confirmed, explore our gallery and client stories for proof of delivery.
+    cta:
+      label: View Gallery
+      href: /gallery
+    contentNotes: |
+      Placeholder editorial band. partner-05 (type media) may migrate here when names confirmed. Link /blog for future press posts.
+    seoNotes: |
+      H2 polo safari media coverage. Intentionally thin until verified clips exist.
+    stockImage:
+      keywords:
+        - travel press media feature article
+        - magazine interview business travel
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Actual press clippings, interview stills, or publication logos when available.
+
+  - id: awards-timeline
+    heading: Eleven years of milestones
+    subheading: From Polo Forest roots to pan-India and international reach
+    description: |
+      Founded in Ahmedabad in 2014, Polo Safari grew from heritage tours at Polo Forest to corporate and educational pillars, international outbound programs, and multi-year inbound hosting—culminating in our strongest Gujarat Tourism award season in 2025.
+    entityRefs:
+      - entityType: timeline-event
+        entityId: timeline-2014-founded
+      - entityType: timeline-event
+        entityId: timeline-2016-pan-india
+      - entityType: timeline-event
+        entityId: timeline-2018-corporate-education
+      - entityType: timeline-event
+        entityId: timeline-2020-international-outbound
+      - entityType: timeline-event
+        entityId: timeline-2023-inbound-vietnam
+      - entityType: timeline-event
+        entityId: timeline-2024-gt-season6
+      - entityType: timeline-event
+        entityId: timeline-2024-inbound-vietnam
+      - entityType: timeline-event
+        entityId: timeline-2025-gt-season7
+      - entityType: timeline-event
+        entityId: timeline-2025-swiftnlift
+      - entityType: timeline-event
+        entityId: timeline-2025-eleven-years
+      - entityType: timeline-event
+        entityId: timeline-2025-inbound-vietnam
+    contentNotes: |
+      Vertical timeline component—year left, event right. Award years visually emphasised (2024, 2025). Link /about#how-we-started for founder narrative.
+    seoNotes: |
+      H2 polo safari history awards timeline. Year markers for long-tail queries.
+    stockImage:
+      keywords:
+        - company timeline milestone infographic
+        - travel business growth journey india
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: background
+    replacementNote: Timeline illustrated with Polo Safari archival photos per milestone year.
+
+  - id: cta
+    heading: Award-winning execution starts with a conversation
+    subheading: Corporate, educational, family, and adventure programs from Ahmedabad
+    description: |
+      Recognition matters—but the real test is your next trip. Speak with our team about an offsite, field study, or family holiday backed by eleven years of delivery and Gujarat Tourism honours.
+    cta:
+      label: Contact Polo Safari
+      href: /contact
+    contentNotes: |
+      Dual CTA: /corporate and /schools-colleges. Trust strip: MSME, GST, Verified & Authorized from company entity.
+    seoNotes: |
+      H2 plan trip polo safari ahmedabad. Conversion-focused close.
+    stockImage:
+      keywords:
+        - corporate team celebration outdoor sunset
+        - successful group travel happy moment
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: background
+    replacementNote: Polo Safari group celebration moment post-award-season corporate trip.

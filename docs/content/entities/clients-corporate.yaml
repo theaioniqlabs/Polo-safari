@@ -1,0 +1,315 @@
+$schema: ../schema/content-model.schema.json
+entityFile: clients-corporate
+version: 1.1.0
+updatedAt: 2026-07-01
+
+items:
+  - id: client-alaska
+    entityType: client
+    name: Alaska
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Alaska]"
+    logoSrc: /images/clients/corporate/logos/alaska.jpeg
+    industry: Hospitality
+    verified: true
+
+  - id: client-astute-management
+    entityType: client
+    name: Astute Management Solutions
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Astute]"
+    logoSrc: /images/clients/corporate/logos/astute-management-solutions.jpeg
+    industry: Management Consulting
+    verified: true
+
+  - id: client-av-design
+    entityType: client
+    name: AV Design
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_AVDesign]"
+    logoSrc: /images/clients/corporate/logos/av-design.jpeg
+    industry: Design & AV
+    verified: true
+
+  - id: client-bdhm
+    entityType: client
+    name: BDHM Consultants Pvt Ltd
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_BDHM]"
+    logoSrc: /images/clients/corporate/logos/bdhm.jpeg
+    certificateSrc: /images/clients/corporate/certs/bdhm.jpg
+    industry: Engineering & Consulting
+    verified: true
+    featured: true
+
+  - id: client-biomatrix
+    entityType: client
+    name: Biomatrix
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Biomatrix]"
+    logoSrc: /images/clients/corporate/logos/biomatrix.jpeg
+    industry: Life Sciences
+    verified: true
+
+  - id: client-digicorp
+    entityType: client
+    name: Digicorp
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Digicorp]"
+    logoSrc: /images/clients/corporate/logos/digicorp.png
+    certificateSrc: /images/clients/corporate/certs/digicorp.jpg
+    industry: IT Services
+    verified: true
+    featured: true
+
+  - id: client-fortune-inn
+    entityType: client
+    name: Fortune Inn
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_FortuneInn]"
+    logoSrc: /images/clients/corporate/logos/fortune-inn.png
+    industry: Hospitality
+    verified: true
+
+  - id: client-fovera
+    entityType: client
+    name: Fovera Orthodesign
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Fovera]"
+    logoSrc: /images/clients/corporate/logos/fovera.jpg
+    certificateSrc: /images/clients/corporate/certs/fovera.jpg
+    industry: Medical Devices
+    verified: true
+    featured: true
+
+  - id: client-harley-davidson
+    entityType: client
+    name: Harley-Davidson
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_HarleyDavidson]"
+    logoSrc: /images/clients/corporate/logos/harley-davidson.webp
+    industry: Automotive
+    verified: true
+
+  - id: client-house-of-mg
+    entityType: client
+    name: House of MG
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_HouseOfMG]"
+    logoSrc: /images/clients/corporate/logos/house-of-mg.jpeg
+    industry: Hospitality & Heritage
+    verified: true
+
+  - id: client-hp
+    entityType: client
+    name: HP
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_HP]"
+    logoSrc: /images/clients/corporate/logos/hp.png
+    industry: Technology
+    verified: true
+
+  - id: client-ibm
+    entityType: client
+    name: IBM
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_IBM]"
+    logoSrc: /images/clients/corporate/logos/ibm.webp
+    industry: Technology
+    verified: true
+
+  - id: client-inextrix
+    entityType: client
+    name: Inextrix Technologies
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Inextrix]"
+    logoSrc: /images/clients/corporate/logos/inextrix.png
+    certificateSrc: /images/clients/corporate/certs/inextrix.jpg
+    industry: IT Services
+    verified: true
+    featured: true
+
+  - id: client-initor-globe
+    entityType: client
+    name: Initor Globe
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_InitorGlobe]"
+    logoSrc: /images/clients/corporate/logos/initor-globe.jpeg
+    industry: IT Services
+    verified: true
+
+  - id: client-kanhasoft
+    entityType: client
+    name: Kanhasoft
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Kanhasoft]"
+    logoSrc: /images/clients/corporate/logos/kanhasoft.png
+    industry: Software
+    verified: true
+
+  - id: client-kevision
+    entityType: client
+    name: Kevision Systems
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Kevision]"
+    logoSrc: /images/clients/corporate/logos/kevision-systems.jpeg
+    industry: Technology
+    verified: true
+
+  - id: client-knack-packaging
+    entityType: client
+    name: Knack Packaging
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Knack]"
+    logoSrc: /images/clients/corporate/logos/knack-packaging.png
+    industry: Manufacturing
+    verified: true
+
+  - id: client-kpmg
+    entityType: client
+    name: KPMG
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_KPMG]"
+    logoSrc: /images/clients/corporate/logos/kpmg.png
+    industry: Financial Services
+    verified: true
+
+  - id: client-lincoln
+    entityType: client
+    name: Lincoln
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Lincoln]"
+    logoSrc: /images/clients/corporate/logos/lincoln.png
+    industry: Automotive
+    verified: true
+
+  - id: client-mac-fitness
+    entityType: client
+    name: Mac Fitness
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_MacFitness]"
+    logoSrc: /images/clients/corporate/logos/mac-fitness.jpeg
+    industry: Wellness & Fitness
+    verified: true
+
+  - id: client-maf-fitness
+    entityType: client
+    name: MAF Fitness
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_MAFFitness]"
+    logoSrc: /images/clients/corporate/logos/maf-fitness.png
+    industry: Wellness & Fitness
+    verified: true
+
+  - id: client-navratna
+    entityType: client
+    name: Navratna
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Navratna]"
+    logoSrc: /images/clients/corporate/logos/navratna.png
+    industry: Corporate
+    verified: true
+
+  - id: client-pwc
+    entityType: client
+    name: PwC
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_PwC]"
+    logoSrc: /images/clients/corporate/logos/pwc.png
+    industry: Financial Services
+    verified: true
+
+  - id: client-pragnakalp
+    entityType: client
+    name: Pragnakalp Techlabs
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Pragnakalp]"
+    logoSrc: /images/clients/corporate/logos/pragnakalp.jpeg
+    certificateSrc: /images/clients/corporate/certs/pragnakalp.jpg
+    industry: AI & Software
+    verified: true
+    featured: true
+
+  - id: client-raywell
+    entityType: client
+    name: Raywell
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Raywell]"
+    logoSrc: /images/clients/corporate/logos/raywell.png
+    industry: Manufacturing
+    verified: true
+
+  - id: client-rishabh-software
+    entityType: client
+    name: Rishabh Software
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Rishabh]"
+    logoSrc: /images/clients/corporate/logos/rishabh-software.webp
+    industry: Software
+    verified: true
+
+  - id: client-soham-erp
+    entityType: client
+    name: Soham ERP
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_SohamERP]"
+    logoSrc: /images/clients/corporate/logos/soham-erp.png
+    certificateSrc: /images/clients/corporate/certs/soham-erp.jpg
+    industry: ERP & Software
+    verified: true
+
+  - id: client-spx-flow
+    entityType: client
+    name: SPX Flow
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_SPXFlow]"
+    logoSrc: /images/clients/corporate/logos/spx-flow.png
+    certificateSrc: /images/clients/corporate/certs/spx-flow.jpg
+    industry: Industrial Engineering
+    verified: true
+
+  - id: client-sufalam
+    entityType: client
+    name: Sufalam
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Sufalam]"
+    logoSrc: /images/clients/corporate/logos/sufalam.jpeg
+    industry: Corporate
+    verified: true
+
+  - id: client-unison-globus
+    entityType: client
+    name: Unison Globus
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_UnisonGlobus]"
+    logoSrc: /images/clients/corporate/logos/unison-globus.jpeg
+    certificateSrc: /images/clients/corporate/certs/unison-globus.jpg
+    industry: Pharmaceuticals
+    verified: true
+
+  - id: client-dynasoft
+    entityType: client
+    name: DynaSoft
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_DynaSoft]"
+    certificateSrc: /images/clients/corporate/certs/dynasoft.jpg
+    industry: IT Services
+    verified: true
+
+  - id: client-guhilot
+    entityType: client
+    name: Guhilot
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_Guhilot]"
+    certificateSrc: /images/clients/corporate/certs/guhilot.jpg
+    industry: Corporate
+    verified: true
+
+  - id: client-raj-infotech
+    entityType: client
+    name: Raj Infotech
+    segment: corporate
+    logoPlaceholder: "[Corporate_Client_RajInfotech]"
+    certificateSrc: /images/clients/corporate/certs/raj-infotech.jpg
+    industry: IT Services
+    verified: true

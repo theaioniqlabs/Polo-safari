@@ -1,0 +1,195 @@
+$schema: ../schema/content-model.schema.json
+entityFile: testimonials
+version: 1.1.0
+updatedAt: 2026-07-01
+
+items:
+  - id: google-reviews-stat
+    entityType: testimonial
+    quote: "4.7 · 1,304+ reviews"
+    author: Google Reviews
+    role: Public review aggregate
+    organization: Google
+    segment: general
+    source: google
+
+  - id: recommend-rate-stat
+    entityType: testimonial
+    quote: "96% recommend · 253 reviews"
+    author: Guest recommendations
+    role: Platform attribution TBC — see 01-REVIEW-STATS-PENDING.md
+    organization: Platform TBC
+    segment: general
+    source: other
+
+  - id: appreciation-letter-bdhm
+    entityType: testimonial
+    quote: Appreciation letter — corporate offsite at Polo Forest
+    author: BDHM Consultants Pvt Ltd
+    role: Corporate client
+    organization: BDHM Consultants Pvt Ltd
+    segment: corporate
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_BDHM]"
+    assetSrc: /images/clients/corporate/certs/bdhm.jpg
+
+  - id: appreciation-letter-digicorp
+    entityType: testimonial
+    quote: Appreciation letter — team offsite program
+    author: Digicorp
+    role: Corporate client
+    organization: Digicorp
+    segment: corporate
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_Digicorp]"
+    assetSrc: /images/clients/corporate/certs/digicorp.jpg
+
+  - id: appreciation-letter-dynasoft
+    entityType: testimonial
+    quote: Appreciation letter — corporate retreat
+    author: DynaSoft
+    role: Corporate client
+    organization: DynaSoft
+    segment: corporate
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_DynaSoft]"
+    assetSrc: /images/clients/corporate/certs/dynasoft.jpg
+
+  - id: appreciation-letter-fovera
+    entityType: testimonial
+    quote: Appreciation letter — leadership offsite
+    author: Fovera Orthodesign
+    role: Corporate client
+    organization: Fovera Orthodesign
+    segment: corporate
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_Fovera]"
+    assetSrc: /images/clients/corporate/certs/fovera.jpg
+
+  - id: appreciation-letter-guhilot
+    entityType: testimonial
+    quote: Appreciation letter — corporate group travel
+    author: Guhilot
+    role: Corporate client
+    organization: Guhilot
+    segment: corporate
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_Guhilot]"
+    assetSrc: /images/clients/corporate/certs/guhilot.jpg
+
+  - id: appreciation-letter-inextrix
+    entityType: testimonial
+    quote: Appreciation letter — team building offsite
+    author: Inextrix Technologies
+    role: Corporate client
+    organization: Inextrix Technologies
+    segment: corporate
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_Inextrix]"
+    assetSrc: /images/clients/corporate/certs/inextrix.jpg
+
+  - id: appreciation-letter-pragnakalp
+    entityType: testimonial
+    quote: Appreciation letter — corporate engagement program
+    author: Pragnakalp Techlabs
+    role: Corporate client
+    organization: Pragnakalp Techlabs
+    segment: corporate
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_Pragnakalp]"
+    assetSrc: /images/clients/corporate/certs/pragnakalp.jpg
+
+  - id: appreciation-letter-raj-infotech
+    entityType: testimonial
+    quote: Appreciation letter — corporate outing
+    author: Raj Infotech
+    role: Corporate client
+    organization: Raj Infotech
+    segment: corporate
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_RajInfotech]"
+    assetSrc: /images/clients/corporate/certs/raj-infotech.jpg
+
+  - id: appreciation-letter-soham-erp
+    entityType: testimonial
+    quote: Appreciation letter — annual offsite
+    author: Soham ERP
+    role: Corporate client
+    organization: Soham ERP
+    segment: corporate
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_SohamERP]"
+    assetSrc: /images/clients/corporate/certs/soham-erp.jpg
+
+  - id: appreciation-letter-spx-flow
+    entityType: testimonial
+    quote: Appreciation letter — MICE and team program
+    author: SPX Flow
+    role: Corporate client
+    organization: SPX Flow
+    segment: corporate
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_SPXFlow]"
+    assetSrc: /images/clients/corporate/certs/spx-flow.jpg
+
+  - id: appreciation-letter-unison-globus
+    entityType: testimonial
+    quote: Appreciation letter — corporate retreat
+    author: Unison Globus
+    role: Corporate client
+    organization: Unison Globus
+    segment: corporate
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_UnisonGlobus]"
+    assetSrc: /images/clients/corporate/certs/unison-globus.jpg
+
+  - id: appreciation-letter-01
+    entityType: testimonial
+    quote: Client appreciation letter — corporate offsite
+    author: Corporate client
+    segment: corporate
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_01]"
+
+  - id: appreciation-letter-02
+    entityType: testimonial
+    quote: Client appreciation letter — educational tour
+    author: School / college
+    segment: education
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_02]"
+
+  - id: appreciation-letter-03
+    entityType: testimonial
+    quote: Client appreciation letter — group travel
+    author: Group organiser
+    segment: general
+    source: letter
+    assetPlaceholder: "[Appreciation_Letter_03]"
+
+  - id: testimonial-corporate-placeholder
+    entityType: testimonial
+    quote: |
+      Polo Safari handled our offsite end to end—from transport and meals to facilitators who actually understood our team dynamics. Our people left Polo Forest more connected than any hotel ballroom could deliver.
+    author: HR & People Operations Lead
+    role: Gujarat-based enterprise
+    segment: corporate
+    source: other
+
+  - id: testimonial-education-placeholder
+    entityType: testimonial
+    quote: |
+      The field study was curriculum-aligned and safely run. Faculty received clear briefings, students stayed engaged outdoors, and parents heard detailed stories at home—that is the bar we expect.
+    author: Academic Coordinator
+    role: Senior secondary school
+    segment: education
+    source: other
+
+  - id: testimonial-family-placeholder
+    entityType: testimonial
+    quote: |
+      We wanted nature without chaos. Polo Safari paced the trip for our children and grandparents alike—heritage in the morning, downtime in the afternoon, and zero guesswork on logistics.
+    author: Family traveller
+    role: Ahmedabad
+    segment: family
+    source: other

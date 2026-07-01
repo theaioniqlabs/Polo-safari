@@ -4,53 +4,24 @@ import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { Container } from "@/components/layout/Container";
 import { MediaImage } from "@/components/home/MediaImage";
-import { homeImages } from "@/lib/home-images";
-
-const slides = [
-  {
-    id: "monsoon",
-    overline: "MONSOON 2026",
-    title: "Discover Polo Forest",
-    titleItalic: "After the Rains",
-    body: "Guided ecology walks in Gujarat's hidden forest.",
-    primary: { label: "Book Monsoon Safari", href: "/plan/book/monsoon-safari/dates" },
-    secondary: { label: "Explore experiences →", href: "/experiences" },
-    caption: "From ₹2,499 · 1 day",
-    image: homeImages.heroMonsoon,
-  },
-  {
-    id: "corporate",
-    overline: "CORPORATE RETREATS",
-    title: "Build Teams Where",
-    titleItalic: "Nature Inspires",
-    body: "Custom offsite programs at Polo Forest for 20–200 guests.",
-    primary: { label: "Request Proposal", href: "/corporate#rfp" },
-    secondary: { label: "View Corporate Programs →", href: "/experiences/category/corporate" },
-    caption: "Custom pricing · 48-hour proposal turnaround",
-    image: homeImages.heroCorporate,
-  },
-  {
-    id: "education",
-    overline: "EDUCATIONAL TOURS",
-    title: "Ecology Lessons That",
-    titleItalic: "Leave the Classroom",
-    body: "Curriculum-aligned field studies for Std 5–12 at Polo Forest.",
-    primary: { label: "Request School Program", href: "/education#rfp" },
-    secondary: { label: "Learn More →", href: "/education" },
-    caption: "Custom proposal — not instant online booking",
-    image: homeImages.heroEducation,
-  },
-] as const;
+import type { HeroSlideContent } from "@/content/home-content";
 
 const INTERVAL_MS = 8000;
 
-export function Hero() {
+type HeroProps = {
+  slides: HeroSlideContent[];
+};
+
+export function Hero({ slides }: HeroProps) {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
 
-  const goTo = useCallback((index: number) => {
-    setActive((index + slides.length) % slides.length);
-  }, []);
+  const goTo = useCallback(
+    (index: number) => {
+      setActive((index + slides.length) % slides.length);
+    },
+    [slides.length],
+  );
 
   useEffect(() => {
     if (paused) return;
@@ -62,7 +33,7 @@ export function Hero() {
     }, INTERVAL_MS);
 
     return () => window.clearInterval(timer);
-  }, [paused]);
+  }, [paused, slides.length]);
 
   const slide = slides[active];
 
@@ -96,10 +67,14 @@ export function Hero() {
           <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#8fd0e1]">
             {slide.overline}
           </p>
-          <h1 className="mt-4 max-w-3xl font-display text-4xl font-semibold leading-tight text-text-inverse md:text-6xl">
+          <h1 className="mt-4 max-w-3xl type-display text-4xl leading-tight text-text-inverse md:text-6xl">
             {slide.title}
-            <br />
-            <span className="italic">{slide.titleItalic}</span>
+            {slide.titleItalic && (
+              <>
+                <br />
+                <span className="italic">{slide.titleItalic}</span>
+              </>
+            )}
           </h1>
           <p className="mt-4 max-w-xl text-lg text-text-on-dark/90">{slide.body}</p>
           <div className="mt-8 flex flex-wrap items-center gap-4">

@@ -1,0 +1,182 @@
+$schema: ../schema/content-model.schema.json
+entityFile: destinations-international
+version: 1.0.0
+updatedAt: 2026-07-01
+
+items:
+  - id: singapore
+    entityType: destination
+    name: Singapore
+    region: international
+    stateOrCountry: Singapore
+    summary: |
+      Asia — city-state precision: clean urban experiences, team rewards, and family-friendly attractions for Gujarat outbound groups. Duration tags: multi-day.
+    themes:
+      - international-escapes
+      - corporate-retreats
+      - family-getaways
+    pdfConfirmed: true
+    image:
+      keywords:
+        - singapore skyline gardens by the bay
+        - asia corporate incentive travel
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: malaysia
+    entityType: destination
+    name: Malaysia
+    region: international
+    stateOrCountry: Malaysia
+    summary: |
+      Asia — Kuala Lumpur city breaks and nature escapes; popular combo itineraries with Singapore. Duration tags: multi-day.
+    themes:
+      - international-escapes
+      - corporate-retreats
+      - family-getaways
+    pdfConfirmed: true
+    image:
+      keywords:
+        - kuala lumpur malaysia city tour
+        - southeast asia family vacation
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: bali
+    entityType: destination
+    name: Bali
+    region: international
+    stateOrCountry: Indonesia
+    summary: |
+      Asia — wellness, culture, and resort-led corporate retreats amid rice terraces and coastline. Duration tags: multi-day.
+    themes:
+      - international-escapes
+      - wellness-yoga-meditation
+      - corporate-retreats
+    pdfConfirmed: true
+    image:
+      keywords:
+        - bali rice terrace resort indonesia
+        - wellness retreat southeast asia
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: dubai
+    entityType: destination
+    name: Dubai
+    region: international
+    stateOrCountry: United Arab Emirates
+    summary: |
+      Middle East — premium urban experiences, desert safaris, and incentive travel for corporate groups. Duration tags: multi-day.
+    themes:
+      - international-escapes
+      - corporate-retreats
+    pdfConfirmed: true
+    image:
+      keywords:
+        - dubai skyline desert safari
+        - middle east corporate travel
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: vietnam
+    entityType: destination
+    name: Vietnam
+    region: international
+    stateOrCountry: Vietnam
+    summary: |
+      Asia — outbound heritage and city tours; also inbound partner nation—Vietnamese delegations hosted in Ahmedabad (2023–2025). Duration tags: multi-day.
+    themes:
+      - international-escapes
+      - heritage-polo-forest
+    pdfConfirmed: true
+    image:
+      keywords:
+        - vietnam heritage city tour
+        - southeast asia cultural travel
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: ahmedabad-inbound-hosting
+    entityType: destination
+    name: Ahmedabad (Inbound Hosting)
+    region: international
+    stateOrCountry: India
+    summary: |
+      Inbound programs for international guest groups—Ahmedabad heritage hosting for Vietnamese delegations and future inbound partners (2023–2025 confirmed).
+    themes:
+      - heritage-polo-forest
+      - international-escapes
+    pdfConfirmed: true
+    image:
+      keywords:
+        - ahmedabad heritage walk international guests
+        - inbound tourism cultural exchange india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: international-destination-asia
+    entityType: destination
+    name: "[International_Destination_Asia]"
+    region: international
+    stateOrCountry: Asia
+    summary: Expansion slot for additional Asia outbound destinations beyond PDF-confirmed list.
+    themes:
+      - international-escapes
+    pdfConfirmed: false
+
+  - id: international-destination-europe
+    entityType: destination
+    name: "[International_Destination_Europe]"
+    region: international
+    stateOrCountry: Europe
+    summary: Expansion slot for Europe programs—no PDF-confirmed destinations yet.
+    themes:
+      - international-escapes
+    pdfConfirmed: false
+
+  - id: international-destination-middle-east
+    entityType: destination
+    name: "[International_Destination_Middle_East]"
+    region: international
+    stateOrCountry: Middle East
+    summary: Expansion slot for Middle East beyond Dubai—no additional PDF-confirmed destinations.
+    themes:
+      - international-escapes
+    pdfConfirmed: false
+
+  - id: international-destination-africa
+    entityType: destination
+    name: "[International_Destination_Africa]"
+    region: international
+    stateOrCountry: Africa
+    summary: Expansion slot for Africa programs—placeholder until catalogue confirmed.
+    themes:
+      - international-escapes
+    pdfConfirmed: false
+
+  - id: international-destination-australia
+    entityType: destination
+    name: "[International_Destination_Australia]"
+    region: international
+    stateOrCountry: Australia
+    summary: Expansion slot for Australia programs—placeholder until catalogue confirmed.
+    themes:
+      - international-escapes
+    pdfConfirmed: false
+
+  - id: international-destination-general
+    entityType: destination
+    name: "[International_Destination_X]"
+    region: international
+    stateOrCountry: International
+    summary: General expansion slot for future outbound destinations.
+    themes:
+      - international-escapes
+    pdfConfirmed: false

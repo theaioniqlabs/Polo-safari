@@ -1,0 +1,348 @@
+$schema: ../schema/content-model.schema.json
+entityFile: destinations-india
+version: 1.0.0
+updatedAt: 2026-07-01
+
+items:
+  - id: polo-forest
+    entityType: destination
+    name: Polo Forest
+    region: india
+    stateOrCountry: Gujarat
+    summary: |
+      Heritage heartland and flagship destination—temple trails, river walks, eco-resorts, and corporate campsites in the Aravalli. Duration tags: weekend · multi-day.
+    themes:
+      - heritage-polo-forest
+      - corporate-retreats
+      - adventure-trekking
+      - educational-industrial-visits
+      - family-getaways
+      - one-day-picnics
+      - wellness-yoga-meditation
+    pdfConfirmed: true
+    image:
+      keywords:
+        - polo forest aravalli temples
+        - gujarat heritage forest trail
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: jambughoda
+    entityType: destination
+    name: Jambughoda
+    region: india
+    stateOrCountry: Gujarat
+    summary: |
+      Wildlife sanctuary and nature retreat near Vadodara—ideal for corporate rejuvenation and family nature breaks. Duration tags: weekend · multi-day.
+    themes:
+      - corporate-retreats
+      - family-getaways
+      - adventure-trekking
+    pdfConfirmed: true
+    image:
+      keywords:
+        - jambughoda wildlife sanctuary gujarat
+        - forest nature retreat india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: saputara
+    entityType: destination
+    name: Saputara
+    region: india
+    stateOrCountry: Gujarat
+    summary: |
+      Gujarat's hill station—cooler climate, viewpoints, and group-friendly resorts for offsites and family holidays. Duration tags: weekend · multi-day.
+    themes:
+      - corporate-retreats
+      - family-getaways
+      - one-day-picnics
+    pdfConfirmed: true
+    image:
+      keywords:
+        - saputara hill station gujarat
+        - monsoon green hills western ghats
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: ahmedabad
+    entityType: destination
+    name: Ahmedabad
+    region: india
+    stateOrCountry: Gujarat
+    summary: |
+      Heritage city hosting—inbound cultural programs, city walks, and gateway logistics for Gujarat tours. Duration tags: 1-day · weekend.
+    themes:
+      - heritage-polo-forest
+      - educational-industrial-visits
+      - international-escapes
+    pdfConfirmed: true
+    image:
+      keywords:
+        - ahmedabad heritage city pol
+        - gujarat urban culture tour
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: udaipur
+    entityType: destination
+    name: Udaipur
+    region: india
+    stateOrCountry: Rajasthan
+    summary: |
+      Lake city retreats—palace vistas, boutique resorts, and premium corporate offsite settings. Duration tags: weekend · multi-day.
+    themes:
+      - corporate-retreats
+      - team-building-leadership
+      - family-getaways
+    pdfConfirmed: true
+    image:
+      keywords:
+        - udaipur lake palace rajasthan
+        - corporate retreat lake city
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: jaisalmer
+    entityType: destination
+    name: Jaisalmer
+    region: india
+    stateOrCountry: Rajasthan
+    summary: |
+      Golden desert experiences—dunes, fort heritage, and memorable team-building backdrops. Duration tags: multi-day.
+    themes:
+      - corporate-retreats
+      - adventure-trekking
+      - family-getaways
+    pdfConfirmed: true
+    image:
+      keywords:
+        - jaisalmer desert sand dunes
+        - rajasthan golden fort sunset
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: matheran
+    entityType: destination
+    name: Matheran
+    region: india
+    stateOrCountry: Maharashtra
+    summary: |
+      Vehicle-free hill station—trekking paths, viewpoints, and compact corporate picnic circuits from Mumbai/Pune corridors. Duration tags: weekend · 1-day.
+    themes:
+      - corporate-retreats
+      - adventure-trekking
+      - one-day-picnics
+    pdfConfirmed: true
+    image:
+      keywords:
+        - matheran hill station maharashtra
+        - monsoon western ghats trek
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: lonavala
+    entityType: destination
+    name: Lonavala
+    region: india
+    stateOrCountry: Maharashtra
+    summary: |
+      Monsoon-green escapes and resort clusters—popular for quick corporate offsites and family weekends. Duration tags: weekend · 1-day.
+    themes:
+      - corporate-retreats
+      - family-getaways
+      - one-day-picnics
+    pdfConfirmed: true
+    image:
+      keywords:
+        - lonavala monsoon hills maharashtra
+        - resort weekend getaway india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: manali
+    entityType: destination
+    name: Manali
+    region: india
+    stateOrCountry: Himachal Pradesh
+    summary: |
+      Himalayan adventure and educational camps—trekking, snow-season programs, and multi-day outdoor learning. Duration tags: multi-day.
+    themes:
+      - adventure-trekking
+      - educational-industrial-visits
+      - family-getaways
+    pdfConfirmed: true
+    image:
+      keywords:
+        - manali himalaya snow adventure
+        - mountain trek india students
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: diu
+    entityType: destination
+    name: Diu
+    region: india
+    stateOrCountry: Diu (UT)
+    summary: |
+      Coastal UT escape—beaches, fort heritage, and relaxed corporate rejuvenation from Gujarat. Duration tags: weekend · multi-day.
+    themes:
+      - corporate-retreats
+      - family-getaways
+    pdfConfirmed: true
+    image:
+      keywords:
+        - diu beach fort coastal gujarat
+        - seaside corporate retreat india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: daman
+    entityType: destination
+    name: Daman
+    region: india
+    stateOrCountry: Daman (UT)
+    summary: |
+      Compact coastal getaway—beach resorts and short corporate/family circuits from Ahmedabad and South Gujarat. Duration tags: weekend · 1-day.
+    themes:
+      - corporate-retreats
+      - family-getaways
+      - one-day-picnics
+    pdfConfirmed: true
+    image:
+      keywords:
+        - daman beach union territory
+        - coastal weekend india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: hyderabad
+    entityType: destination
+    name: Hyderabad
+    region: india
+    stateOrCountry: Telangana
+    summary: |
+      South India educational and industrial visit hub—2025 program destination for schools and colleges. Duration tags: multi-day.
+    themes:
+      - educational-industrial-visits
+    pdfConfirmed: true
+    image:
+      keywords:
+        - hyderabad educational tour india
+        - south india city learning trip
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: chennai
+    entityType: destination
+    name: Chennai
+    region: india
+    stateOrCountry: Tamil Nadu
+    summary: |
+      Coastal metro for curriculum-aligned tours—heritage, industry exposure, and 2025 educational itineraries. Duration tags: multi-day.
+    themes:
+      - educational-industrial-visits
+    pdfConfirmed: true
+    image:
+      keywords:
+        - chennai educational tour tamil nadu
+        - south india college trip
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: bakor
+    entityType: destination
+    name: Bakor
+    region: india
+    stateOrCountry: Gujarat
+    summary: |
+      Adventure and trekking destination—day and overnight outdoor programs for schools and adventure groups. Duration tags: 1-day · weekend.
+    themes:
+      - adventure-trekking
+      - educational-industrial-visits
+    pdfConfirmed: true
+    image:
+      keywords:
+        - gujarat adventure trek hills
+        - outdoor camping students india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: devs-camp
+    entityType: destination
+    name: Devs Camp
+    region: india
+    stateOrCountry: Gujarat
+    summary: |
+      Outdoor learning and nature camp venue—hands-on ecology and team activities for educational groups. Duration tags: 1-day · weekend.
+    themes:
+      - educational-industrial-visits
+      - adventure-trekking
+    pdfConfirmed: true
+    image:
+      keywords:
+        - nature camp outdoor learning india
+        - school ecology field trip
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: destination-state-gujarat
+    entityType: destination
+    name: "[Destination_State_Gujarat]"
+    region: india
+    stateOrCountry: Gujarat
+    summary: Expansion slot for additional Gujarat destinations beyond PDF-confirmed list.
+    themes: []
+    pdfConfirmed: false
+
+  - id: destination-state-rajasthan
+    entityType: destination
+    name: "[Destination_State_Rajasthan]"
+    region: india
+    stateOrCountry: Rajasthan
+    summary: Expansion slot for additional Rajasthan destinations.
+    themes: []
+    pdfConfirmed: false
+
+  - id: destination-state-maharashtra
+    entityType: destination
+    name: "[Destination_State_Maharashtra]"
+    region: india
+    stateOrCountry: Maharashtra
+    summary: Expansion slot for additional Maharashtra destinations.
+    themes: []
+    pdfConfirmed: false
+
+  - id: destination-state-himachal
+    entityType: destination
+    name: "[Destination_State_Himachal]"
+    region: india
+    stateOrCountry: Himachal Pradesh
+    summary: Expansion slot for additional Himachal destinations.
+    themes: []
+    pdfConfirmed: false
+
+  - id: destination-state-south
+    entityType: destination
+    name: "[Destination_State_South]"
+    region: india
+    stateOrCountry: South India
+    summary: Expansion slot for additional South India educational and leisure destinations.
+    themes:
+      - educational-industrial-visits
+    pdfConfirmed: false

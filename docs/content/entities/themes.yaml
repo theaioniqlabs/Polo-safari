@@ -1,0 +1,96 @@
+$schema: ../schema/content-model.schema.json
+entityFile: themes
+version: 1.0.0
+updatedAt: 2026-07-01
+
+items:
+  - id: corporate-retreats
+    entityType: theme
+    name: Corporate Retreats
+    summary: |
+      Offsites, MICE, and leadership away-days—Polo Forest, hill stations, and resort destinations designed for teams of 20–200.
+    anchorSlug: corporate-retreats
+    relatedRoutes:
+      - /corporate
+      - /theme-tour-packages
+
+  - id: team-building-leadership
+    entityType: theme
+    name: Team Building & Leadership
+    summary: |
+      Facilitated games, obstacle challenges, and leadership labs that strengthen collaboration in outdoor settings.
+    anchorSlug: team-building-leadership
+    relatedRoutes:
+      - /corporate
+      - /theme-tour-packages
+
+  - id: educational-industrial-visits
+    entityType: theme
+    name: Educational & Industrial Visits
+    summary: |
+      Curriculum-aligned field trips, factory visits, and outdoor classrooms for schools and colleges.
+    anchorSlug: educational-industrial-visits
+    relatedRoutes:
+      - /schools-colleges
+      - /theme-tour-packages
+
+  - id: adventure-trekking
+    entityType: theme
+    name: Adventure & Trekking
+    summary: |
+      Guided treks, camping, and adrenaline activities—from Polo Forest trails to Himalayan programs in Manali and Bakor.
+    anchorSlug: adventure-trekking
+    relatedRoutes:
+      - /theme-tour-packages
+      - /india
+
+  - id: family-getaways
+    entityType: theme
+    name: Family Getaways
+    summary: |
+      All-India family holidays—comfortable pacing, child-friendly activities, and nature-led memories.
+    anchorSlug: family-getaways
+    relatedRoutes:
+      - /india
+      - /theme-tour-packages
+
+  - id: one-day-picnics
+    entityType: theme
+    name: 1-Day Picnics
+    summary: |
+      Single-day escapes from Ahmedabad—Polo Forest, Saputara, Lonavala, and coastal UT circuits for schools and groups.
+    anchorSlug: one-day-picnics
+    relatedRoutes:
+      - /theme-tour-packages
+      - /india
+
+  - id: heritage-polo-forest
+    entityType: theme
+    name: Heritage & Polo Forest
+    summary: |
+      Authentic Aravalli heritage—temple archaeology, village culture, and founder-led storytelling at our home destination.
+    anchorSlug: heritage-polo-forest
+    relatedRoutes:
+      - /india
+      - /about
+      - /theme-tour-packages
+
+  - id: wellness-yoga-meditation
+    entityType: theme
+    name: Wellness (Yoga & Meditation)
+    summary: |
+      Pause-and-reconnect sessions for corporate groups—yoga, meditation, and nature-led rejuvenation between strategy blocks.
+    anchorSlug: wellness-yoga-meditation
+    relatedRoutes:
+      - /corporate
+      - /theme-tour-packages
+
+  - id: international-escapes
+    entityType: theme
+    name: International Escapes
+    summary: |
+      Curated outbound tours and inbound hosting—Southeast Asia, Middle East, and cultural exchange programs from Ahmedabad.
+    anchorSlug: international-escapes
+    relatedRoutes:
+      - /international
+      - /theme-tour-packages

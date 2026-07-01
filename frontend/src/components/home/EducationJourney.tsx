@@ -1,48 +1,26 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { MediaImage } from "@/components/home/MediaImage";
-import { homeImages } from "@/lib/home-images";
-
-const steps = [
-  {
-    title: "Curriculum-aligned programs",
-    body: "Std 5–12 · Gujarat board compatible",
-    image: homeImages.educationStep1,
-    align: "left" as const,
-  },
-  {
-    title: "Hands-on field studies",
-    body: "Biodiversity · Heritage · Archaeology",
-    image: homeImages.educationStep2,
-    align: "right" as const,
-  },
-  {
-    title: "Expert naturalists",
-    body: "30–500 students per program",
-    image: homeImages.educationStep3,
-    align: "left" as const,
-  },
-  {
-    title: "Outcomes that last",
-    body: "Field journals · Certificates",
-    image: homeImages.educationStep4,
-    align: "right" as const,
-  },
-];
+import { getEducationalContent } from "@/content/home-content";
 
 export function EducationJourney() {
+  const content = getEducationalContent();
+
   return (
     <section className="bg-surface-nature py-[var(--space-15)]">
       <Container>
         <p className="text-xs font-semibold uppercase tracking-[0.12em] text-text-subtle">
-          Educational Tours
+          {content.subheading}
         </p>
-        <h2 className="mt-2 max-w-2xl font-display text-3xl font-semibold md:text-4xl">
-          Ecology beyond the classroom
+        <h2 className="mt-2 max-w-2xl type-display text-3xl md:text-4xl">
+          {content.heading}
         </h2>
+        {content.description && (
+          <p className="mt-4 max-w-2xl text-text-muted">{content.description}</p>
+        )}
 
         <ol className="mt-12 space-y-16">
-          {steps.map((step, i) => (
+          {content.steps.map((step, i) => (
             <li
               key={step.title}
               className={`grid items-center gap-8 lg:grid-cols-12 ${
@@ -62,7 +40,7 @@ export function EducationJourney() {
                 <span className="text-xs font-semibold uppercase tracking-wide text-primary">
                   Step {i + 1}
                 </span>
-                <h3 className="mt-2 font-display text-2xl font-semibold">{step.title}</h3>
+                <h3 className="mt-2 text-2xl font-semibold">{step.title}</h3>
                 <p className="mt-2 text-text-muted">{step.body}</p>
               </div>
             </li>
@@ -70,22 +48,21 @@ export function EducationJourney() {
         </ol>
 
         <div className="mt-12 flex flex-wrap items-center gap-4">
+          {content.cta && (
+            <Link
+              href={content.cta.href}
+              className="rounded-[var(--radius-button)] bg-primary px-6 py-3 text-sm font-semibold text-text-inverse hover:bg-primary-hover"
+            >
+              {content.cta.label}
+            </Link>
+          )}
           <Link
-            href="/education#rfp"
-            className="rounded-[var(--radius-button)] bg-primary px-6 py-3 text-sm font-semibold text-text-inverse hover:bg-primary-hover"
-          >
-            Request School Program
-          </Link>
-          <Link
-            href="/experiences/category/education"
+            href="/schools-colleges"
             className="text-sm font-semibold text-primary hover:underline"
           >
             View programs →
           </Link>
         </div>
-        <p className="mt-4 text-sm text-text-muted">
-          Custom proposal — not instant online booking
-        </p>
       </Container>
     </section>
   );

@@ -1,11 +1,5 @@
-import { PagePlaceholder } from "@/components/layout/PagePlaceholder";
+import { createContentPage } from "@/content/create-content-page";
 
-export default function ContactPage() {
-  return (
-    <PagePlaceholder
-      title="Contact"
-      description="Contact form, map, and inquiry — no login required."
-      specRef="Step 11 · /contact"
-    />
-  );
-}
+const { Page, generateMetadata } = createContentPage({ pageId: "contact" });
+export { generateMetadata };
+export default Page;

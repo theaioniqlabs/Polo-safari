@@ -5,7 +5,13 @@ import { useEffect, useState } from "react";
 
 const ANNOUNCEMENT_HEIGHT = "40px";
 
-export function AnnouncementBar() {
+type AnnouncementBarProps = {
+  message: string;
+  linkLabel: string;
+  href: string;
+};
+
+export function AnnouncementBar({ message, linkLabel, href }: AnnouncementBarProps) {
   const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
@@ -36,9 +42,9 @@ export function AnnouncementBar() {
     >
       <div className="mx-auto flex h-10 max-w-[var(--layout-max)] items-center justify-center gap-2 px-4 sm:px-6">
         <p className="truncate">
-          Monsoon ecology tours now open —{" "}
-          <Link href="/experiences" className="font-semibold text-primary hover:underline">
-            View the season →
+          {message}{" "}
+          <Link href={href} className="font-semibold text-primary hover:underline">
+            {linkLabel} →
           </Link>
         </p>
         <button

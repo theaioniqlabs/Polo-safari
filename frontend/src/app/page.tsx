@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { Hero } from "@/components/home/Hero";
 import { QuickSearch } from "@/components/home/QuickSearch";
@@ -20,31 +21,50 @@ import { JourneyTimeline } from "@/components/home/JourneyTimeline";
 import { PartnersMarquee } from "@/components/home/PartnersMarquee";
 import { FaqSection } from "@/components/home/FaqSection";
 import { EmotionalCtaBand } from "@/components/home/EmotionalCtaBand";
+import { getPage } from "@/content/load";
+import {
+  getFaqPreviewContent,
+  getHeroSlides,
+  getNewsletterCtaContent,
+  getSearchContent,
+  getWhyPoloSafariContent,
+} from "@/content/home-content";
+import { pageMetadata } from "@/content/metadata";
+
+export function generateMetadata(): Metadata {
+  return pageMetadata(getPage("home"));
+}
 
 export default function HomePage() {
+  const heroSlides = getHeroSlides();
+  const searchContent = getSearchContent();
+  const whyPoloSafari = getWhyPoloSafariContent();
+  const newsletterCta = getNewsletterCtaContent();
+  const faqPreview = getFaqPreviewContent();
+
   return (
     <SiteShell transparentHeader>
-      <Hero />
-      <QuickSearch />
+      <Hero slides={heroSlides} />
+      <QuickSearch content={searchContent} />
       <CategoryScroll />
       <FeaturedExperiences />
+      <StorySection content={whyPoloSafari} />
+      <CorporateDark />
+      <EducationJourney />
+      <HeritageSection />
+      <DestinationsSection />
+      <FamilySection />
+      <AdventureSection />
+      <PackagesSection />
+      <TrustWall />
       <TrustStatsBar />
       <TestimonialsSection />
-      <TrustWall />
-      <EducationJourney />
-      <CorporateDark />
-      <StorySection />
-      <AdventureSection />
-      <HeritageSection />
-      <FamilySection />
-      <DestinationsSection />
-      <PackagesSection />
+      <PartnersMarquee />
       <GalleryMasonry />
       <BlogMagazine />
       <JourneyTimeline />
-      <PartnersMarquee />
-      <FaqSection />
-      <EmotionalCtaBand />
+      <FaqSection {...faqPreview} />
+      <EmotionalCtaBand content={newsletterCta} />
     </SiteShell>
   );
 }

@@ -1,0 +1,338 @@
+$schema: ../schema/content-model.schema.json
+id: about
+slug: about
+route: /about
+title: About
+status: review
+seo:
+  title: About Polo Safari | Heritage Travel Since 2014
+  metaDescription: Meet Chirag Shah and the Polo Safari team—Ahmedabad-founded experiential travel with authentic Polo Forest heritage, award-winning corporate and educational programs.
+  slug: about
+  primaryKeyword: about polo safari
+  secondaryKeywords:
+    - chirag shah polo safari founder
+    - polo forest heritage tours
+    - experiential travel ahmedabad
+    - gujarat tourism award operator
+  internalLinks:
+    - label: Corporate Retreats
+      href: /corporate
+    - label: Schools & Colleges
+      href: /schools-colleges
+    - label: Awards & Recognition
+      href: /awards
+    - label: Polo Forest Tours
+      href: /india
+    - label: Contact Us
+      href: /contact
+  ctaSuggestions:
+    - label: Request Corporate Proposal
+      href: /corporate
+    - label: Plan an Educational Tour
+      href: /schools-colleges
+    - label: View Awards
+      href: /awards
+
+sections:
+  - id: hero
+    heading: About Polo Safari
+    subheading: Eleven years of journeys rooted in Polo Forest
+    description: |
+      Founded in Ahmedabad in 2014, Polo Safari designs experiential travel for organisations and families who want more than a template itinerary—authentic heritage, purposeful team experiences, and curriculum-aligned learning delivered with care.
+    cta:
+      label: Meet the Founder
+      href: "#founder-message"
+    contentNotes: |
+      Pillar hero with breadcrumb Home → About. Split layout—copy left, heritage image right. Scroll anchor to founder section.
+    seoNotes: |
+      Single H1 "About Polo Safari". Primary keyword in first paragraph. Founded 2014, Ahmedabad, Polo Forest.
+    stockImage:
+      keywords:
+        - polo forest heritage aravalli temple
+        - gujarat experiential travel team
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Polo Safari team or founder at Polo Forest ruins—seasonal heritage walk still.
+
+  - id: who-we-are
+    heading: Who we are
+    subheading: Ahmedabad headquarters. Pan-India and international reach.
+    description: |
+      Polo Safari is an experiential travel company specialising in corporate retreats, school and college tours, family getaways, adventure programs, and international travel. We craft journeys that connect people to place—with professionalism from enquiry to homecoming.
+    cta:
+      label: Our Services
+      href: /services
+    contentNotes: |
+      Pull narrative from company.story—condensed for web. Credentials strip: MSME, GST, Verified & Authorized. Link specializations to /theme-tour-packages.
+    seoNotes: |
+      H2 who we are. Secondary keywords: experiential travel ahmedabad, corporate educational tours.
+    stockImage:
+      keywords:
+        - travel company team office india
+        - professional tour operator planning
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari team at Ganesh Glory office or on-trip coordination moment.
+
+  - id: how-we-started
+    heading: How we started
+    subheading: A childhood moment that became a mission
+    description: |
+      Chirag Shah grew up in Vijaynagar, twelve kilometres from Polo Forest. Hearing foreign visitors told inaccurate local history by an outside guide, he committed to researching the forest's heritage and sharing it with pride—work that became Polo Safari in 2014.
+    cta:
+      label: Why Polo Forest
+      href: "#why-polo-forest"
+    contentNotes: |
+      Editorial split—origin story from founder entity, no PDF watermarks. Emotional but factual tone. Link to founder section below.
+    seoNotes: |
+      H2 how polo safari started. Founder name and Vijaynagar for E-E-A-T. Heritage storytelling keyword.
+    stockImage:
+      keywords:
+        - village gujarat aravalli childhood landscape
+        - heritage research ancient ruins
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Vijaynagar village or young-guide-era Polo Forest archival if available; else founder portrait on trail.
+
+  - id: why-polo-forest
+    heading: Why Polo Forest matters
+    subheading: Our home destination—and India's hidden heritage heartland
+    description: |
+      Polo Forest is where Polo Safari began: Aravalli temple trails, river walks, eco-resorts, and village culture minutes from our founder's childhood home. Every program we design carries that standard of local truth—whether the destination is Gujarat, Rajasthan, or abroad.
+    cta:
+      label: Explore Polo Forest
+      href: /india
+    entityRefs:
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: theme
+        entityId: heritage-polo-forest
+    contentNotes: |
+      Anchor id why-polo-forest for in-page nav. Destination card from polo-forest entity. Link /india for full catalogue.
+    seoNotes: |
+      H2 polo forest tours gujarat. Heritage and eco-tourism keywords. Internal link /india.
+    stockImage:
+      keywords:
+        - polo forest gujarat ancient temple trail
+        - aravalli forest river walk
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Founder-led heritage walk at Polo Forest—temple ruins, group on trail.
+
+  - id: journey-since-2014
+    heading: Our journey since 2014
+    subheading: From forest trails to award-winning pan-India travel
+    description: |
+      Eleven years of milestones—from Ahmedabad founding and pan-India expansion to international outbound, Vietnamese inbound hosting, and Gujarat Tourism Season 7 triple recognition.
+    cta:
+      label: View Awards
+      href: /awards
+    entityRefs:
+      - entityType: timeline-event
+        entityId: timeline-2014-founded
+      - entityType: timeline-event
+        entityId: timeline-2016-pan-india
+      - entityType: timeline-event
+        entityId: timeline-2018-corporate-education
+      - entityType: timeline-event
+        entityId: timeline-2020-international-outbound
+      - entityType: timeline-event
+        entityId: timeline-2023-inbound-vietnam
+      - entityType: timeline-event
+        entityId: timeline-2025-gt-season7
+      - entityType: timeline-event
+        entityId: timeline-2025-eleven-years
+    contentNotes: |
+      Vertical timeline component—render all timeline-event entityRefs in year order. Expandable cards on mobile. Optional link to full timeline on /awards.
+    seoNotes: |
+      H2 polo safari history. Year markers for structured data TimelineEvent when implemented.
+    stockImage:
+      keywords:
+        - company timeline milestone infographic
+        - travel business growth india
+      orientation: portrait
+      aspectRatio: "4:5"
+      usage: card
+    replacementNote: Milestone photos per year—awards ceremony, first international group, Polo Forest early tours.
+
+  - id: vision
+    heading: Our vision
+    subheading: India's most trusted experiential travel partner
+    description: |
+      To lead in heritage storytelling, outdoor learning, and responsible tourism across Gujarat and beyond—deepening eco-tourism at Polo Forest, expanding youth-focused outdoor education, and growing inbound cultural hosting from Ahmedabad, measured by repeat clients and community impact.
+    cta:
+      label: Corporate Programs
+      href: /corporate
+    contentNotes: |
+      Single vision block from company.vision—collapsed from PDF triple-repeat. No unverifiable global market share claims.
+    seoNotes: |
+      H2 vision. Responsible tourism and heritage keywords.
+    stockImage:
+      keywords:
+        - sustainable tourism india landscape
+        - community eco tourism gujarat
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: Polo Forest community or eco-initiative photography when available.
+
+  - id: mission
+    heading: Our mission
+    subheading: Connect people to place—with professionalism end to end
+    description: |
+      We craft journeys that deliver authentic heritage at Polo Forest, purposeful team experiences for corporates, and curriculum-aligned learning for schools and colleges—from first enquiry through safe homecoming.
+    cta:
+      label: Educational Tours
+      href: /schools-colleges
+    contentNotes: |
+      Mission from company.mission. Pair with vision/mission two-column on desktop.
+    seoNotes: |
+      H2 mission statement. Keywords: corporate retreats, educational tours, polo forest heritage.
+    stockImage:
+      keywords:
+        - mission driven travel team
+        - outdoor learning corporate education
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: Composite of corporate, educational, and family moments—Polo Safari trip montage.
+
+  - id: values
+    heading: What we stand for
+    subheading: Four values that guide every program
+    description: |
+      Authenticity—truthful storytelling and local expertise. Learning—educational value in every outdoor experience. Teamwork—collaboration built into group programs. Responsible Tourism—respect for communities, ecology, and safety standards.
+    cta:
+      label: FAQ
+      href: /faq
+    contentNotes: |
+      Four value cards from company.values array. Icon per value. Link safety FAQs when Step 5 complete.
+    seoNotes: |
+      H2 company values. H3 per value name for scannability.
+    stockImage:
+      keywords:
+        - teamwork outdoor values illustration
+        - authentic local guide storytelling
+      orientation: square
+      aspectRatio: "1:1"
+      usage: card
+    replacementNote: One photo per value from real trips—authenticity=heritage walk, learning=students, etc.
+
+  - id: future-goals
+    heading: Where we're headed
+    subheading: Grounded growth—not vanity metrics
+    description: |
+      Deeper Polo Forest eco-tourism leadership. Expanded outdoor education for schools and colleges. Stronger inbound cultural programs from Ahmedabad. Continued investment in facilitator training, safety systems, and media services that help clients tell their trip stories.
+    cta:
+      label: Partner With Us
+      href: /contact
+    contentNotes: |
+      Future goals derived from company.vision—omit PDF "25% global corporates" claim. Aspirational but credible bullets optional in UI.
+    seoNotes: |
+      H2 future goals. Eco-tourism and outdoor education keywords.
+    stockImage:
+      keywords:
+        - future travel innovation nature
+        - youth outdoor education camp
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Forward-looking Polo Safari program—new destination scout or training session photo.
+
+  - id: founder-message
+    heading: A message from our founder
+    subheading: Chirag Shah — Founder & CEO
+    description: |
+      I grew up minutes from Polo Forest. When I heard our history told wrongly to visitors who had travelled across the world to be here, I knew someone from this land had to tell the story right. That is still why we exist—for every traveler who deserves the truth of a place, and a journey built around who they are.
+    cta:
+      label: Contact Chirag's Team
+      href: /contact
+    entityRefs:
+      - entityType: founder
+        entityId: chirag-shah
+    contentNotes: |
+      Anchor id founder-message. Pull quote and bio from founder entity. Portrait from founder.photo spec. Signature optional in design.
+    seoNotes: |
+      H2 founder message. Person schema for Chirag Shah when implemented. Founder name in title tag support.
+    stockImage:
+      keywords:
+        - founder portrait professional outdoor
+        - polo forest heritage guide ahmedabad
+      orientation: portrait
+      aspectRatio: "4:5"
+      usage: card
+    replacementNote: Official Chirag Shah portrait—professional headshot or on-trail leadership photo.
+
+  - id: company-philosophy
+    heading: Our philosophy
+    subheading: Every traveler is special
+    description: |
+      We listen first, then design. Whether your brief is a quiet heritage walk, a high-energy team challenge, or a campus field study with measurable outcomes—we shape logistics around people, not the other way around.
+    cta:
+      label: Theme Tour Packages
+      href: /theme-tour-packages
+    contentNotes: |
+      Closing philosophy from company.story closing paragraph. Bridges founder message to commercial CTAs.
+    seoNotes: |
+      H2 travel philosophy. Customer-centric keywords without generic OTA fluff.
+    stockImage:
+      keywords:
+        - personalized travel consultation
+        - bespoke itinerary planning
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Client consultation or bespoke program whiteboard session at Polo Safari office.
+
+  - id: awards-preview
+    heading: Recognition that reflects our clients' trust
+    subheading: Gujarat Tourism · Swiftnlift Business Magazine
+    description: |
+      Season 7 honours for inbound corporate and adventure programs—plus industry recognition as Best Corporate Tour Operator in Gujarat. Awards earned through repeat enterprise bookings and safe outdoor execution.
+    cta:
+      label: All Awards & Certificates
+      href: /awards
+    entityRefs:
+      - entityType: award
+        entityId: gt-season7-inbound-corporate-gujarat
+      - entityType: award
+        entityId: gt-season7-adventure-ahmedabad
+      - entityType: award
+        entityId: swiftnlift-best-corporate-gujarat
+    contentNotes: |
+      Compact 3-award preview with certificate placeholders. Link to full /awards page from Step 5.
+    seoNotes: |
+      H2 awards preview. Issuer names for trust. Link /awards.
+    stockImage:
+      keywords:
+        - gujarat tourism award certificate
+        - corporate tour operator trophy
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Certificate scans [Certificate_01], [Certificate_03], [Certificate_05].
+
+  - id: cta
+    heading: Ready to plan your next journey?
+    subheading: Corporate, educational, family, or adventure—we're listening
+    description: |
+      Tell us about your team, campus, or family—and we'll design a program with the same care we bring to Polo Forest, our home destination.
+    cta:
+      label: Get in Touch
+      href: /contact
+    contentNotes: |
+      Full-width CTA band with three buttons: /contact, /corporate, /schools-colleges. Match homepage newsletter-cta pattern.
+    seoNotes: |
+      H2 closing CTA. Conversion keywords in button labels, not heading.
+    stockImage:
+      keywords:
+        - call to action travel sunset group
+        - polo forest evening gathering
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: background
+    replacementNote: Golden-hour group photo at Polo Forest campsite—recent corporate or educational cohort.

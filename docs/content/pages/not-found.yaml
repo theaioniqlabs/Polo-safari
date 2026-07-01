@@ -1,0 +1,104 @@
+$schema: ../schema/content-model.schema.json
+id: not-found
+slug: not-found
+title: Page Not Found
+status: review
+seo:
+  title: Page Not Found | Polo Safari
+  metaDescription: This page could not be found. Explore Polo Safari tours—India, international, corporate retreats, and school programs—from Ahmedabad. Every traveler is special.
+  slug: not-found
+  primaryKeyword: polo safari page not found
+  secondaryKeywords:
+    - polo safari tours ahmedabad
+    - india tour packages
+    - corporate retreat gujarat
+    - school educational tours
+  internalLinks:
+    - label: Home
+      href: /
+    - label: India Tours
+      href: /india
+    - label: International Tours
+      href: /international
+    - label: Corporate Retreats
+      href: /corporate
+    - label: Schools & Colleges
+      href: /schools-colleges
+    - label: Contact
+      href: /contact
+  ctaSuggestions:
+    - label: Return Home
+      href: /
+    - label: Contact Polo Safari
+      href: /contact
+    - label: Browse FAQ
+      href: /faq
+
+sections:
+  - id: hero
+    heading: This path isn't on our map
+    subheading: Even the best journeys take an unexpected turn
+    description: |
+      The page you're looking for may have moved, been renamed, or never existed. That happens—what matters is where you go next.
+
+      Polo Safari has spent eleven years crafting journeys where every traveler is special. Let us help you find the right starting point.
+    contentNotes: |
+      Rendered at HTTP 404—no public slug route required. Framework maps this content to the not-found/error boundary. Warm premium tone—not jokey, not sterile. No breadcrumb needed. Requires solicitor review not applicable.
+    seoNotes: |
+      Set robots noindex, nofollow on 404 responses. Do not include in sitemap. H1 empathetic—not "404 Error" as primary headline.
+    stockImage:
+      keywords:
+        - golden hour forest trail adventure india
+        - misty woodland path sunrise travel
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Polo Forest golden-hour trail or Aravalli woodland—authentic destination photography preferred over generic lost-map stock.
+
+  - id: helpful-links
+    heading: Find your way
+    subheading: Popular destinations on polo-safari.in
+    description: |
+      Start with one of these pages—or reach out and we'll point you in the right direction.
+
+      • **Home** — Overview of Polo Safari programs and trust signals
+      • **India** — Domestic tours including Polo Forest, Gujarat, and pan-India circuits
+      • **International** — Select outbound programs from Ahmedabad
+      • **Corporate** — Retreats, team-building, and RFP proposals for HR teams
+      • **Schools & Colleges** — Educational tours and campus field-study programs
+      • **Contact** — WhatsApp, email, and enquiry forms
+    contentNotes: |
+      Link grid or card row—six internal links as specified. Optional icons per pillar. entityRefs not required. Match IA routes exactly: /, /india, /international, /corporate, /schools-colleges, /contact.
+    seoNotes: |
+      H2 helpful links 404 recovery. Internal links aid crawl recovery from broken inbound URLs.
+    stockImage:
+      keywords:
+        - travel destination cards navigation
+        - india tour map inspiration collage
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Thumbnail mosaic from gallery categories—corporate, education, heritage.
+
+  - id: search-suggestion
+    heading: Still looking for something?
+    subheading: Search or speak with our team
+    description: |
+      Try searching for a destination, program type, or topic—or message us on WhatsApp and a coordinator will help within business hours.
+
+      From Polo Forest heritage weekends to corporate offsites and college field studies, we design around your brief—not a template.
+    cta:
+      label: Contact Polo Safari
+      href: /contact
+    contentNotes: |
+      Site search input if search index exists at implementation; otherwise CTA-only with link to /contact and /faq. WhatsApp deep link +91 94085 10911 secondary button. Brand voice: premium, empathetic, founder-authentic.
+    seoNotes: |
+      H2 search suggestion 404. Primary CTA to /contact; secondary to /faq.
+    stockImage:
+      keywords:
+        - travel planning consultation warm office
+        - customer support travel enquiry india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: Polo Safari team member assisting traveller—human, welcoming frame.

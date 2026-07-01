@@ -1,25 +1,24 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
-
-const partners = [
-  "Forest Lodge",
-  "Idar Resorts",
-  "Gujarat Trails",
-  "Eco Transport",
-  "Heritage Stays",
-  "Adventure Co",
-  "School Partners",
-];
+import { getClientsContent } from "@/content/home-content";
 
 export function PartnersMarquee() {
+  const content = getClientsContent();
+  const partners = content.clients.map((c) => c.label);
   const doubled = [...partners, ...partners];
 
   return (
     <section className="overflow-hidden bg-surface py-[var(--space-8)]">
       <Container>
         <p className="text-center text-xs font-semibold uppercase tracking-[0.12em] text-text-subtle">
-          In partnership with
+          {content.subheading}
         </p>
+        <h2 className="mt-2 text-center text-2xl font-semibold">{content.heading}</h2>
+        {content.description && (
+          <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-text-muted">
+            {content.description}
+          </p>
+        )}
       </Container>
 
       <div className="relative mt-6">
@@ -37,9 +36,11 @@ export function PartnersMarquee() {
 
       <Container>
         <p className="mt-6 text-center">
-          <Link href="/contact#partners" className="text-sm font-semibold text-primary hover:underline">
-            Become a partner →
-          </Link>
+          {content.cta && (
+            <Link href={content.cta.href} className="text-sm font-semibold text-primary hover:underline">
+              {content.cta.label} →
+            </Link>
+          )}
         </p>
       </Container>
     </section>

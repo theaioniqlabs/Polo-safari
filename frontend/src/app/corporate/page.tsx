@@ -1,11 +1,25 @@
-import { PagePlaceholder } from "@/components/layout/PagePlaceholder";
+import { Breadcrumb } from "@/components/layout/Breadcrumb";
+import { SiteShell } from "@/components/layout/SiteShell";
+import { PageSections } from "@/components/sections/PageSections";
+import { getPage } from "@/content/load";
+import { pageMetadata } from "@/content/metadata";
+import type { Metadata } from "next";
+
+export function generateMetadata(): Metadata {
+  return pageMetadata(getPage("corporate"));
+}
 
 export default function CorporatePage() {
+  const page = getPage("corporate");
   return (
-    <PagePlaceholder
-      title="Corporate Retreats"
-      description="MICE and corporate offsite landing with RFP form at #rfp. Separate from standard booking flow."
-      specRef="Step 5 · /corporate"
-    />
+    <SiteShell>
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Corporate Retreats" },
+        ]}
+      />
+      <PageSections page={page} rfpType="corporate" />
+    </SiteShell>
   );
 }

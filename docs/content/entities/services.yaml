@@ -1,0 +1,61 @@
+$schema: ../schema/content-model.schema.json
+entityFile: services
+version: 1.0.0
+updatedAt: 2026-07-01
+
+items:
+  - id: photography
+    entityType: service
+    name: Photography
+    summary: |
+      Professional on-trip photography—candid team moments, destination highlights, and deliverables sized for internal comms and awards submissions.
+    pdfConfirmed: true
+    availability: on-request
+
+  - id: videography
+    entityType: service
+    name: Videography
+    summary: |
+      Event and journey videography—highlight films and documentary-style coverage for corporate offsites and educational tours.
+    pdfConfirmed: true
+    availability: on-request
+
+  - id: drone
+    entityType: service
+    name: Drone Coverage
+    summary: |
+      Aerial photography and video where permitted and safe—ideal for large group formations, landscape reveals, and destination showcases.
+    pdfConfirmed: true
+    availability: on-request
+
+  - id: reel-social-content
+    entityType: service
+    name: Reel & Social Content
+    summary: |
+      Short-form reels and social-ready clips—edited for LinkedIn, Instagram, and internal channels after your trip.
+    pdfConfirmed: true
+    availability: on-request
+
+  - id: trip-merchandise
+    entityType: service
+    name: Trip Merchandise
+    summary: |
+      Branded keepsakes—custom mugs, T-shirts, and group memorabilia designed and produced for your cohort.
+    pdfConfirmed: true
+    availability: on-request
+
+  - id: book-collateral-printing
+    entityType: service
+    name: Book & Collateral Printing
+    summary: |
+      Printed trip books, itineraries, and event collateral—souvenir albums and leave-behind materials for delegates and students.
+    pdfConfirmed: true
+    availability: on-request
+
+  - id: customized-packages
+    entityType: service
+    name: Customized Packages
+    summary: |
+      End-to-end bespoke itineraries—destinations, activities, facilitation, and add-on services tailored to your brief and budget.
+    pdfConfirmed: true
+    availability: included

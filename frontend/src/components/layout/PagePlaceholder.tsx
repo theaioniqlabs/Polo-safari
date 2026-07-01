@@ -21,7 +21,7 @@ export function PagePlaceholder({
         <p className="text-xs font-semibold uppercase tracking-[0.12em] text-text-subtle">
           {specRef}
         </p>
-        <h1 className="mt-2 font-display text-4xl font-semibold">{title}</h1>
+        <h1 className="mt-2 type-display text-4xl">{title}</h1>
         <p className="mt-4 max-w-2xl text-lg text-text-muted">{description}</p>
         <div className="mt-10 rounded-[var(--radius-lg)] border border-dashed border-border bg-surface p-8">
           {children ?? (

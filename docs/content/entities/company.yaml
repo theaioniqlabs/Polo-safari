@@ -1,0 +1,50 @@
+$schema: ../schema/content-model.schema.json
+entityFile: company
+version: 1.0.0
+updatedAt: 2026-07-01
+
+items:
+  - id: polo-safari
+    entityType: company
+    legalName: Polo Safari
+    tagline: Eleven years of experiential travel rooted in Polo Forest heritage
+    foundedYear: 2014
+    headquarters: Ahmedabad, Gujarat, India
+    story: |
+      Polo Safari began in 2014 with a simple conviction: every traveler deserves a journey shaped around them—not a template itinerary. From our Ahmedabad headquarters, we design corporate retreats, school and college tours, family getaways, and international programs that balance logistics with storytelling.
+
+      What started as Polo Forest–focused heritage tours has grown into pan-India and select international travel. Corporate and educational groups remain our strongest pillars—teams and campuses that return season after season for programs built with care, safety, and local insight.
+
+      Our philosophy is simple: every traveler is special. We listen first, then design—whether that means a quiet heritage walk, a high-energy team challenge, or a campus field study with learning outcomes your faculty can measure.
+    vision: |
+      To be India's most trusted experiential travel partner for organizations and families—leading in heritage storytelling, outdoor learning, and responsible tourism across Gujarat and beyond. We aim to deepen eco-tourism leadership at Polo Forest, expand youth-focused outdoor education, and grow inbound cultural hosting from Ahmedabad—measured by repeat clients and community impact, not vanity metrics.
+    mission: |
+      We craft journeys that connect people to place: authentic heritage at Polo Forest, purposeful team experiences for corporates, and curriculum-aligned learning for schools and colleges—delivered with professionalism from enquiry to homecoming.
+    values:
+      - Authenticity — truthful storytelling and local expertise, especially at Polo Forest
+      - Learning — educational value in every outdoor and heritage experience
+      - Teamwork — collaboration built into corporate and group programs
+      - Responsible Tourism — respect for communities, ecology, and safety standards
+    specializations:
+      - Corporate retreats and MICE
+      - School and college educational tours
+      - Adventure and trekking
+      - Family getaways and 1-day picnics
+      - International outbound and inbound hosting
+      - Heritage and Polo Forest experiences
+    credentials:
+      - MSME Registered
+      - GST Certified
+      - Verified & Authorized Company
+    contact:
+      address: D-906, Ganesh Glory 11, Nr. BSNL Office, S.G. Highway, Jagatpur
+      city: Ahmedabad
+      state: Gujarat
+      postalCode: "382470"
+      country: India
+      phones:
+        - "+91 94085 10911"
+        - "+91 87990 17801"
+        - "+91 93285 65243"
+      email: Chirag@polo-safari.in
+      website: https://www.polo-safari.in

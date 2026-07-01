@@ -1,11 +1,5 @@
-import { PagePlaceholder } from "@/components/layout/PagePlaceholder";
+import { createContentPage } from "@/content/create-content-page";
 
-export default function GalleryPage() {
-  return (
-    <PagePlaceholder
-      title="Gallery"
-      description="Photo, video, and drone gallery with immersive dark layout."
-      specRef="Step 8 · /gallery"
-    />
-  );
-}
+const { Page, generateMetadata } = createContentPage({ pageId: "gallery" });
+export { generateMetadata };
+export default Page;

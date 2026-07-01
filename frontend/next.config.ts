@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
     ],
+    // Avoid long hangs when an upstream Unsplash URL is unavailable.
+    dangerouslyAllowSVG: false,
+    minimumCacheTTL: 60,
   },
   async redirects() {
     return [
@@ -20,6 +23,16 @@ const nextConfig: NextConfig = {
       {
         source: "/stories/:slug",
         destination: "/blog/:slug",
+        permanent: true,
+      },
+      {
+        source: "/education",
+        destination: "/schools-colleges",
+        permanent: true,
+      },
+      {
+        source: "/destinations",
+        destination: "/india",
         permanent: true,
       },
     ];

@@ -1,11 +1,5 @@
-import { PagePlaceholder } from "@/components/layout/PagePlaceholder";
+import { createContentPage } from "@/content/create-content-page";
 
-export default function BlogIndexPage() {
-  return (
-    <PagePlaceholder
-      title="Stories & Insights"
-      description="Blog index — canonical URL /blog (legacy /stories redirects here)."
-      specRef="Step 10 · /blog"
-    />
-  );
-}
+const { Page, generateMetadata } = createContentPage({ pageId: "blog" });
+export { generateMetadata };
+export default Page;

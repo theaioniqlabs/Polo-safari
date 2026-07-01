@@ -1,0 +1,260 @@
+$schema: ../schema/content-model.schema.json
+id: contact
+slug: contact
+route: /contact
+title: Contact
+status: review
+seo:
+  title: Contact Polo Safari | Ahmedabad Office
+  metaDescription: Reach Polo Safari at Ganesh Glory 11, S.G. Highway, Ahmedabad. WhatsApp +91 94085 10911 · Chirag@polo-safari.in · Corporate and school RFP shortcuts.
+  slug: contact
+  primaryKeyword: contact polo safari ahmedabad
+  secondaryKeywords:
+    - polo safari whatsapp
+    - polo safari office address
+    - corporate tour enquiry ahmedabad
+    - school tour booking gujarat
+    - polo safari phone number
+  internalLinks:
+    - label: Corporate RFP
+      href: /corporate
+      anchor: "#rfp"
+    - label: Educational RFP
+      href: /schools-colleges
+      anchor: "#rfp"
+    - label: FAQ
+      href: /faq
+    - label: About Polo Safari
+      href: /about
+    - label: Awards
+      href: /awards
+  ctaSuggestions:
+    - label: WhatsApp Us
+      href: /contact
+    - label: Request Corporate Proposal
+      href: /corporate
+    - label: Plan Educational Tour
+      href: /schools-colleges
+
+sections:
+  - id: hero
+    heading: Let's plan your next journey
+    subheading: Ahmedabad headquarters · WhatsApp-first · Response within business hours
+    description: |
+      Whether you are an HR manager scoping Q3 offsites, a principal scheduling the annual picnic, or a family planning a heritage weekend—Polo Safari's team is one message away.
+    cta:
+      label: WhatsApp +91 94085 10911
+      href: /contact
+    contentNotes: |
+      Hero CTA opens WhatsApp deep link to +91 94085 10911 (primary phone per user decision). Breadcrumb Home → Contact. Secondary: email mailto:Chirag@polo-safari.in.
+    seoNotes: |
+      Single H1 contact polo safari ahmedabad. Phone in first screen.
+    stockImage:
+      keywords:
+        - ahmedabad office travel company welcome
+        - customer service travel planning consultation
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Polo Safari office reception or team at Ganesh Glory 11.
+
+  - id: office-address
+    heading: Office address
+    subheading: Visit by appointment
+    description: |
+      D-906, Ganesh Glory 11, Nr. BSNL Office, S.G. Highway, Jagatpur, Ahmedabad 382470, Gujarat, India.
+    entityRefs:
+      - entityType: company
+        entityId: polo-safari
+    contentNotes: |
+      Pull full address from company.contact block. Format for maps and structured data LocalBusiness. Visiting hours align with working-hours section [TBC].
+    seoNotes: |
+      H2 polo safari office address ahmedabad. NAP consistency with Google Business Profile.
+    stockImage:
+      keywords:
+        - ganesh glory building ahmedabad highway
+        - modern office building gujarat exterior
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Building exterior or office door signage at Ganesh Glory 11.
+
+  - id: google-map
+    heading: Find us on the map
+    subheading: S.G. Highway, Jagatpur — near BSNL Office
+    description: |
+      Polo Safari is located on Ahmedabad's S.G. Highway corridor—convenient for corporate clients and campus coordinators across the city. Embed Google Maps once mapEmbedUrl is confirmed in the company entity.
+    contentNotes: |
+      Map embed placeholder—company.contact.mapEmbedUrl not yet in entity file. Use "Open in Google Maps" external link with address query until embed URL supplied. Pin: Ganesh Glory 11, Jagatpur.
+    seoNotes: |
+      H2 polo safari map location. Geo coordinates when verified.
+    stockImage:
+      keywords:
+        - ahmedabad map location pin highway
+        - google maps office location india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Verified Google Maps embed screenshot or live embed.
+
+  - id: whatsapp
+    heading: WhatsApp
+    subheading: Fastest way to reach our team
+    description: |
+      Message us on WhatsApp at +91 94085 10911—primary line for enquiries, itinerary questions, and quick confirmations. Alternate numbers: +91 87990 17801 · +91 93285 65243.
+    entityRefs:
+      - entityType: company
+        entityId: polo-safari
+    contentNotes: |
+      Primary phone +91 94085 10911 per user decision. wa.me deep link button. List all three phones from company.contact.phones. Click-to-call on mobile.
+    seoNotes: |
+      H2 polo safari whatsapp contact.
+    stockImage:
+      keywords:
+        - whatsapp business chat travel enquiry
+        - mobile messaging customer support
+      orientation: portrait
+      aspectRatio: "4:5"
+      usage: card
+    replacementNote: Branded WhatsApp Business profile when configured.
+
+  - id: email
+    heading: Email
+    subheading: For proposals, RFPs, and detailed briefs
+    description: |
+      Chirag@polo-safari.in — send corporate RFPs, educational tour requirements, and detailed itineraries. We respond with scoped proposals including inclusions, pricing, and timelines.
+    entityRefs:
+      - entityType: company
+        entityId: polo-safari
+    contentNotes: |
+      mailto:Chirag@polo-safari.in. Suggest attaching group size, dates, and destination preferences. CC policy TBC.
+    seoNotes: |
+      H2 polo safari email contact.
+    stockImage:
+      keywords:
+        - professional email communication business travel
+        - proposal document laptop office
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: N/A—functional contact block.
+
+  - id: working-hours
+    heading: Working hours
+    subheading: "[TBC — verify with client]"
+    description: |
+      Standard office and enquiry response hours will be published here once confirmed with the Polo Safari team. WhatsApp messages received outside hours are answered on the next business day.
+    contentNotes: |
+      FLAG TBC — Step 7 verification. Placeholder: Mon–Sat 10:00–19:00 IST (unconfirmed). Do not publish until client approves. contentNotes: verify working hours.
+    seoNotes: |
+      H2 polo safari working hours. Omit from structured data until confirmed.
+    stockImage:
+      keywords:
+        - office hours clock business schedule
+        - customer service availability travel
+      orientation: square
+      aspectRatio: "1:1"
+      usage: card
+    replacementNote: N/A—text-only until hours confirmed.
+
+  - id: quick-enquiry
+    heading: Quick enquiry
+    subheading: Tell us about your trip in sixty seconds
+    description: |
+      Name, phone, email, trip type (corporate / educational / family / adventure / international), preferred dates, and group size—our coordinator will follow up with relevant options.
+    cta:
+      label: Send Enquiry
+      href: "#enquiry-form"
+    contentNotes: |
+      Anchor #enquiry-form. Short web form—no login. Route high-intent corporate/education to dedicated RFP forms via shortcuts section. Privacy policy link when /legal/privacy live (Step 6).
+    seoNotes: |
+      H2 polo safari enquiry form.
+    stockImage:
+      keywords:
+        - contact form travel enquiry web
+        - quick quote request tour planning
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: N/A—form UI.
+
+  - id: emergency-contact
+    heading: Emergency contact on trip
+    subheading: "[TBC — verify dedicated line]"
+    description: |
+      Active trip emergency numbers are shared in pre-departure briefings and on-ground with your coordinator. A dedicated 24/7 emergency line for published web use awaits client confirmation.
+    contentNotes: |
+      FLAG TBC — Step 7 verification. Do not invent emergency number. On-trip contacts delivered per proposal only until dedicated public line confirmed. contentNotes: verify emergency contact policy.
+    seoNotes: |
+      H2 polo safari emergency contact. Thin until verified—acceptable with TBC flag.
+    stockImage:
+      keywords:
+        - emergency contact travel safety phone
+        - on trip support coordinator travel
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: N/A—policy text only until number confirmed.
+
+  - id: social-media
+    heading: Social media
+    subheading: "[TBC — verify profile URLs]"
+    description: |
+      Follow Polo Safari for trip highlights, Polo Forest heritage notes, and seasonal offers—profile links will be added once official accounts are confirmed.
+    contentNotes: |
+      FLAG TBC — Step 7 verification. Icon row placeholder: Instagram, Facebook, LinkedIn, YouTube—URLs unconfirmed. Do not link to unverified profiles. contentNotes: verify social media URLs.
+    seoNotes: |
+      H2 polo safari social media. sameAs schema when URLs live.
+    stockImage:
+      keywords:
+        - social media icons travel brand
+        - instagram travel photography feed
+      orientation: square
+      aspectRatio: "1:1"
+      usage: card
+    replacementNote: Branded social tiles when handles confirmed.
+
+  - id: rfp-shortcuts
+    heading: Detailed proposals
+    subheading: Corporate and educational RFP forms
+    description: |
+      Need a full proposal with itinerary options, pricing, and learning outcomes? Use our dedicated request forms—designed for HR procurement and academic coordinators.
+    cta:
+      label: Corporate RFP
+      href: /corporate
+    contentNotes: |
+      Dual prominent cards: (1) Corporate RFP → /corporate#rfp (2) Educational RFP → /schools-colleges#rfp. Brief copy per pillar. Awards trust link /awards optional sidebar.
+    seoNotes: |
+      H2 corporate school tour proposal request ahmedabad.
+    stockImage:
+      keywords:
+        - corporate rfp proposal business travel
+        - school tour planning form education
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Screenshot of RFP form or proposal meeting—corporate and education split.
+
+  - id: cta
+    heading: Eleven years of journeys start with hello
+    subheading: Gujarat Tourism award winner · Ahmedabad since 2014
+    description: |
+      From Polo Forest heritage to pan-India offsites and international programs—speak with the team that thousands of travellers and dozens of enterprises already trust.
+    cta:
+      label: WhatsApp Polo Safari
+      href: /contact
+    entityRefs:
+      - entityType: company
+        entityId: polo-safari
+    contentNotes: |
+      Closing band—WhatsApp primary CTA, email secondary, link /faq and /awards. website: https://www.polo-safari.in from company entity.
+    seoNotes: |
+      H2 contact polo safari close. Trust + conversion.
+    stockImage:
+      keywords:
+        - successful group travel team celebration
+        - ahmedabad tour operator trusted partner
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: background
+    replacementNote: Polo Safari team group photo or client send-off moment.

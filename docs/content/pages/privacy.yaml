@@ -1,0 +1,221 @@
+$schema: ../schema/content-model.schema.json
+id: privacy
+slug: privacy
+route: /legal/privacy
+title: Privacy Policy
+status: review
+seo:
+  title: Privacy Policy | Polo Safari
+  metaDescription: How Polo Safari collects, uses, and protects your personal data under Indian law—including the IT Act 2000 and DPDP Act 2023. Ahmedabad-based tour operator.
+  slug: privacy
+  primaryKeyword: polo safari privacy policy
+  secondaryKeywords:
+    - data protection india travel company
+    - dpdp act travel booking privacy
+    - polo safari personal information
+    - gujarat tour operator privacy
+    - website cookies policy india
+  internalLinks:
+    - label: Contact Polo Safari
+      href: /contact
+    - label: Terms of Service
+      href: /legal/terms
+    - label: FAQ
+      href: /faq
+    - label: Corporate RFP
+      href: /corporate
+      anchor: "#rfp"
+    - label: Educational RFP
+      href: /schools-colleges
+      anchor: "#rfp"
+  ctaSuggestions:
+    - label: Contact for Privacy Enquiries
+      href: /contact
+    - label: Read Terms of Service
+      href: /legal/terms
+
+sections:
+  - id: hero
+    heading: Privacy Policy
+    subheading: Your trust matters — how Polo Safari handles your information
+    description: |
+      This policy explains what personal data we collect when you enquire about or book our tours, how we use it, and the choices available to you under applicable Indian law.
+    contentNotes: |
+      Requires solicitor review before production. Legal page layout—minimal hero, readable typography, table of contents anchor links to section ids. Breadcrumb Home → Privacy Policy. Link to /legal/terms in footer band.
+    seoNotes: |
+      Single H1 polo safari privacy policy. noindex not required—standard legal page. Canonical /legal/privacy.
+    stockImage:
+      keywords:
+        - secure data privacy travel business
+        - professional trust document office india
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Subtle branded legal hero—Polo Safari office or abstract trust imagery; avoid stock padlock clichés.
+
+  - id: introduction
+    heading: Introduction
+    subheading: Polo Safari · Ahmedabad, Gujarat, India
+    description: |
+      Polo Safari ("we", "us", "our") operates polo-safari.in and designs experiential travel programs for corporate groups, schools and colleges, families, and international travellers from our Ahmedabad headquarters.
+
+      This Privacy Policy describes how we collect, use, store, and share personal information when you visit our website, submit an enquiry, request a proposal, or travel with us. We process data in accordance with the Information Technology Act, 2000, the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, and with awareness of the Digital Personal Data Protection Act, 2023 (DPDP Act) as it comes into force.
+
+      By using our website or services, you acknowledge this policy. If you do not agree, please refrain from submitting personal data through our channels.
+    entityRefs:
+      - entityType: company
+        entityId: polo-safari
+    contentNotes: |
+      Requires solicitor review before production. Plain-language intro—no dense legalese. Pull legal name and headquarters from company entity. Update when DPDP rules and enforcement dates are finalised.
+    seoNotes: |
+      H2 introduction. Mention India jurisdiction in first paragraph.
+
+  - id: information-we-collect
+    heading: Information we collect
+    subheading: What you share with us—and what we receive automatically
+    description: |
+      **Information you provide directly** — Name, phone number, email address, organisation or institution name, job title or role, group size, preferred travel dates, destination interests, dietary or accessibility requirements, and any other details you include in enquiry forms, RFP submissions, WhatsApp messages, or email correspondence.
+
+      **Booking and trip-related information** — Participant lists, emergency contacts, ID details where required for permits or venue access, and feedback you choose to share after a trip.
+
+      **Automatically collected information** — IP address, browser type, device information, pages visited, and referral source when you browse our website. We may use cookies and similar technologies as described in the Cookies section below.
+
+      We collect only what is reasonably necessary to respond to enquiries, prepare proposals, deliver tours safely, and improve our services.
+    contentNotes: |
+      Requires solicitor review before production. Bulleted sub-lists in UI optional. Do not claim collection of payment card data on-site unless payment gateway is implemented—currently enquiry-led.
+    seoNotes: |
+      H2 information we collect. H3 optional: Direct information · Automatic information.
+
+  - id: how-we-use-information
+    heading: How we use your information
+    subheading: Purpose-limited processing
+    description: |
+      We use personal information to:
+
+      • Respond to enquiries and prepare customised proposals for corporate retreats, educational tours, family holidays, and adventure programs
+      • Coordinate itineraries, transport, accommodation partners, and on-ground logistics for confirmed bookings
+      • Communicate pre-departure briefings, safety information, and post-trip follow-up
+      • Send marketing communications where you have opted in—or where permitted under applicable law—with an option to unsubscribe
+      • Maintain records required for accounting, tax (including GST), and regulatory compliance
+      • Improve our website, analyse aggregate traffic patterns, and protect against fraud or misuse
+
+      We do not sell your personal data. We do not use your information for purposes incompatible with those described here without notice.
+    contentNotes: |
+      Requires solicitor review before production. Align with actual CRM and WhatsApp workflows. Marketing opt-in mechanism TBC at implementation.
+    seoNotes: |
+      H2 how polo safari uses personal data.
+
+  - id: cookies
+    heading: Cookies and similar technologies
+    subheading: How our website remembers your visit
+    description: |
+      Our website may use cookies—small text files stored on your device—to enable core functionality, remember preferences, and understand how visitors use our pages.
+
+      **Essential cookies** support basic site operation. **Analytics cookies** (if enabled) help us measure traffic and improve content—we will use privacy-respecting settings and, where required, seek consent before non-essential cookies are placed.
+
+      You can control cookies through your browser settings. Disabling cookies may limit certain features. For questions about our cookie practices, contact us using the details in the Contact for Privacy section.
+    contentNotes: |
+      Requires solicitor review before production. Cookie consent banner implementation deferred to frontend. List specific tools (e.g. Google Analytics) only once confirmed—placeholder until analytics stack chosen.
+    seoNotes: |
+      H2 cookies policy polo safari.
+
+  - id: third-party-services
+    heading: Third-party services
+    subheading: Partners who may process data on our behalf
+    description: |
+      We work with trusted third parties to operate our business, including:
+
+      • **Hosting and infrastructure** — Website and email service providers
+      • **Communication tools** — WhatsApp, email, and messaging platforms you use to reach us
+      • **Maps and embeds** — Google Maps or similar services when you view our office location
+      • **On-trip partners** — Resorts, transport operators, activity providers, and venues that require participant details to deliver services safely
+
+      These parties process data only as needed to perform their function. We require appropriate safeguards where we engage processors. Third-party websites linked from polo-safari.in have their own privacy policies—we are not responsible for their practices.
+
+      Polo Safari does not book airline tickets, hotel inventory, visa applications, or travel insurance as standalone products; any such arrangements you make independently are outside this policy unless we explicitly coordinate on your behalf.
+    contentNotes: |
+      Requires solicitor review before production. Enumerate actual subprocessors in CMS once stack finalised. Cross-reference services scope—no flights/visa claims.
+    seoNotes: |
+      H2 third party data sharing travel operator.
+
+  - id: data-retention
+    heading: Data retention
+    subheading: How long we keep your information
+    description: |
+      We retain personal information only as long as necessary for the purposes described in this policy, including:
+
+      • **Active enquiries and proposals** — Until the enquiry is concluded or you request deletion, plus a reasonable follow-up period
+      • **Confirmed bookings and trip records** — For the duration of the relationship and thereafter as required for legal, tax, and dispute-resolution purposes
+      • **Marketing preferences** — Until you unsubscribe or request erasure, subject to legal exceptions
+      • **Website logs** — For a limited period consistent with security and analytics needs
+
+      When data is no longer required, we delete or anonymise it using reasonable measures.
+    contentNotes: |
+      Requires solicitor review before production. Define specific retention periods (e.g. 7 years for financial records) with solicitor and accountant input.
+    seoNotes: |
+      H2 data retention policy.
+
+  - id: your-rights
+    heading: Your rights
+    subheading: Access, correction, and withdrawal
+    description: |
+      Depending on applicable law—including the DPDP Act as implemented—you may have the right to:
+
+      • **Access** personal data we hold about you
+      • **Correct** inaccurate or incomplete information
+      • **Withdraw consent** where processing is consent-based
+      • **Request erasure** subject to legal and contractual obligations
+      • **Nominate** a person to exercise rights on your behalf in certain circumstances (as provided under the DPDP Act)
+      • **Grievance redressal** — Lodge a complaint with us; we will respond within reasonable timelines
+
+      To exercise these rights, email Chirag@polo-safari.in with "Privacy Request" in the subject line. We may need to verify your identity before fulfilling a request. If you are unsatisfied with our response, you may have the right to approach the relevant authority once DPDP grievance mechanisms are operational.
+    contentNotes: |
+      Requires solicitor review before production. Implement request workflow and SLA with solicitor guidance. Grievance officer appointment may be required under DPDP.
+    seoNotes: |
+      H2 your privacy rights india dpdp.
+
+  - id: childrens-privacy
+    heading: Children's privacy
+    subheading: School and college programs
+    description: |
+      Our website is not directed at children under 18 for independent registration. Educational tours involve minors as participants under institutional supervision—schools and colleges typically provide participant information through authorised faculty or administrators.
+
+      If you believe we have collected personal data from a child without appropriate authority, contact us at Chirag@polo-safari.in and we will take prompt steps to review and, where appropriate, delete the information.
+    contentNotes: |
+      Requires solicitor review before production. Align with schools-colleges RFP data-handling practices and institutional consent models.
+    seoNotes: |
+      H2 children privacy educational tours.
+
+  - id: contact-for-privacy
+    heading: Contact for privacy enquiries
+    subheading: Data protection correspondence
+    description: |
+      **Polo Safari**  
+      D-906, Ganesh Glory 11, Nr. BSNL Office, S.G. Highway, Jagatpur, Ahmedabad 382470, Gujarat, India
+
+      **Email:** Chirag@polo-safari.in  
+      **Phone:** +91 94085 10911 · +91 87990 17801 · +91 93285 65243
+
+      For general trip enquiries, visit /contact. For privacy-specific requests, use the email above with "Privacy Request" in the subject line.
+    entityRefs:
+      - entityType: company
+        entityId: polo-safari
+    cta:
+      label: Contact Polo Safari
+      href: /contact
+    contentNotes: |
+      Requires solicitor review before production. Pull NAP from company entity. Designate Data Protection Officer / Grievance Officer name once solicitor advises.
+    seoNotes: |
+      H2 contact privacy polo safari ahmedabad.
+
+  - id: last-updated
+    heading: Last updated
+    subheading: Policy version
+    description: |
+      This Privacy Policy was last updated on **1 July 2026**.
+
+      We may revise this policy to reflect legal, technical, or business changes. Material updates will be posted on this page with a revised date. Continued use of our website after changes constitutes acknowledgment of the updated policy.
+    contentNotes: |
+      Requires solicitor review before production. Bump updatedAt on each solicitor-approved revision. Consider version history in CMS.
+    seoNotes: |
+      H2 privacy policy last updated. dateModified schema when published.

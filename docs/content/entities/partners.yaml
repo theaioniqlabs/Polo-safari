@@ -1,0 +1,41 @@
+$schema: ../schema/content-model.schema.json
+entityFile: partners
+version: 1.0.0
+updatedAt: 2026-07-01
+
+items:
+  - id: partner-01
+    entityType: partner
+    name: "[Partner_01]"
+    logoPlaceholder: "[Partner_01]"
+    type: association
+
+  - id: partner-02
+    entityType: partner
+    name: "[Partner_02]"
+    logoPlaceholder: "[Partner_02]"
+    type: industry
+
+  - id: partner-03
+    entityType: partner
+    name: "[Partner_03]"
+    logoPlaceholder: "[Partner_03]"
+    type: association
+
+  - id: partner-04
+    entityType: partner
+    name: "[Partner_04]"
+    logoPlaceholder: "[Partner_04]"
+    type: industry
+
+  - id: partner-05
+    entityType: partner
+    name: "[Partner_05]"
+    logoPlaceholder: "[Partner_05]"
+    type: media
+
+  - id: partner-06
+    entityType: partner
+    name: "[Partner_06]"
+    logoPlaceholder: "[Partner_06]"
+    type: other

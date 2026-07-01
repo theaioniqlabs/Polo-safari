@@ -1,32 +1,30 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
-
-const steps = [
-  { label: "Browse experiences", detail: "Find your perfect Polo Forest trip" },
-  { label: "Login & create account", detail: "Required to complete booking" },
-  { label: "Pick dates & guests", detail: "Real-time availability" },
-  { label: "Pay UPI / card online", detail: "Secure checkout" },
-  { label: "Confirmation & e-ticket", detail: "Instant email confirmation" },
-];
+import { getJourneyTimelineContent } from "@/content/home-content";
 
 export function JourneyTimeline() {
+  const content = getJourneyTimelineContent();
+
   return (
     <section className="bg-surface-muted py-[var(--space-8)]">
       <Container>
         <p className="text-center text-xs font-semibold uppercase tracking-[0.12em] text-text-subtle">
-          Your Journey
+          {content.subheading}
         </p>
-        <h2 className="mt-2 text-center font-display text-3xl font-semibold">
-          From browsing to arriving at Polo Forest
-        </h2>
+        <h2 className="mt-2 text-center type-display text-3xl">{content.heading}</h2>
+        {content.description && (
+          <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-text-muted">
+            {content.description}
+          </p>
+        )}
 
         <ol className="mt-10 grid gap-6 md:grid-cols-5">
-          {steps.map((step, i) => (
-            <li key={step.label} className="relative text-center">
+          {content.milestones.map((step, i) => (
+            <li key={step.id} className="relative text-center">
               <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-primary-subtle text-sm font-semibold text-primary">
-                {i + 1}
+                {step.year}
               </div>
-              {i < steps.length - 1 && (
+              {i < content.milestones.length - 1 && (
                 <div
                   className="absolute left-[calc(50%+28px)] top-7 hidden h-0.5 w-[calc(100%-56px)] bg-border md:block"
                   aria-hidden
@@ -38,12 +36,13 @@ export function JourneyTimeline() {
           ))}
         </ol>
 
-        <p className="mx-auto mt-8 max-w-2xl text-center text-sm text-text-muted">
-          Corporate and school groups: use Request Proposal — custom quotes within 48 hours.
-        </p>
-        <p className="mt-4 text-center">
-          <Link href="/legal/cancellation" className="text-sm font-semibold text-primary hover:underline">
-            View cancellation policy →
+        <p className="mt-8 text-center">
+          <Link href={content.awardsHref} className="text-sm font-semibold text-primary hover:underline">
+            View all awards & milestones →
+          </Link>
+          {" · "}
+          <Link href={content.aboutHref} className="text-sm font-semibold text-primary hover:underline">
+            Our founder story →
           </Link>
         </p>
       </Container>

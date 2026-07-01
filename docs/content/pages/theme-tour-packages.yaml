@@ -1,0 +1,427 @@
+$schema: ../schema/content-model.schema.json
+id: theme-tour-packages
+slug: theme-tour-packages
+route: /theme-tour-packages
+title: Theme Tour Packages
+status: review
+seo:
+  title: Themed Tour Packages India | Polo Safari
+  metaDescription: Nine travel themes—corporate retreats, school tours, adventure, family getaways, heritage, wellness, and international escapes. Curated from Ahmedabad since 2014.
+  slug: theme-tour-packages
+  primaryKeyword: themed tour packages india
+  secondaryKeywords:
+    - corporate retreat packages gujarat
+    - school educational tour packages
+    - adventure trekking tour india
+    - family holiday packages ahmedabad
+    - polo forest heritage tour
+    - one day picnic gujarat
+    - wellness yoga corporate retreat
+    - international tour packages
+  internalLinks:
+    - label: Home
+      href: /
+    - label: India Tour Packages
+      href: /india
+    - label: International Tours
+      href: /international
+    - label: Corporate Retreats
+      href: /corporate
+    - label: Schools & Colleges
+      href: /schools-colleges
+    - label: Gallery
+      href: /gallery
+    - label: Contact Us
+      href: /contact
+  ctaSuggestions:
+    - label: Request Corporate Proposal
+      href: /corporate
+    - label: Request Educational Proposal
+      href: /schools-colleges
+    - label: Browse India Destinations
+      href: /india
+    - label: Explore International
+      href: /international
+
+sections:
+  - id: hero
+    heading: Theme tour packages for every kind of traveller
+    subheading: Nine pillars · One Ahmedabad team · PDF-confirmed destinations
+    description: |
+      Polo Safari organises travel around how you travel—not arbitrary geography. Corporate offsites, school field studies, family weekends, heritage walks at Polo Forest, adventure treks, wellness pauses, day picnics, and international escapes—each theme links to destinations, durations, and the right proposal path.
+    cta:
+      label: Compare Themes Below
+      href: "#how-to-choose"
+    contentNotes: |
+      WF-THEME-HERO. Breadcrumb Home → Theme Tour Packages. Anchor jump to #how-to-choose or first theme section. Nine theme chips as quick nav linking to section anchors (anchorSlug from themes entity).
+    seoNotes: |
+      Single H1 themed tour packages india. Nine pillars listed in subheading. Primary keyword in first 80 words.
+    stockImage:
+      keywords:
+        - themed travel experience collage india
+        - diverse tour packages corporate family adventure
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Nine-theme mosaic using Polo Safari on-trip photography—one image per pillar when available.
+
+  - id: corporate-retreats
+    heading: Corporate Retreats
+    subheading: Offsites and MICE for teams of 20–200
+    description: |
+      Weekend and multi-day programs at Polo Forest, Udaipur, Jambughoda, Saputara, Jaisalmer, Diu, Matheran, and Lonavala—transport, meals, facilitation, and resort coordination from Ahmedabad. Gujarat Tourism Best Inbound Corporate Tour Operator.
+    cta:
+      label: Request Corporate Proposal
+      href: /corporate
+    entityRefs:
+      - entityType: theme
+        entityId: corporate-retreats
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: udaipur
+      - entityType: destination
+        entityId: jambughoda
+      - entityType: destination
+        entityId: saputara
+      - entityType: destination
+        entityId: jaisalmer
+      - entityType: destination
+        entityId: diu
+      - entityType: destination
+        entityId: matheran
+      - entityType: destination
+        entityId: lonavala
+    contentNotes: |
+      Section anchor #corporate-retreats. Audience: HR, L&D, admin leads. Duration hints: weekend · multi-day. Sample destinations from PDF corporate list. Primary CTA /corporate#rfp.
+    seoNotes: |
+      H2 corporate retreat packages gujarat. H3 destination names. Link /corporate and /india.
+    stockImage:
+      keywords:
+        - corporate retreat resort india offsite
+        - mice conference outdoor venue gujarat
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari corporate offsite—Polo Forest or Udaipur resort with team activity visible.
+
+  - id: team-building-leadership
+    heading: Team Building & Leadership
+    subheading: Facilitated games and leadership labs outdoors
+    description: |
+      Obstacle challenges, problem-solving circuits, and energiser games with trained facilitators—scaled for departments of 20 to company-wide offsites of 200. Often paired with corporate retreat destinations for a single away-day or weekend program.
+    cta:
+      label: Build Your Program
+      href: /corporate
+    entityRefs:
+      - entityType: theme
+        entityId: team-building-leadership
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: udaipur
+      - entityType: destination
+        entityId: bakor
+    contentNotes: |
+      Anchor #team-building-leadership. Audience: HR, team leads. Duration: 1-day module within offsite · weekend. Destinations: outdoor-capable venues. CTA /corporate—modules sold as part of corporate programs.
+    seoNotes: |
+      H2 team building leadership retreat india. Activity keywords in body. Link /corporate.
+    stockImage:
+      keywords:
+        - team building obstacle course outdoor india
+        - leadership workshop corporate group nature
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari facilitator leading team challenge at Polo Forest or Bakor.
+
+  - id: educational-industrial-visits
+    heading: Educational & Industrial Visits
+    subheading: Curriculum-aligned field studies for schools and colleges
+    description: |
+      Polo Forest heritage walks, Devs Camp ecology, Bakor adventure learning, Hyderabad and Chennai industrial circuits (2025), and Manali outdoor camps—programs with safety briefings, faculty support, and learning outcomes you can document.
+    cta:
+      label: Request Educational Proposal
+      href: /schools-colleges
+    entityRefs:
+      - entityType: theme
+        entityId: educational-industrial-visits
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: devs-camp
+      - entityType: destination
+        entityId: bakor
+      - entityType: destination
+        entityId: hyderabad
+      - entityType: destination
+        entityId: chennai
+      - entityType: destination
+        entityId: manali
+    contentNotes: |
+      Anchor #educational-industrial-visits. Audience: principals, coordinators, faculty. Duration: 1-day · weekend · multi-day. CTA /schools-colleges#rfp. Cross-link /india South India section.
+    seoNotes: |
+      H2 school college educational tour packages. Industrial visit and nature camp keywords. Link /schools-colleges.
+    stockImage:
+      keywords:
+        - school field trip outdoor learning india
+        - college industrial visit educational tour
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari school group at Polo Forest or Devs Camp with faculty liaison.
+
+  - id: adventure-trekking
+    heading: Adventure & Trekking
+    subheading: Gujarat Tourism Best Adventure & Trekking Operator (Ahmedabad)
+    description: |
+      Guided treks, camping, and adrenaline activities—from Polo Forest and Bakor day programs to Himalayan multi-day camps in Manali. Safety-first facilitation with trained guides and equipment checks before every trail.
+    cta:
+      label: Browse Adventure Destinations
+      href: /india
+    entityRefs:
+      - entityType: theme
+        entityId: adventure-trekking
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: bakor
+      - entityType: destination
+        entityId: manali
+      - entityType: destination
+        entityId: matheran
+    contentNotes: |
+      Anchor #adventure-trekking. Audience: schools, adventure groups, corporate teams. Duration: 1-day · weekend · multi-day. Award badge gt-season7-adventure-ahmedabad. CTA /india for destination browse; schools via /schools-colleges.
+    seoNotes: |
+      H2 adventure trekking tour gujarat. Award mention for E-E-A-T. Link /india and /awards when live.
+    stockImage:
+      keywords:
+        - mountain trek group india adventure
+        - gujarat hills camping outdoor challenge
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari trek on Bakor or Manali trail—guides, helmets, real gear visible.
+
+  - id: family-getaways
+    heading: Family Getaways
+    subheading: All-India family holidays with comfortable pacing
+    description: |
+      Nature-led breaks at Jambughoda, Saputara, Diu, Daman, Udaipur, Jaisalmer, and Lonavala—child-friendly activities, resort comfort, and itineraries that respect nap times and grandparents. Domestic focus with international family options on /international.
+    cta:
+      label: Browse India Family Destinations
+      href: /india
+    entityRefs:
+      - entityType: theme
+        entityId: family-getaways
+      - entityType: destination
+        entityId: jambughoda
+      - entityType: destination
+        entityId: saputara
+      - entityType: destination
+        entityId: diu
+      - entityType: destination
+        entityId: daman
+      - entityType: destination
+        entityId: udaipur
+      - entityType: destination
+        entityId: jaisalmer
+      - entityType: destination
+        entityId: lonavala
+    contentNotes: |
+      Anchor #family-getaways. Audience: families, multi-generational groups. Duration: weekend · multi-day. CTA /india; mention /international for outbound family in cross-link copy.
+    seoNotes: |
+      H2 family holiday packages india. Child-friendly and resort keywords. Link /india.
+    stockImage:
+      keywords:
+        - family vacation resort india happy children
+        - multigenerational travel nature getaway
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari family group at Saputara, Diu, or Jambughoda—children and parents engaged.
+
+  - id: one-day-picnics
+    heading: 1-Day Picnics
+    subheading: Single-day escapes from Ahmedabad and nearby corridors
+    description: |
+      Polo Forest, Saputara, Lonavala, Daman, Bakor, and Devs Camp—compact circuits for schools, corporates, and families who need impact without an overnight. Depart early, return same evening with meals and activities included.
+    cta:
+      label: Plan a Day Trip
+      href: /contact
+    entityRefs:
+      - entityType: theme
+        entityId: one-day-picnics
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: saputara
+      - entityType: destination
+        entityId: lonavala
+      - entityType: destination
+        entityId: daman
+      - entityType: destination
+        entityId: bakor
+      - entityType: destination
+        entityId: devs-camp
+    contentNotes: |
+      Anchor #one-day-picnics. Audience: schools, corporates, families. Duration: 1-day only. Popular with edu and corporate segments. CTA /contact for quick enquiry; /schools-colleges for institutional picnics.
+    seoNotes: |
+      H2 one day picnic gujarat ahmedabad. Day trip keywords per destination. Link /india by-duration section.
+    stockImage:
+      keywords:
+        - one day picnic school group bus india
+        - day trip nature outing gujarat
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari day-trip group at Polo Forest or Saputara—bus arrival or picnic setup.
+
+  - id: heritage-polo-forest
+    heading: Heritage & Polo Forest
+    subheading: Authentic Aravalli storytelling at our home destination
+    description: |
+      Temple archaeology, river walks, village culture, and founder-led heritage research—the experience that started Polo Safari in 2014. Suitable for corporate culture days, school history modules, family explorers, and inbound international guests.
+    cta:
+      label: Explore Polo Forest Programs
+      href: /india
+    entityRefs:
+      - entityType: theme
+        entityId: heritage-polo-forest
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: ahmedabad
+    contentNotes: |
+      Anchor #heritage-polo-forest. Audience: all segments; flagship brand story. Duration: 1-day · weekend · multi-day. Link /about for founder narrative. Ahmedabad for inbound hosting gateway.
+    seoNotes: |
+      H2 polo forest heritage tour gujarat. Founder authenticity keyword. Link /about and /india.
+    stockImage:
+      keywords:
+        - polo forest aravalli temple heritage trail
+        - ancient ruins forest gujarat archaeology
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Founder or naturalist leading heritage walk at Polo Forest temple trail—real on-trip photography.
+
+  - id: wellness-yoga-meditation
+    heading: Wellness (Yoga & Meditation)
+    subheading: Pause-and-reconnect for corporate groups
+    description: |
+      Yoga, meditation, and nature-led rejuvenation woven between strategy blocks—popular at Polo Forest, Jambughoda, Saputara, and Bali international retreats. Designed for teams that need mental reset without sacrificing program objectives.
+    cta:
+      label: Add Wellness to Your Offsite
+      href: /corporate
+    entityRefs:
+      - entityType: theme
+        entityId: wellness-yoga-meditation
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: jambughoda
+      - entityType: destination
+        entityId: saputara
+      - entityType: destination
+        entityId: bali
+    contentNotes: |
+      Anchor #wellness-yoga-meditation. Audience: corporate primarily; some family/international. Duration: module within offsite · multi-day Bali. CTA /corporate; Bali links to /international.
+    seoNotes: |
+      H2 corporate wellness retreat yoga meditation gujarat. Link /corporate and /international for Bali.
+    stockImage:
+      keywords:
+        - yoga meditation corporate retreat nature india
+        - wellness outdoor session group peaceful
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari wellness session at Polo Forest or Jambughoda—mats, instructor, natural setting.
+
+  - id: international-escapes
+    heading: International Escapes
+    subheading: Outbound tours and inbound cultural hosting
+    description: |
+      Singapore, Malaysia, Bali, Dubai, and Vietnam for corporate incentives and family holidays—plus Ahmedabad hosting for international delegations including Vietnamese partnerships (2023–2025). Coordinated from our international desk.
+    cta:
+      label: Explore International Tours
+      href: /international
+    entityRefs:
+      - entityType: theme
+        entityId: international-escapes
+      - entityType: destination
+        entityId: singapore
+      - entityType: destination
+        entityId: malaysia
+      - entityType: destination
+        entityId: bali
+      - entityType: destination
+        entityId: dubai
+      - entityType: destination
+        entityId: vietnam
+      - entityType: destination
+        entityId: ahmedabad-inbound-hosting
+    contentNotes: |
+      Anchor #international-escapes. Audience: corporate, family, cultural exchange. Duration: multi-day. CTA /international. Inbound callout for ahmedabad-inbound-hosting. No Europe/Africa/Australia placeholders here.
+    seoNotes: |
+      H2 international tour packages from ahmedabad. Country names as H3 support. Link /international.
+    stockImage:
+      keywords:
+        - international travel southeast asia dubai collage
+        - outbound tour group landmark photo
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari outbound and inbound international photography—Singapore skyline and Ahmedabad hosting.
+
+  - id: how-to-choose
+    heading: How to choose your theme
+    subheading: Match audience · duration · destination · season
+    description: |
+      Start with who travels—corporate HR, school coordinator, family, or adventure group. Then pick duration: 1-day picnic, weekend offsite, or multi-day circuit. Filter destinations on /india or /international, or jump straight to /corporate and /schools-colleges for proposal-ready paths. Not sure? Our team maps objectives to themes in one conversation.
+    cta:
+      label: Contact Our Team
+      href: /contact
+    entityRefs:
+      - entityType: theme
+        entityId: corporate-retreats
+      - entityType: theme
+        entityId: educational-industrial-visits
+      - entityType: theme
+        entityId: family-getaways
+      - entityType: theme
+        entityId: adventure-trekking
+      - entityType: theme
+        entityId: international-escapes
+    contentNotes: |
+      Section anchor #how-to-choose. Comparison matrix or decision tree UI—rows: Audience (Corporate, Education, Family, Adventure, International); columns: Duration, Sample theme, CTA route. Link all nine theme anchors in sidebar nav. No pricing—proposal model only.
+    seoNotes: |
+      H2 how to choose tour package india. FAQ-style long-tail capture. internalLinks to /contact, /corporate, /schools-colleges, /india, /international.
+    stockImage:
+      keywords:
+        - travel decision guide comparison chart
+        - choose vacation type planning infographic
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: Optional—section may be UI-only decision matrix; if imagery used, Polo Safari consultation moment at office.
+
+  - id: cta-band
+    heading: Found your theme?
+    subheading: Request a proposal or speak with our travel desk
+    description: |
+      Corporate and educational enquiries get dedicated proposal workflows. Family, adventure, and international trips start with a conversation—share dates, group size, and must-haves. We respond from Ahmedabad with itinerary options grounded in eleven years of field experience.
+    cta:
+      label: Get Started
+      href: /contact
+    contentNotes: |
+      Full-width CTA with four quick links: /corporate#rfp, /schools-colleges#rfp, /india, /international. Gallery teaser link to /gallery when Step 5 live.
+    seoNotes: |
+      H2 book themed tour polo safari. Conversion band—primary keyword once. ctaSuggestions mirrored in page footer.
+    stockImage:
+      keywords:
+        - travel agency consultation happy clients
+        - tour booking success group departure
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: Polo Safari team handshake or pre-trip briefing—professional, welcoming tone.

@@ -5,15 +5,15 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { homeImages } from "@/lib/home-images";
-import { experiencePillars, featuredExperiences } from "./nav-config";
+import { experiencePillars, megaMenuPrograms } from "./nav-config";
 import { ChevronDownIcon } from "./icons";
 import { useFocusTrap } from "./useFocusTrap";
 
-const featuredImages: Record<string, string> = {
-  "polo-forest-heritage-walk": homeImages.featuredHeritage,
-  "night-safari": homeImages.featuredNightSafari,
-  "family-camping-weekend": homeImages.featuredFamily,
-};
+const programImages = {
+  corporateCampfire: homeImages.corporateCampfire,
+  categoryEducation: homeImages.categoryEducation,
+  familyCampfire: homeImages.familyCampfire,
+} as const;
 
 const MENU_TOP =
   "calc(var(--announcement-height, 0px) + var(--current-header-height, var(--header-height)))";
@@ -140,40 +140,40 @@ export function ExperiencesMegaMenu({
                       ))}
                     </ul>
                     <Link
-                      href="/experiences"
+                      href="/theme-tour-packages"
                       onClick={onClose}
                       className="mt-5 inline-flex text-sm font-semibold text-primary hover:underline"
                     >
-                      View all experiences →
+                      View all tour packages →
                     </Link>
                   </div>
 
                   <div className="border-t border-border pt-8 lg:col-span-8 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
                     <p className="text-xs font-semibold uppercase tracking-[0.12em] text-text-subtle">
-                      Featured experiences
+                      Tours for groups
                     </p>
                     <div className="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-                      {featuredExperiences.map((experience) => (
+                      {megaMenuPrograms.map((program) => (
                         <Link
-                          key={experience.slug}
-                          href={`/experiences/${experience.slug}`}
+                          key={program.id}
+                          href={program.href}
                           onClick={onClose}
                           className="group overflow-hidden rounded-[var(--radius-md)] border border-border bg-surface transition-shadow hover:shadow-[var(--shadow-medium)]"
                         >
                           <div className="relative aspect-[16/10] overflow-hidden bg-surface-muted">
                             <Image
-                              src={featuredImages[experience.slug]}
-                              alt={experience.title}
+                              src={programImages[program.imageKey]}
+                              alt={program.title}
                               fill
                               sizes="(max-width:768px) 50vw, 280px"
                               className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                             />
                           </div>
                           <div className="p-4">
-                            <p className="font-display text-base font-semibold leading-snug text-text-heading group-hover:text-primary">
-                              {experience.title}
+                            <p className="text-base font-semibold leading-snug text-text-heading group-hover:text-primary">
+                              {program.title}
                             </p>
-                            <p className="mt-1 text-sm text-text-muted">{experience.caption}</p>
+                            <p className="mt-1 text-sm text-text-muted">{program.caption}</p>
                           </div>
                         </Link>
                       ))}

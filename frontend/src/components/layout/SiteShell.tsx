@@ -1,5 +1,6 @@
 import { type ReactNode } from "react";
 import { AnnouncementBar } from "@/components/home/AnnouncementBar";
+import { getAnnouncementContent } from "@/content/home-content";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
@@ -9,6 +10,8 @@ type SiteShellProps = {
 };
 
 export function SiteShell({ children, transparentHeader = false }: SiteShellProps) {
+  const announcement = getAnnouncementContent();
+
   return (
     <>
       <a
@@ -18,7 +21,11 @@ export function SiteShell({ children, transparentHeader = false }: SiteShellProp
         Skip to main content
       </a>
       <div className="sticky top-0 z-50" data-zone="site-header-stack">
-        <AnnouncementBar />
+        <AnnouncementBar
+          message={announcement.message}
+          linkLabel={announcement.linkLabel}
+          href={announcement.href}
+        />
         <Header transparent={transparentHeader} />
       </div>
       <main id="main-content" className="min-h-screen">

@@ -4,14 +4,13 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 import { Container } from "@/components/layout/Container";
+import type { getSearchContent } from "@/content/home-content";
 
-const popularChips = [
-  { label: "Night Safari", href: "/experiences?category=adventure" },
-  { label: "School Trip", href: "/education" },
-  { label: "Corporate Day", href: "/corporate" },
-];
+type QuickSearchProps = {
+  content: ReturnType<typeof getSearchContent>;
+};
 
-export function QuickSearch() {
+export function QuickSearch({ content }: QuickSearchProps) {
   const router = useRouter();
   const [category, setCategory] = useState("");
   const [guests, setGuests] = useState("2");
@@ -21,12 +20,14 @@ export function QuickSearch() {
     const params = new URLSearchParams();
     if (category) params.set("category", category);
     params.set("guests", guests);
-    router.push(`/experiences?${params.toString()}`);
+    router.push(`/theme-tour-packages?${params.toString()}`);
   }
 
   return (
-    <section className="relative z-20 -mt-6 pb-8 md:-mt-6" aria-label="Search experiences">
+    <section className="relative z-20 -mt-6 pb-8 md:-mt-6" aria-label={content.heading}>
       <Container>
+        <h2 className="sr-only">{content.heading}</h2>
+        <p className="sr-only">{content.subheading}</p>
         <form
           onSubmit={handleSubmit}
           className="mx-auto flex max-w-[960px] flex-col gap-3"
@@ -88,7 +89,7 @@ export function QuickSearch() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-2">
-            {popularChips.map((chip) => (
+            {content.chips.map((chip) => (
               <Link
                 key={chip.href}
                 href={chip.href}

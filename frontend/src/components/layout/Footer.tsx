@@ -1,46 +1,63 @@
 import Link from "next/link";
 import { Container } from "./Container";
-import { experiencePillars } from "./navigation/nav-config";
+import { experiencePillars, primaryNav } from "./navigation/nav-config";
+import { getFooterContent } from "@/content/home-content";
 
 const destinations = [
+  { href: "/india", label: "India Tours" },
   { href: "/polo-forest", label: "Polo Forest" },
-  { href: "/destinations/saputara", label: "Saputara" },
-  { href: "/destinations/gir", label: "Gir" },
-  { href: "/destinations/rann", label: "Rann of Kutch" },
+  { href: "/international", label: "International" },
+  { href: "/theme-tour-packages", label: "Theme Packages" },
 ];
 
 const planLinks = [
-  { href: "/plan", label: "Plan Your Visit" },
-  { href: "/plan", label: "Book online" },
-  { href: "/legal/cancellation", label: "Cancellation policy" },
-  { href: "/plan/enquire", label: "Enquire" },
+  { href: "/contact", label: "Plan Your Visit" },
+  { href: "/corporate#rfp", label: "Corporate RFP" },
+  { href: "/schools-colleges#rfp", label: "Educational RFP" },
+  { href: "/contact", label: "Contact" },
 ];
 
-const contactLinks = [
-  { href: "tel:+919876543210", label: "+91 98765 43210" },
-  { href: "https://wa.me/919876543210", label: "WhatsApp" },
-  { href: "/contact", label: "Ahmedabad office" },
+const awards = [
+  "Gujarat Tourism S7",
+  "Best Corporate Operator",
+  "MSME Registered",
 ];
-
-const awards = ["Gujarat Tourism", "TripAdvisor 2024", "Safe Travel"];
 
 const social = [
   { href: "#", label: "Instagram" },
   { href: "#", label: "Facebook" },
-  { href: "#", label: "YouTube" },
-  { href: "https://wa.me/919876543210", label: "WhatsApp" },
+  { href: "#", label: "LinkedIn" },
+  { href: "https://wa.me/919408510911", label: "WhatsApp" },
 ];
 
 export function Footer() {
+  const footer = getFooterContent();
+  const contact = footer.company?.contact;
+
+  const contactLinks = [
+    ...(contact?.phones?.slice(0, 1).map((p) => ({
+      href: `tel:${p.replace(/\s/g, "")}`,
+      label: p,
+    })) ?? [{ href: "tel:+919408510911", label: "+91 94085 10911" }]),
+    { href: "https://wa.me/919408510911", label: "WhatsApp" },
+    { href: footer.directionsHref, label: "Ahmedabad office" },
+  ];
+
   return (
     <footer className="bg-surface-dark-elevated text-text-on-dark" aria-label="Site footer">
       <Container className="py-12">
         <div className="mb-10">
-          <p className="font-display text-2xl font-semibold">Polo Safari</p>
-          <p className="mt-2 max-w-md text-sm text-text-on-dark/80">
-            Gujarat&apos;s experiential travel brand — heritage, education, corporate, and adventure
-            at Polo Forest.
-          </p>
+          <p className="text-2xl font-semibold">{footer.heading}</p>
+          <p className="mt-2 max-w-md text-sm text-text-on-dark/80">{footer.subheading}</p>
+          <p className="mt-3 max-w-xl text-sm text-text-on-dark/70">{footer.contactLine}</p>
+          {footer.cta && (
+            <Link
+              href={footer.cta.href}
+              className="mt-4 inline-block text-sm font-semibold text-primary hover:underline"
+            >
+              {footer.cta.label} →
+            </Link>
+          )}
         </div>
 
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
@@ -79,10 +96,10 @@ export function Footer() {
               ))}
               <li>
                 <Link
-                  href="/experiences"
+                  href="/theme-tour-packages"
                   className="text-sm font-semibold text-text-on-dark/85 transition-colors hover:text-text-inverse"
                 >
-                  View all
+                  View all themes
                 </Link>
               </li>
             </ul>
@@ -90,11 +107,21 @@ export function Footer() {
 
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-text-on-dark/60">
-              Plan
+              Company
             </p>
             <ul className="mt-4 space-y-2">
-              {planLinks.map((link, i) => (
-                <li key={`${link.href}-${i}`}>
+              {primaryNav.slice(6).map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-text-on-dark/85 transition-colors hover:text-text-inverse"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+              {planLinks.map((link) => (
+                <li key={`${link.href}-${link.label}`}>
                   <Link
                     href={link.href}
                     className="text-sm text-text-on-dark/85 transition-colors hover:text-text-inverse"
@@ -126,11 +153,11 @@ export function Footer() {
         </div>
 
         <Link
-          href="/polo-forest"
+          href="/india"
           className="mt-10 block overflow-hidden rounded-[var(--radius-md)] border border-white/10"
         >
           <div className="flex h-32 items-center justify-center bg-primary-subtle/20 text-sm text-text-on-dark/70">
-            Mini map — Polo Forest, Idar, Gujarat
+            India tour footprint — Gujarat roots, pan-India reach
           </div>
         </Link>
 
@@ -170,19 +197,12 @@ export function Footer() {
               Terms
             </Link>{" "}
             ·{" "}
-            <Link href="/sitemap" className="hover:text-text-inverse">
-              Sitemap
+            <Link href="/faq" className="hover:text-text-inverse">
+              FAQ
             </Link>
           </p>
           <div className="flex items-center gap-4">
             <span className="font-medium text-text-on-dark/80">EN</span>
-            <button
-              type="button"
-              className="rounded border border-white/20 px-3 py-1 text-xs text-text-on-dark/80"
-              aria-label="Toggle theme"
-            >
-              Theme
-            </button>
           </div>
         </div>
       </Container>

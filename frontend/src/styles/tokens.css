@@ -1,6 +1,9 @@
 /**
  * Polo Safari — Design Tokens (adapted from docs/brand/04-design-tokens.css)
  * Version: 1.1.0
+ *
+ * Source values use --ps-* to avoid clashing with shadcn :root vars.
+ * --color-* aliases remain for custom CSS; Tailwind maps via @theme in globals.css.
  */
 
 :root {
@@ -11,37 +14,37 @@
   --color-logo-orange: #ec6602;
   --color-logo-slate: #346982;
 
-  --color-primary: #005ca9;
-  --color-primary-hover: #004a88;
-  --color-primary-active: #003d70;
-  --color-primary-subtle: #e6f0f8;
-  --color-primary-on: #ffffff;
+  --ps-primary: #005ca9;
+  --ps-primary-hover: #004a88;
+  --ps-primary-active: #003d70;
+  --ps-primary-subtle: #e6f0f8;
+  --ps-primary-on: #ffffff;
 
-  --color-secondary: #00963f;
-  --color-secondary-hover: #007a33;
-  --color-secondary-subtle: #e8f5ed;
-  --color-secondary-on: #ffffff;
+  --ps-secondary: #00963f;
+  --ps-secondary-hover: #007a33;
+  --ps-secondary-subtle: #e8f5ed;
+  --ps-secondary-on: #ffffff;
 
-  --color-surface: #ffffff;
-  --color-surface-muted: #f9f7f2;
-  --color-surface-nature: #eef4ed;
-  --color-surface-water: #e6f7fb;
-  --color-surface-warm: #ede6d6;
-  --color-surface-dark: #1e2a24;
-  --color-surface-dark-elevated: #14261e;
-  --color-surface-inverse: #1a1f2e;
+  --ps-surface: #ffffff;
+  --ps-surface-muted: #f9f7f2;
+  --ps-surface-nature: #eef4ed;
+  --ps-surface-water: #e6f7fb;
+  --ps-surface-warm: #ede6d6;
+  --ps-surface-dark: #1e2a24;
+  --ps-surface-dark-elevated: #14261e;
+  --ps-surface-inverse: #1a1f2e;
 
   --space-15: 120px;
 
-  --color-border: #d4d8dc;
-  --color-border-strong: #b8c0c8;
+  --ps-border: #d4d8dc;
+  --ps-border-strong: #b8c0c8;
 
-  --color-text: #2c3e50;
-  --color-text-heading: #1f2521;
-  --color-text-muted: #5f6b64;
-  --color-text-subtle: #8a948f;
-  --color-text-inverse: #ffffff;
-  --color-text-on-dark: #f9f7f2;
+  --ps-text: #2c3e50;
+  --ps-text-heading: #1f2521;
+  --ps-text-muted: #5f6b64;
+  --ps-text-subtle: #8a948f;
+  --ps-text-inverse: #ffffff;
+  --ps-text-on-dark: #f9f7f2;
 
   --color-pillar-heritage: #98211e;
   --color-pillar-education: #00963f;
@@ -60,8 +63,8 @@
   --color-error: #98211e;
   --color-info: #005ca9;
 
-  --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
-  --font-body: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --ps-font-display: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --ps-font-body: var(--font-inter), "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -93,15 +96,15 @@
   --current-header-height: var(--header-height);
   --announcement-height: 0px;
 
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --radius-button: 999px;
+  --ps-radius-sm: 8px;
+  --ps-radius-md: 16px;
+  --ps-radius-lg: 24px;
+  --ps-radius-button: 999px;
   --radius-input: 12px;
 
-  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
-  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.08);
-  --shadow-header: 0 1px 0 rgba(0, 0, 0, 0.06);
+  --ps-shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --ps-shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --ps-shadow-header: 0 1px 0 rgba(0, 0, 0, 0.06);
 
   --glass-bg: rgba(255, 255, 255, 0.12);
   --glass-border: rgba(255, 255, 255, 0.18);
@@ -111,6 +114,42 @@
   --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
 
   --focus-ring: 0 0 0 3px rgba(0, 92, 169, 0.35);
+
+  /* Aliases for custom CSS */
+  --color-primary: var(--ps-primary);
+  --color-primary-hover: var(--ps-primary-hover);
+  --color-primary-active: var(--ps-primary-active);
+  --color-primary-subtle: var(--ps-primary-subtle);
+  --color-primary-on: var(--ps-primary-on);
+  --color-secondary: var(--ps-secondary);
+  --color-secondary-hover: var(--ps-secondary-hover);
+  --color-secondary-subtle: var(--ps-secondary-subtle);
+  --color-secondary-on: var(--ps-secondary-on);
+  --color-surface: var(--ps-surface);
+  --color-surface-muted: var(--ps-surface-muted);
+  --color-surface-nature: var(--ps-surface-nature);
+  --color-surface-water: var(--ps-surface-water);
+  --color-surface-warm: var(--ps-surface-warm);
+  --color-surface-dark: var(--ps-surface-dark);
+  --color-surface-dark-elevated: var(--ps-surface-dark-elevated);
+  --color-surface-inverse: var(--ps-surface-inverse);
+  --color-border: var(--ps-border);
+  --color-border-strong: var(--ps-border-strong);
+  --color-text: var(--ps-text);
+  --color-text-heading: var(--ps-text-heading);
+  --color-text-muted: var(--ps-text-muted);
+  --color-text-subtle: var(--ps-text-subtle);
+  --color-text-inverse: var(--ps-text-inverse);
+  --color-text-on-dark: var(--ps-text-on-dark);
+  --font-display: var(--ps-font-display);
+  --font-body: var(--ps-font-body);
+  --radius-sm: var(--ps-radius-sm);
+  --radius-md: var(--ps-radius-md);
+  --radius-lg: var(--ps-radius-lg);
+  --radius-button: var(--ps-radius-button);
+  --shadow-soft: var(--ps-shadow-soft);
+  --shadow-medium: var(--ps-shadow-medium);
+  --shadow-header: var(--ps-shadow-header);
 }
 
 [data-pillar="heritage"] {
@@ -157,5 +196,9 @@
 
 .bg-surface-inverse {
   background-color: var(--color-surface-inverse);
+  color: var(--color-text-on-dark);
+}
+
+.text-on-dark {
   color: var(--color-text-on-dark);
 }
