@@ -1,0 +1,126 @@
+$schema: ../schema/content-model.schema.json
+entityFile: awards
+version: 1.0.0
+updatedAt: 2026-07-01
+
+items:
+  - id: gt-season7-inbound-corporate-gujarat
+    entityType: award
+    title: Best Inbound Corporate Tour Operator
+    issuer: Gujarat Tourism
+    year: 2025
+    season: Season 7
+    category: Inbound Corporate
+    scope: Gujarat
+    description: |
+      State-level recognition for corporate inbound programs—reflecting repeat enterprise bookings, professional execution, and trust built with HR and leadership teams across Gujarat.
+    imagePlaceholder: "[Certificate_01]"
+
+  - id: gt-season7-inbound-corporate-ahmedabad
+    entityType: award
+    title: Best Inbound Corporate Tour Operator
+    issuer: Gujarat Tourism
+    year: 2025
+    season: Season 7
+    category: Inbound Corporate
+    scope: Ahmedabad
+    description: |
+      City-level honour for Ahmedabad-headquartered corporate tour operations—underscoring local expertise for offsites, team-building retreats, and MICE-style group travel.
+    imagePlaceholder: "[Certificate_02]"
+
+  - id: gt-season7-adventure-ahmedabad
+    entityType: award
+    title: Best Adventure & Trekking Tour Operator
+    issuer: Gujarat Tourism
+    year: 2025
+    season: Season 7
+    category: Adventure & Trekking
+    scope: Ahmedabad
+    description: |
+      Recognition for adventure and trekking programs—from Polo Forest trails to multi-day outdoor itineraries—delivered with safety briefing, trained facilitators, and gear discipline.
+    imagePlaceholder: "[Certificate_03]"
+
+  - id: gt-season6-award
+    entityType: award
+    title: Gujarat Tourism Award — Season 6
+    issuer: Gujarat Tourism
+    season: Season 6
+    description: |
+      Prior-season Gujarat Tourism recognition affirming Polo Safari's standing among the state's tour operators. Exact category and year to be confirmed from certificate scan—see imagePlaceholder.
+    imagePlaceholder: "[Certificate_04]"
+
+  - id: swiftnlift-best-corporate-gujarat
+    entityType: award
+    title: Best Corporate Tour Operator in Gujarat
+    issuer: Swiftnlift Business Magazine
+    category: Corporate Tours
+    scope: Gujarat
+    description: |
+      Industry recognition presented by actor Bhagyashree—celebrating Polo Safari's corporate tour leadership, client retention, and reputation among Gujarat enterprises.
+    imagePlaceholder: "[Certificate_05]"
+
+  - id: timeline-2014-founded
+    entityType: timeline-event
+    year: 2014
+    title: Founded in Ahmedabad
+    description: Polo Safari established with Polo Forest heritage tours as the founding focus.
+
+  - id: timeline-2016-pan-india
+    entityType: timeline-event
+    year: 2016
+    title: Pan-India expansion
+    description: Programs extended beyond Gujarat to Rajasthan, Maharashtra, Himachal, and union territories—corporate and family itineraries scaled nationally.
+
+  - id: timeline-2018-corporate-education
+    entityType: timeline-event
+    year: 2018
+    title: Corporate & educational pillars
+    description: Corporate retreats and school/college tours become primary revenue streams alongside adventure and family travel.
+
+  - id: timeline-2020-international-outbound
+    entityType: timeline-event
+    year: 2020
+    title: International outbound tours
+    description: Curated outbound programs to Southeast Asia and the Middle East for corporate and group travellers from Ahmedabad and Gujarat.
+
+  - id: timeline-2023-inbound-vietnam
+    entityType: timeline-event
+    year: 2023
+    title: Inbound hosting — Vietnam
+    description: Vietnamese guest groups hosted in Ahmedabad for cultural exchange and heritage experiences—first of multi-year inbound partnerships.
+
+  - id: timeline-2024-gt-season6
+    entityType: timeline-event
+    year: 2024
+    title: Gujarat Tourism Season 6 recognition
+    description: State tourism award season marking continued excellence in group and corporate travel—certificate details to verify.
+
+  - id: timeline-2024-inbound-vietnam
+    entityType: timeline-event
+    year: 2024
+    title: Inbound hosting — Vietnam (repeat)
+    description: Second year of Vietnamese delegation hosting in Ahmedabad—heritage walks, city experiences, and cross-cultural programming.
+
+  - id: timeline-2025-gt-season7
+    entityType: timeline-event
+    year: 2025
+    title: Gujarat Tourism Season 7 — triple recognition
+    description: Best Inbound Corporate (Gujarat and Ahmedabad) and Best Adventure/Trekking (Ahmedabad)—strongest award season to date.
+
+  - id: timeline-2025-swiftnlift
+    entityType: timeline-event
+    year: 2025
+    title: Swiftnlift — Best Corporate Tour Operator Gujarat
+    description: Industry magazine honour presented by Bhagyashree, reinforcing corporate tour leadership.
+
+  - id: timeline-2025-eleven-years
+    entityType: timeline-event
+    year: 2025
+    title: Eleven years, thousands of travellers
+    description: A decade-plus milestone—corporate, family, educational, and adventure guests served across India and select international destinations.
+
+  - id: timeline-2025-inbound-vietnam
+    entityType: timeline-event
+    year: 2025
+    title: Inbound hosting — Vietnam (third year)
+    description: Continued Vietnamese group hosting in Ahmedabad—sustained inbound tourism partnership.

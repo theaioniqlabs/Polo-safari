@@ -1,0 +1,26 @@
+$schema: ../schema/content-model.schema.json
+entityFile: founder
+version: 1.0.0
+updatedAt: 2026-07-01
+
+items:
+  - id: chirag-shah
+    entityType: founder
+    name: Chirag Shah
+    title: Founder & CEO
+    origin: |
+      Vijaynagar, Gujarat — a village roughly twelve kilometres from Polo Forest, where Chirag Shah grew up surrounded by the Aravalli landscape, village life, and the ruins that would later define his work.
+    bio: |
+      Chirag Shah founded Polo Safari in Ahmedabad in 2014 after years of researching and documenting Polo Forest heritage. A childhood encounter with foreign visitors led by a guide who misrepresented local history became a turning point: he committed to sharing the forest's story accurately and with pride.
+
+      Under his leadership, Polo Safari evolved from Polo Forest–only tours to pan-India programs and international travel—while keeping corporate retreats and educational tours at the centre of the business. He remains closely involved in program design, client relationships, and the heritage narrative that distinguishes every Polo Forest journey.
+    quote: |
+      I grew up minutes from Polo Forest. When I heard our history told wrongly to visitors who had travelled across the world to be here, I knew someone from this land had to tell the story right. That is still why we exist—for every traveler who deserves the truth of a place, and a journey built around who they are.
+    photo:
+      keywords:
+        - founder portrait professional
+        - polo forest heritage guide
+        - ahmedabad entrepreneur outdoor
+      orientation: portrait
+      aspectRatio: "4:5"
+      usage: card

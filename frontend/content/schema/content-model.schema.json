@@ -1,0 +1,565 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://polo-safari.in/schemas/content-model.schema.json",
+  "title": "Polo Safari Content Model",
+  "description": "Validates page and entity YAML files under docs/content/. Designed for a travel CMS with strict structure and practical optional fields.",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "#/$defs/Page" },
+    { "$ref": "#/$defs/EntityFile" }
+  ],
+  "$defs": {
+    "Slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "URL-safe slug: lowercase, hyphen-separated."
+    },
+    "RoutePath": {
+      "type": "string",
+      "description": "Site route path, e.g. /corporate or /legal/privacy.",
+      "pattern": "^/(?:[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*)?$"
+    },
+    "Id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$",
+      "description": "Stable kebab-case identifier for sections, entities, and references."
+    },
+    "Cta": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "href": {
+          "oneOf": [
+            { "$ref": "#/$defs/RoutePath" },
+            { "type": "string", "pattern": "^#[a-z][a-z0-9-]*$" }
+          ]
+        }
+      },
+      "required": ["label", "href"]
+    },
+    "InternalLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "href": { "$ref": "#/$defs/RoutePath" },
+        "anchor": {
+          "type": "string",
+          "pattern": "^#[a-z][a-z0-9-]*$"
+        }
+      },
+      "required": ["label", "href"]
+    },
+    "ImageOrientation": {
+      "type": "string",
+      "enum": ["landscape", "portrait", "square"]
+    },
+    "ImageAspectRatio": {
+      "type": "string",
+      "enum": ["16:9", "4:5", "1:1", "21:9", "3:2", "4:3"]
+    },
+    "ImageUsage": {
+      "type": "string",
+      "enum": ["hero", "card", "thumbnail", "full-width", "background", "gallery"]
+    },
+    "StockImage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "keywords": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        },
+        "orientation": { "$ref": "#/$defs/ImageOrientation" },
+        "aspectRatio": { "$ref": "#/$defs/ImageAspectRatio" },
+        "usage": { "$ref": "#/$defs/ImageUsage" }
+      },
+      "required": ["keywords", "orientation", "aspectRatio", "usage"]
+    },
+    "Seo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 70,
+          "description": "Document title / SERP title (aim ≤60 chars)."
+        },
+        "metaDescription": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 170,
+          "description": "Meta description (aim 150–160 chars)."
+        },
+        "slug": {
+          "oneOf": [
+            { "$ref": "#/$defs/Slug" },
+            { "type": "string", "const": "" }
+          ],
+          "description": "Page slug segment; empty string for home."
+        },
+        "primaryKeyword": { "type": "string", "minLength": 1 },
+        "secondaryKeywords": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "default": []
+        },
+        "internalLinks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/InternalLink" },
+          "default": []
+        },
+        "ctaSuggestions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Cta" },
+          "default": []
+        }
+      },
+      "required": [
+        "title",
+        "metaDescription",
+        "slug",
+        "primaryKeyword",
+        "secondaryKeywords",
+        "internalLinks",
+        "ctaSuggestions"
+      ]
+    },
+    "Section": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "heading": { "type": "string" },
+        "subheading": { "type": "string" },
+        "description": {
+          "type": "string",
+          "description": "Short, scannable body copy for the section."
+        },
+        "cta": { "$ref": "#/$defs/Cta" },
+        "contentNotes": {
+          "type": "string",
+          "description": "Implementation hints for designers and developers."
+        },
+        "seoNotes": {
+          "type": "string",
+          "description": "H2/H3 hierarchy and keyword placement guidance."
+        },
+        "stockImage": { "$ref": "#/$defs/StockImage" },
+        "replacementNote": {
+          "type": "string",
+          "description": "Note for replacing stock with real Polo Safari assets."
+        },
+        "entityRefs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/EntityRef" },
+          "description": "Optional references to shared entity records."
+        }
+      },
+      "required": ["id"]
+    },
+    "EntityRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entityType": { "$ref": "#/$defs/EntityType" },
+        "entityId": { "$ref": "#/$defs/Id" }
+      },
+      "required": ["entityType", "entityId"]
+    },
+    "EntityType": {
+      "type": "string",
+      "enum": [
+        "company",
+        "founder",
+        "award",
+        "destination",
+        "theme",
+        "service",
+        "client",
+        "testimonial",
+        "gallery-category",
+        "blog-category",
+        "contact",
+        "credential",
+        "partner",
+        "timeline-event",
+        "faq-item"
+      ]
+    },
+    "Page": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "$schema": {
+          "type": "string",
+          "description": "Optional pointer to this schema file."
+        },
+        "id": { "$ref": "#/$defs/Id" },
+        "slug": {
+          "oneOf": [
+            { "$ref": "#/$defs/Slug" },
+            { "type": "string", "const": "" }
+          ],
+          "description": "URL slug; empty for home."
+        },
+        "route": {
+          "oneOf": [
+            { "$ref": "#/$defs/RoutePath" },
+            { "type": "string", "const": "/" }
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Human-readable page title for CMS and nav."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "published"],
+          "default": "draft"
+        },
+        "seo": { "$ref": "#/$defs/Seo" },
+        "sections": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Section" },
+          "minItems": 1
+        }
+      },
+      "required": ["id", "slug", "title", "seo", "sections"]
+    },
+    "LocalizedString": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string", "minLength": 1 }
+      },
+      "required": ["en"],
+      "description": "Reserved for future i18n; English-only at launch."
+    },
+    "ContactInfo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "address": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string" },
+        "postalCode": { "type": "string" },
+        "country": { "type": "string", "default": "India" },
+        "phones": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "email": { "type": "string", "format": "email" },
+        "website": { "type": "string", "format": "uri" },
+        "mapEmbedUrl": { "type": "string", "format": "uri" }
+      }
+    },
+    "CompanyEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "const": "polo-safari" },
+        "entityType": { "const": "company" },
+        "legalName": { "type": "string" },
+        "tagline": { "type": "string" },
+        "foundedYear": { "type": "integer", "minimum": 1900 },
+        "headquarters": { "type": "string" },
+        "story": { "type": "string" },
+        "vision": { "type": "string" },
+        "mission": { "type": "string" },
+        "values": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "specializations": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "credentials": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "contact": { "$ref": "#/$defs/ContactInfo" },
+        "milestones": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/TimelineEventEntity" }
+        }
+      },
+      "required": ["id", "entityType", "foundedYear", "headquarters"]
+    },
+    "FounderEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "entityType": { "const": "founder" },
+        "name": { "type": "string", "minLength": 1 },
+        "title": { "type": "string" },
+        "origin": { "type": "string" },
+        "bio": { "type": "string" },
+        "quote": { "type": "string" },
+        "photo": { "$ref": "#/$defs/StockImage" }
+      },
+      "required": ["id", "entityType", "name"]
+    },
+    "AwardEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "entityType": { "const": "award" },
+        "title": { "type": "string", "minLength": 1 },
+        "issuer": { "type": "string" },
+        "year": { "type": "integer" },
+        "season": { "type": "string" },
+        "category": { "type": "string" },
+        "scope": { "type": "string" },
+        "description": { "type": "string" },
+        "imagePlaceholder": {
+          "type": "string",
+          "description": "Asset placeholder label, e.g. [Certificate_01]."
+        }
+      },
+      "required": ["id", "entityType", "title"]
+    },
+    "DestinationEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "entityType": { "const": "destination" },
+        "name": { "type": "string", "minLength": 1 },
+        "region": {
+          "type": "string",
+          "enum": ["india", "international"]
+        },
+        "stateOrCountry": { "type": "string" },
+        "summary": { "type": "string" },
+        "themes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Id" }
+        },
+        "pdfConfirmed": { "type": "boolean", "default": true },
+        "image": { "$ref": "#/$defs/StockImage" }
+      },
+      "required": ["id", "entityType", "name", "region"]
+    },
+    "ThemeEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "entityType": { "const": "theme" },
+        "name": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string" },
+        "anchorSlug": { "$ref": "#/$defs/Slug" },
+        "relatedRoutes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/RoutePath" }
+        }
+      },
+      "required": ["id", "entityType", "name"]
+    },
+    "ServiceEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "entityType": { "const": "service" },
+        "name": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string" },
+        "pdfConfirmed": { "type": "boolean", "default": true },
+        "availability": {
+          "type": "string",
+          "enum": ["included", "on-request", "add-on"]
+        }
+      },
+      "required": ["id", "entityType", "name", "pdfConfirmed"]
+    },
+    "ClientEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "entityType": { "const": "client" },
+        "name": { "type": "string" },
+        "segment": {
+          "type": "string",
+          "enum": ["corporate", "education", "government", "partner"]
+        },
+        "logoPlaceholder": {
+          "type": "string",
+          "description": "Asset placeholder, e.g. [Corporate_Client_01]."
+        },
+        "logoSrc": {
+          "type": "string",
+          "description": "Public path to client logo image."
+        },
+        "certificateSrc": {
+          "type": "string",
+          "description": "Public path to appreciation letter scan."
+        },
+        "industry": { "type": "string" },
+        "featured": { "type": "boolean", "default": false },
+        "verified": { "type": "boolean", "default": false }
+      },
+      "required": ["id", "entityType", "segment", "logoPlaceholder"]
+    },
+    "TestimonialEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "entityType": { "const": "testimonial" },
+        "quote": { "type": "string" },
+        "author": { "type": "string" },
+        "role": { "type": "string" },
+        "organization": { "type": "string" },
+        "segment": {
+          "type": "string",
+          "enum": ["corporate", "education", "family", "general"]
+        },
+        "source": {
+          "type": "string",
+          "enum": ["google", "survey", "letter", "other"]
+        },
+        "assetPlaceholder": { "type": "string" },
+        "assetSrc": {
+          "type": "string",
+          "description": "Public path to testimonial asset (e.g. appreciation letter scan)."
+        }
+      },
+      "required": ["id", "entityType"]
+    },
+    "GalleryCategoryEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "entityType": { "const": "gallery-category" },
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
+        "sortOrder": { "type": "integer", "minimum": 0 }
+      },
+      "required": ["id", "entityType", "name"]
+    },
+    "BlogCategoryEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "entityType": { "const": "blog-category" },
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
+        "sortOrder": { "type": "integer", "minimum": 0 }
+      },
+      "required": ["id", "entityType", "name"]
+    },
+    "TimelineEventEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "entityType": { "const": "timeline-event" },
+        "year": { "type": "integer" },
+        "title": { "type": "string" },
+        "description": { "type": "string" }
+      },
+      "required": ["id", "entityType", "year", "title"]
+    },
+    "FaqItemEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "entityType": { "const": "faq-item" },
+        "question": { "type": "string", "minLength": 1 },
+        "answer": { "type": "string", "minLength": 1 },
+        "audience": {
+          "type": "string",
+          "enum": [
+            "families",
+            "corporate",
+            "schools-colleges",
+            "adventure",
+            "booking",
+            "safety",
+            "general"
+          ]
+        }
+      },
+      "required": ["id", "entityType", "question", "answer", "audience"]
+    },
+    "PartnerEntity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/Id" },
+        "entityType": { "const": "partner" },
+        "name": { "type": "string" },
+        "logoPlaceholder": { "type": "string" },
+        "type": {
+          "type": "string",
+          "enum": ["association", "industry", "media", "other"]
+        }
+      },
+      "required": ["id", "entityType", "logoPlaceholder"]
+    },
+    "EntityRecord": {
+      "oneOf": [
+        { "$ref": "#/$defs/CompanyEntity" },
+        { "$ref": "#/$defs/FounderEntity" },
+        { "$ref": "#/$defs/AwardEntity" },
+        { "$ref": "#/$defs/DestinationEntity" },
+        { "$ref": "#/$defs/ThemeEntity" },
+        { "$ref": "#/$defs/ServiceEntity" },
+        { "$ref": "#/$defs/ClientEntity" },
+        { "$ref": "#/$defs/TestimonialEntity" },
+        { "$ref": "#/$defs/GalleryCategoryEntity" },
+        { "$ref": "#/$defs/BlogCategoryEntity" },
+        { "$ref": "#/$defs/TimelineEventEntity" },
+        { "$ref": "#/$defs/FaqItemEntity" },
+        { "$ref": "#/$defs/PartnerEntity" }
+      ]
+    },
+    "EntityFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "$schema": { "type": "string" },
+        "entityFile": {
+          "type": "string",
+          "enum": [
+            "company",
+            "founder",
+            "awards",
+            "destinations-india",
+            "destinations-international",
+            "themes",
+            "services",
+            "clients-corporate",
+            "clients-education",
+            "testimonials",
+            "gallery-categories",
+            "blog-categories",
+            "partners",
+            "faq-items"
+          ]
+        },
+        "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "updatedAt": { "type": "string", "format": "date" },
+        "items": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/EntityRecord" },
+          "minItems": 1
+        }
+      },
+      "required": ["entityFile", "items"]
+    }
+  }
+}

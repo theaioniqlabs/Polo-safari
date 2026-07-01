@@ -1,0 +1,82 @@
+$schema: ../schema/content-model.schema.json
+entityFile: gallery-categories
+version: 1.0.0
+updatedAt: 2026-07-01
+
+items:
+  - id: gallery-corporate
+    entityType: gallery-category
+    name: Corporate
+    description: |
+      Offsites, team-building, and leadership retreats. Stock keywords: corporate retreat, team building outdoor, leadership offsite india, group conference nature.
+    sortOrder: 1
+
+  - id: gallery-educational
+    entityType: gallery-category
+    name: Educational
+    description: |
+      School and college field trips, industrial visits, outdoor classrooms. Stock keywords: school field trip, college educational tour, outdoor learning students, ecology camp.
+    sortOrder: 2
+
+  - id: gallery-adventure
+    entityType: gallery-category
+    name: Adventure
+    description: |
+      Trekking, camping, and adrenaline activities. Stock keywords: adventure trek india, mountain camping group, outdoor challenge course, hiking trail gujarat.
+    sortOrder: 3
+
+  - id: gallery-international
+    entityType: gallery-category
+    name: International
+    description: |
+      Outbound tours and inbound cultural hosting. Stock keywords: international group travel, southeast asia tour, cultural exchange delegation, outbound corporate trip.
+    sortOrder: 4
+
+  - id: gallery-family
+    entityType: gallery-category
+    name: Family
+    description: |
+      Multi-generational holidays and leisure travel. Stock keywords: family vacation india, nature holiday kids, resort family getaway, scenic travel memories.
+    sortOrder: 5
+
+  - id: gallery-nature
+    entityType: gallery-category
+    name: Nature
+    description: |
+      Landscapes, flora, and eco-moments across destinations. Stock keywords: indian landscape nature, forest canopy sunlight, river valley scenic, monsoon greenery hills.
+    sortOrder: 6
+
+  - id: gallery-polo-forest
+    entityType: gallery-category
+    name: Polo Forest
+    description: |
+      Heritage trails, temples, and Aravalli ecology at our home destination. Stock keywords: polo forest gujarat, ancient temple ruins aravalli, heritage walk forest, village culture gujarat.
+    sortOrder: 7
+
+  - id: gallery-drone
+    entityType: gallery-category
+    name: Drone
+    description: |
+      Aerial perspectives of groups and destinations. Stock keywords: drone aerial landscape, bird eye view mountains, aerial group formation, scenic flyover hills.
+    sortOrder: 8
+
+  - id: gallery-events
+    entityType: gallery-category
+    name: Events
+    description: |
+      On-ground event moments, ceremonies, and group gatherings. Stock keywords: outdoor corporate event, group celebration travel, stage setup nature venue, team gathering sunset.
+    sortOrder: 9
+
+  - id: gallery-awards
+    entityType: gallery-category
+    name: Awards
+    description: |
+      Trophy moments, certificate ceremonies, and recognition events. Stock keywords: award ceremony stage, tourism award trophy, business recognition event, certificate presentation.
+    sortOrder: 10
+
+  - id: gallery-videos
+    entityType: gallery-category
+    name: Videos
+    description: |
+      Highlight reels, testimonial films, and journey documentaries. Stock keywords: travel highlight reel, corporate trip video, destination cinematic b-roll, group journey film.
+    sortOrder: 11

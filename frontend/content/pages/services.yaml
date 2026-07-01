@@ -1,0 +1,310 @@
+$schema: ../schema/content-model.schema.json
+id: services
+slug: services
+route: /services
+title: Travel Services
+status: review
+seo:
+  title: Polo Safari Travel Services | Photography & Custom Tours
+  metaDescription: On-trip photography, videography, drone, reels, merchandise, and bespoke itineraries from Ahmedabad. Polo Safari does not book flights, hotels, or visas.
+  slug: services
+  primaryKeyword: polo safari travel services
+  secondaryKeywords:
+    - corporate trip photography gujarat
+    - educational tour videography
+    - drone coverage group travel
+    - custom tour packages ahmedabad
+    - trip merchandise corporate
+  internalLinks:
+    - label: Corporate Retreats
+      href: /corporate
+    - label: Schools & Colleges
+      href: /schools-colleges
+    - label: Theme Tour Packages
+      href: /theme-tour-packages
+    - label: Gallery
+      href: /gallery
+    - label: Contact Us
+      href: /contact
+  ctaSuggestions:
+    - label: Request a Custom Package
+      href: /contact
+    - label: Corporate Proposal
+      href: /corporate
+    - label: Educational Proposal
+      href: /schools-colleges
+
+sections:
+  - id: hero
+    heading: Services that elevate every journey
+    subheading: Media, merchandise, and bespoke programs—PDF-confirmed add-ons from Polo Safari
+    description: |
+      Beyond itinerary design and on-ground execution, Polo Safari offers professional photography, videography, drone coverage, social-ready reels, branded merchandise, and printed collateral—so your corporate offsite or educational tour leaves a lasting record, not just memories.
+    cta:
+      label: Discuss Add-On Services
+      href: /contact
+    contentNotes: |
+      Pillar hero. Breadcrumb Home → Services. Clarify in subcopy: Polo Safari specialises in experiential travel design and facilitation—we coordinate resorts and transport through trusted partners but do not sell flights, hotel rooms, visa processing, passport services, or travel insurance as standalone products.
+    seoNotes: |
+      Single H1 polo safari travel services. Scope disclaimer in first 120 words for clarity and SEO honesty.
+    stockImage:
+      keywords:
+        - professional travel photographer group india
+        - corporate trip videography outdoor
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Polo Safari media crew on corporate offsite—camera operator and group in frame.
+
+  - id: scope-clarity
+    heading: What we offer—and what we do not
+    subheading: Experiential travel expertise, not an OTA
+    description: |
+      Polo Safari designs and delivers corporate retreats, educational tours, family holidays, and adventure programs end to end—from destination selection and facilitation to meals, transport coordination, and safety briefings. We do not book airline tickets, hotel inventory, visa applications, passport services, or travel insurance. Those remain your responsibility or your HR/travel desk's—our team focuses on the journey itself.
+    contentNotes: |
+      Compact callout band—neutral tone, not defensive. Link to /corporate and /schools-colleges for full program scope. User decision: flights/hotels/visa explicitly excluded.
+    seoNotes: |
+      H2 clarifies service scope. Reduces bounce from users seeking flight/hotel booking.
+    stockImage:
+      keywords:
+        - travel planning consultation desk
+        - experiential tour operator briefing
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari coordinator reviewing itinerary with client—office or on-trip.
+
+  - id: photography
+    heading: Photography
+    subheading: Candid moments and destination highlights, professionally captured
+    description: |
+      On-trip photographers document team challenges, heritage walks, and celebration moments—delivering edited galleries sized for internal comms, leadership presentations, and awards submissions.
+    cta:
+      label: Add Photography to Your Trip
+      href: /contact
+    entityRefs:
+      - entityType: service
+        entityId: photography
+    contentNotes: |
+      Service card with availability badge "On request". Link sample work to /gallery#gallery-corporate when live.
+    seoNotes: |
+      H2 corporate trip photography. Entity summary in body copy.
+    stockImage:
+      keywords:
+        - professional event photographer outdoor india
+        - corporate group photo nature venue
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari photographer capturing corporate team at Polo Forest.
+
+  - id: videography
+    heading: Videography
+    subheading: Highlight films and documentary-style journey coverage
+    description: |
+      Event and journey videographers produce highlight reels and longer-form films—ideal for corporate offsites, educational field studies, and milestone celebrations your stakeholders can revisit long after checkout.
+    cta:
+      label: Request Videography
+      href: /contact
+    entityRefs:
+      - entityType: service
+        entityId: videography
+    contentNotes: |
+      Pair with /gallery#gallery-videos for motion samples. Note turnaround time TBC in proposal.
+    seoNotes: |
+      H2 educational tour videography gujarat. Video keyword in description.
+    stockImage:
+      keywords:
+        - travel videographer filming group
+        - corporate event video production outdoor
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari videographer with gimbal at hill-station offsite.
+
+  - id: drone
+    heading: Drone coverage
+    subheading: Aerial perspectives where permitted and safe
+    description: |
+      Licensed drone operators capture aerial photography and video—large group formations, landscape reveals, and destination showcases—subject to local permissions, weather, and safety protocols.
+    cta:
+      label: Enquire About Drone
+      href: /contact
+    entityRefs:
+      - entityType: service
+        entityId: drone
+    contentNotes: |
+      Availability on request only. Flag DGCA/local permit requirements in proposal. Cross-link /gallery#gallery-drone.
+    seoNotes: |
+      H2 drone coverage group travel india.
+    stockImage:
+      keywords:
+        - drone aerial landscape mountains india
+        - bird eye view corporate group formation
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari drone still of group at scenic overlook—actual permit-compliant shoot.
+
+  - id: reel-social-content
+    heading: Reel & social content
+    subheading: Short-form clips edited for LinkedIn, Instagram, and internal channels
+    description: |
+      Social-ready reels and vertical clips—edited after your trip for HR comms, employer branding, campus social channels, and post-event engagement that extends the offsite narrative.
+    cta:
+      label: Plan Social Content
+      href: /contact
+    entityRefs:
+      - entityType: service
+        entityId: reel-social-content
+    contentNotes: |
+      Show aspect-ratio examples (9:16, 1:1). Optional music licensing note in proposal.
+    seoNotes: |
+      H2 corporate travel reels social media.
+    stockImage:
+      keywords:
+        - social media reel travel content
+        - smartphone vertical video outdoor event
+      orientation: portrait
+      aspectRatio: "4:5"
+      usage: card
+    replacementNote: Polo Safari-edited reel still frames from recent corporate offsite.
+
+  - id: trip-merchandise
+    heading: Trip merchandise
+    subheading: Branded mugs, T-shirts, and keepsakes for your cohort
+    description: |
+      Custom mugs, T-shirts, and group memorabilia—designed with your logo and trip branding, produced and distributed so every delegate or student takes home something tangible from the journey.
+    cta:
+      label: Design Merchandise
+      href: /contact
+    entityRefs:
+      - entityType: service
+        entityId: trip-merchandise
+    contentNotes: |
+      Product mockup grid—mug, tee, cap placeholders. Lead time and MOQ in proposal.
+    seoNotes: |
+      H2 trip merchandise corporate branded.
+    stockImage:
+      keywords:
+        - branded t-shirt corporate event merchandise
+        - custom travel souvenir mug group
+      orientation: square
+      aspectRatio: "1:1"
+      usage: card
+    replacementNote: Actual Polo Safari client merchandise from past trips—with client approval.
+
+  - id: book-collateral-printing
+    heading: Book & collateral printing
+    subheading: Souvenir albums, itineraries, and leave-behind materials
+    description: |
+      Printed trip books, detailed itineraries, and event collateral—souvenir albums for leadership gifts and leave-behind materials for delegates, parents, and faculty after educational tours.
+    cta:
+      label: Request Print Collateral
+      href: /contact
+    entityRefs:
+      - entityType: service
+        entityId: book-collateral-printing
+    contentNotes: |
+      Show open-book mockup. Tie to appreciation letters aesthetic on /clients.
+    seoNotes: |
+      H2 tour book printing travel collateral.
+    stockImage:
+      keywords:
+        - printed travel brochure album design
+        - souvenir photo book group trip
+      orientation: landscape
+      aspectRatio: "4:3"
+      usage: card
+    replacementNote: Polo Safari-printed trip book from corporate or educational program.
+
+  - id: customized-packages
+    heading: Customized packages
+    subheading: Bespoke itineraries shaped around your brief and budget
+    description: |
+      End-to-end bespoke programs—destinations, activities, facilitation, and add-on services tailored to corporate HR briefs, academic learning outcomes, family preferences, or adventure group goals. This is Polo Safari's core offering: journeys designed around you, not a catalogue SKU.
+    cta:
+      label: Start Your Brief
+      href: /contact
+    entityRefs:
+      - entityType: service
+        entityId: customized-packages
+      - entityType: company
+        entityId: polo-safari
+    contentNotes: |
+      Featured service—availability "Included". Link pillars: /corporate, /schools-colleges, /india, /international, /theme-tour-packages.
+    seoNotes: |
+      H2 custom tour packages ahmedabad. Primary keyword reinforcement.
+    stockImage:
+      keywords:
+        - bespoke travel itinerary planning map
+        - custom group tour destination collage
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari team mapping custom itinerary—whiteboard or digital planning session.
+
+  - id: how-it-works
+    heading: How add-on services work
+    subheading: Scoped in your proposal, delivered on trip
+    description: |
+      Share your objectives during enquiry—we recommend media and merchandise options in your proposal with clear pricing and deliverables. On trip, our crew coordinates with facilitators and venue teams so coverage never disrupts programming. After return, edited assets and printed collateral ship on an agreed timeline.
+    contentNotes: |
+      Three-step horizontal: 1) Brief & proposal 2) On-trip execution 3) Post-trip delivery. Icons for camera, drone, package.
+    seoNotes: |
+      H2 how polo safari services work. Process keywords for commercial intent.
+    stockImage:
+      keywords:
+        - travel service workflow team coordination
+        - post production travel video editing
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Behind-the-scenes Polo Safari media handoff or merchandise distribution moment.
+
+  - id: corporate-education-add-on
+    heading: Popular with corporate and educational groups
+    subheading: Media packages that support HR comms and campus storytelling
+    description: |
+      HR teams add photography and reels to amplify employer-branding after offsites. Schools and colleges pair videography with field-study documentation parents and faculty expect. Bundle media with merchandise for milestone trips—graduation tours, leadership retreats, and annual picnics.
+    cta:
+      label: Corporate Proposal
+      href: /corporate
+    entityRefs:
+      - entityType: theme
+        entityId: corporate-retreats
+      - entityType: theme
+        entityId: educational-industrial-visits
+    contentNotes: |
+      Dual CTA row: /corporate and /schools-colleges. Cross-sell media bundle examples in sidebar.
+    seoNotes: |
+      H2 corporate educational tour services gujarat. Internal links to pillar pages.
+    stockImage:
+      keywords:
+        - school field trip photography students
+        - corporate hr team building outdoor
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Split image—corporate offsite left, school field study right—from Polo Safari archive.
+
+  - id: cta
+    heading: Ready to enhance your next journey?
+    subheading: Tell us what you need—we will scope it in your proposal
+    description: |
+      Whether you need a single photographer for a day picnic or a full media and merchandise package for a 200-person offsite, our Ahmedabad team will recommend options that fit your brief and budget.
+    cta:
+      label: Contact Polo Safari
+      href: /contact
+    contentNotes: |
+      Closing band with phone +91 94085 10911 (WhatsApp primary) and Chirag@polo-safari.in. Secondary links: /gallery, /awards, /faq.
+    seoNotes: |
+      H2 contact polo safari services. CTA keyword cluster.
+    stockImage:
+      keywords:
+        - travel agency contact consultation warm
+        - ahmedabad office professional team
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: background
+    replacementNote: Polo Safari team welcome moment or office exterior at Ganesh Glory 11.

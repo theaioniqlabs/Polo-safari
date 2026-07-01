@@ -1,0 +1,61 @@
+$schema: ../schema/content-model.schema.json
+entityFile: clients-education
+version: 1.0.0
+updatedAt: 2026-07-01
+
+items:
+  - id: edu-institution-01
+    entityType: client
+    name: "[Edu_Institution_01]"
+    segment: education
+    logoPlaceholder: "[Edu_Institution_01]"
+    verified: false
+
+  - id: edu-institution-02
+    entityType: client
+    name: "[Edu_Institution_02]"
+    segment: education
+    logoPlaceholder: "[Edu_Institution_02]"
+    verified: false
+
+  - id: edu-institution-03
+    entityType: client
+    name: "[Edu_Institution_03]"
+    segment: education
+    logoPlaceholder: "[Edu_Institution_03]"
+    verified: false
+
+  - id: edu-institution-04
+    entityType: client
+    name: "[Edu_Institution_04]"
+    segment: education
+    logoPlaceholder: "[Edu_Institution_04]"
+    verified: false
+
+  - id: edu-institution-05
+    entityType: client
+    name: "[Edu_Institution_05]"
+    segment: education
+    logoPlaceholder: "[Edu_Institution_05]"
+    verified: false
+
+  - id: edu-institution-06
+    entityType: client
+    name: "[Edu_Institution_06]"
+    segment: education
+    logoPlaceholder: "[Edu_Institution_06]"
+    verified: false
+
+  - id: edu-institution-07
+    entityType: client
+    name: "[Edu_Institution_07]"
+    segment: education
+    logoPlaceholder: "[Edu_Institution_07]"
+    verified: false
+
+  - id: edu-institution-08
+    entityType: client
+    name: "[Edu_Institution_08]"
+    segment: education
+    logoPlaceholder: "[Edu_Institution_08]"
+    verified: false

@@ -1,0 +1,327 @@
+$schema: ../schema/content-model.schema.json
+id: gallery
+slug: gallery
+route: /gallery
+title: Gallery
+status: review
+seo:
+  title: Polo Safari Gallery | Corporate & Adventure Photos
+  metaDescription: Explore Polo Safari moments—corporate offsites, school tours, Polo Forest heritage, drone aerials, and award ceremonies. Full gallery launching with verified assets.
+  slug: gallery
+  primaryKeyword: polo safari gallery
+  secondaryKeywords:
+    - corporate retreat photos gujarat
+    - polo forest gallery images
+    - school tour photography india
+    - adventure trek photo gallery
+    - drone travel photography
+  internalLinks:
+    - label: Corporate Retreats
+      href: /corporate
+    - label: Schools & Colleges
+      href: /schools-colleges
+    - label: India Tours
+      href: /india
+    - label: Travel Services
+      href: /services
+    - label: Awards
+      href: /awards
+  ctaSuggestions:
+    - label: Plan Your Trip
+      href: /contact
+    - label: View Services
+      href: /services
+    - label: Read the Blog
+      href: /blog
+
+sections:
+  - id: hero
+    heading: Moments from the field
+    subheading: Corporate · Educational · Adventure · Heritage · International
+    description: |
+      A visual record of offsites, field studies, treks, heritage walks, and celebration moments—photography, drone perspectives, and highlight reels from Polo Safari programs across Gujarat, pan-India, and select international destinations.
+    cta:
+      label: Plan Your Experience
+      href: /contact
+    contentNotes: |
+      Structure-only page—no real images at content pass. Hero uses stock brief until curated selects ready. Breadcrumb Home → Gallery.
+    seoNotes: |
+      Single H1 polo safari gallery. Category keywords in subheading.
+    stockImage:
+      keywords:
+        - travel photography collage india outdoor
+        - group adventure scenic landscape sunset
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Curated Polo Safari hero collage—minimum 4 category representatives.
+
+  - id: category-filter-intro
+    heading: Browse by experience
+    subheading: Filter by trip type—assets loading from Polo Safari archive
+    description: |
+      Use category filters to explore corporate retreats, campus field studies, adventure treks, family holidays, Polo Forest heritage, drone aerials, events, awards, and video highlights. Each section below uses placeholder grids until verified Polo Safari photography is ingested.
+    contentNotes: |
+      Sticky filter bar—chips map to section anchors #gallery-corporate through #gallery-videos. Masonry layout sitewide. Lazy-load placeholders with skeleton state.
+    seoNotes: |
+      H2 polo safari photo categories. Filter labels match gallery-category entity names.
+    stockImage:
+      keywords:
+        - photo gallery filter ui travel
+        - image grid category navigation
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: N/A—UI chrome only; category photos replace per section below.
+
+  - id: gallery-corporate
+    heading: Corporate
+    subheading: Offsites, team-building, and leadership retreats
+    description: |
+      Team challenges, resort offsites, and leadership away-days—placeholder grid until Polo Safari corporate archive is curated.
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-corporate
+    contentNotes: |
+      Placeholder grid: 12 cells, 4:3 crops. Stock keywords from entity: corporate retreat, team building outdoor, leadership offsite india, group conference nature. Link /corporate.
+    seoNotes: |
+      H2 corporate retreat photos gujarat. Anchor #gallery-corporate.
+    stockImage:
+      keywords:
+        - corporate retreat team building outdoor
+        - leadership offsite india resort
+      orientation: landscape
+      aspectRatio: "4:3"
+      usage: gallery
+    replacementNote: Minimum 12 Polo Safari corporate images—Polo Forest, Udaipur, hill stations.
+
+  - id: gallery-educational
+    heading: Educational
+    subheading: School and college field trips
+    description: |
+      Outdoor classrooms, industrial visits, and ecology camps—placeholder grid for campus program photography.
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-educational
+    contentNotes: |
+      Placeholder grid 12 cells. Keywords: school field trip, college educational tour, outdoor learning students, ecology camp. Link /schools-colleges.
+    seoNotes: |
+      H2 school tour photography india. Anchor #gallery-educational.
+    stockImage:
+      keywords:
+        - school field trip outdoor learning
+        - college educational tour students india
+      orientation: landscape
+      aspectRatio: "4:3"
+      usage: gallery
+    replacementNote: Polo Safari educational tour photos—Hyderabad, Chennai, Polo Forest, Devs camp.
+
+  - id: gallery-adventure
+    heading: Adventure
+    subheading: Trekking, camping, and outdoor challenges
+    description: |
+      Trail moments, campsite evenings, and adrenaline activities—placeholder grid for adventure program assets.
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-adventure
+    contentNotes: |
+      Placeholder grid 12 cells. Keywords: adventure trek india, mountain camping group, outdoor challenge course, hiking trail gujarat. Link /theme-tour-packages#adventure-trekking.
+    seoNotes: |
+      H2 adventure trek photo gallery. Anchor #gallery-adventure.
+    stockImage:
+      keywords:
+        - adventure trek india mountain group
+        - outdoor challenge course hiking
+      orientation: landscape
+      aspectRatio: "4:3"
+      usage: gallery
+    replacementNote: Manali, Polo Forest, Bakor adventure archives.
+
+  - id: gallery-international
+    heading: International
+    subheading: Outbound tours and inbound cultural hosting
+    description: |
+      Southeast Asia, Middle East outbound groups and inbound delegations in Ahmedabad—placeholder grid for international program photography.
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-international
+    contentNotes: |
+      Placeholder grid 12 cells. Keywords: international group travel, southeast asia tour, cultural exchange delegation, outbound corporate trip. Link /international.
+    seoNotes: |
+      H2 international tour photos polo safari. Anchor #gallery-international.
+    stockImage:
+      keywords:
+        - international group travel southeast asia
+        - cultural exchange delegation tourism
+      orientation: landscape
+      aspectRatio: "4:3"
+      usage: gallery
+    replacementNote: Singapore, Bali, Dubai, Vietnam inbound/outbound Polo Safari photos.
+
+  - id: gallery-family
+    heading: Family
+    subheading: Multi-generational holidays and leisure travel
+    description: |
+      Family moments across scenic destinations—placeholder grid for leisure travel photography.
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-family
+    contentNotes: |
+      Placeholder grid 12 cells. Keywords: family vacation india, nature holiday kids, resort family getaway, scenic travel memories. Link /theme-tour-packages#family-getaways.
+    seoNotes: |
+      H2 family tour photos india. Anchor #gallery-family.
+    stockImage:
+      keywords:
+        - family vacation india nature holiday
+        - multi generational travel scenic
+      orientation: landscape
+      aspectRatio: "4:3"
+      usage: gallery
+    replacementNote: Polo Safari family tour candid selects.
+
+  - id: gallery-nature
+    heading: Nature
+    subheading: Landscapes, flora, and eco-moments
+    description: |
+      Forest canopies, river valleys, and monsoon greenery—placeholder grid for destination landscape photography.
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-nature
+    contentNotes: |
+      Placeholder grid 12 cells. Keywords: indian landscape nature, forest canopy sunlight, river valley scenic, monsoon greenery hills. Link /india.
+    seoNotes: |
+      H2 nature landscape travel photography india. Anchor #gallery-nature.
+    stockImage:
+      keywords:
+        - indian landscape nature forest canopy
+        - river valley scenic monsoon hills
+      orientation: landscape
+      aspectRatio: "4:3"
+      usage: gallery
+    replacementNote: Destination landscape library from Polo Safari routes.
+
+  - id: gallery-polo-forest
+    heading: Polo Forest
+    subheading: Heritage trails, temples, and Aravalli ecology
+    description: |
+      Our home destination—ancient ruins, village culture, and forest ecology—placeholder grid for heritage photography.
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-polo-forest
+    contentNotes: |
+      Placeholder grid 12 cells. Keywords: polo forest gujarat, ancient temple ruins aravalli, heritage walk forest, village culture gujarat. Link /india#polo-forest. Featured category—larger hero tile on index.
+    seoNotes: |
+      H2 polo forest gallery gujarat. Anchor #gallery-polo-forest. Primary heritage keyword.
+    stockImage:
+      keywords:
+        - polo forest gujarat ancient temple ruins
+        - heritage walk aravalli forest
+      orientation: landscape
+      aspectRatio: "4:3"
+      usage: gallery
+    replacementNote: Founder-authentic Polo Forest archive—temples, trails, ecology.
+
+  - id: gallery-drone
+    heading: Drone
+    subheading: Aerial perspectives of groups and destinations
+    description: |
+      Bird's-eye formations, flyovers, and landscape reveals—placeholder grid for permitted drone footage stills.
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-drone
+    contentNotes: |
+      Placeholder grid 8 cells—wider 16:9 crops. Keywords: drone aerial landscape, bird eye view mountains, aerial group formation, scenic flyover hills. Link /services#drone.
+    seoNotes: |
+      H2 drone travel photography polo safari. Anchor #gallery-drone.
+    stockImage:
+      keywords:
+        - drone aerial landscape mountains india
+        - bird eye view group formation outdoor
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: gallery
+    replacementNote: DGCA-compliant Polo Safari drone stills only.
+
+  - id: gallery-events
+    heading: Events
+    subheading: Ceremonies, gatherings, and on-ground moments
+    description: |
+      Outdoor ceremonies, group celebrations, and event setups—placeholder grid for event photography.
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-events
+    contentNotes: |
+      Placeholder grid 12 cells. Keywords: outdoor corporate event, group celebration travel, stage setup nature venue, team gathering sunset.
+    seoNotes: |
+      H2 corporate outdoor event photos. Anchor #gallery-events.
+    stockImage:
+      keywords:
+        - outdoor corporate event nature venue
+        - group celebration travel sunset
+      orientation: landscape
+      aspectRatio: "4:3"
+      usage: gallery
+    replacementNote: Polo Safari event moments from offsites and picnics.
+
+  - id: gallery-awards
+    heading: Awards
+    subheading: Trophy moments and recognition events
+    description: |
+      Award ceremonies, certificate presentations, and team celebrations—placeholder grid complementing /awards page.
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-awards
+    contentNotes: |
+      Placeholder grid 6 cells. Keywords: award ceremony stage, tourism award trophy, business recognition event, certificate presentation. Link /awards.
+    seoNotes: |
+      H2 tourism award ceremony photos. Anchor #gallery-awards.
+    stockImage:
+      keywords:
+        - award ceremony stage tourism trophy
+        - certificate presentation business event
+      orientation: landscape
+      aspectRatio: "4:3"
+      usage: gallery
+    replacementNote: Gujarat Tourism and Swiftnlift ceremony photos.
+
+  - id: gallery-videos
+    heading: Videos
+    subheading: Highlight reels and journey films
+    description: |
+      Motion gallery placeholder—embed slots for highlight reels, testimonial films, and destination b-roll when video assets are ingested.
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-videos
+    contentNotes: |
+      Video card grid 6 slots—16:9 thumbnails with play overlay. Keywords: travel highlight reel, corporate trip video, destination cinematic b-roll, group journey film. Link /services#videography.
+    seoNotes: |
+      H2 polo safari travel videos. Anchor #gallery-videos.
+    stockImage:
+      keywords:
+        - travel highlight reel video thumbnail
+        - corporate trip cinematic b-roll
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: gallery
+    replacementNote: Polo Safari Vimeo/YouTube embeds when channel confirmed.
+
+  - id: cta
+    heading: Want your team in our next gallery?
+    subheading: Photography and videography add-ons available on request
+    description: |
+      Professional on-trip media is available for corporate offsites, educational tours, and milestone celebrations—scoped in your proposal alongside the itinerary itself.
+    cta:
+      label: Explore Travel Services
+      href: /services
+    contentNotes: |
+      Secondary CTA /contact. Cross-link /corporate and /schools-colleges.
+    seoNotes: |
+      H2 book trip polo safari gallery close.
+    stockImage:
+      keywords:
+        - professional travel photographer group
+        - video production outdoor corporate
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: background
+    replacementNote: Polo Safari media crew behind-the-scenes still.

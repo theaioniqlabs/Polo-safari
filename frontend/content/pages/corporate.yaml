@@ -1,0 +1,361 @@
+$schema: ../schema/content-model.schema.json
+id: corporate
+slug: corporate
+route: /corporate
+title: Corporate Retreats
+status: review
+seo:
+  title: Corporate Retreat Gujarat | Polo Safari Offsites
+  metaDescription: Award-winning corporate retreats from Ahmedabad—Polo Forest, Udaipur, hill stations, and custom MICE for 20–200 guests. Request a proposal.
+  slug: corporate
+  primaryKeyword: corporate retreat gujarat
+  secondaryKeywords:
+    - team building ahmedabad
+    - corporate offsite polo forest
+    - leadership retreat india
+    - mice gujarat
+    - employee engagement outdoor
+  internalLinks:
+    - label: Awards & Recognition
+      href: /awards
+    - label: Our Corporate Clients
+      href: /clients
+    - label: Travel Services
+      href: /services
+    - label: India Destinations
+      href: /india
+    - label: FAQ
+      href: /faq
+  ctaSuggestions:
+    - label: Request Proposal
+      href: /corporate
+    - label: View Awards
+      href: /awards
+    - label: Contact Us
+      href: /contact
+
+sections:
+  - id: hero
+    heading: Build teams where the Aravalli inspires
+    subheading: Corporate retreats · Polo Forest, Gujarat
+    description: |
+      Custom offsites, leadership labs, and celebration events for 20–200 guests—2 hours from Ahmedabad. Award-winning facilitation, heritage venues, and end-to-end logistics from our Ahmedabad team.
+    cta:
+      label: Request Proposal
+      href: "#rfp"
+    contentNotes: |
+      WF-PILLAR-HERO with trust stats strip and secondary CTA to #packages.
+    seoNotes: |
+      Single H1 corporate retreat gujarat. Award mention for E-E-A-T.
+    stockImage:
+      keywords:
+        - corporate retreat polo forest gujarat
+        - team offsite outdoor india resort
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Polo Safari corporate group at Polo Forest campsite.
+
+  - id: benefits
+    heading: Benefits of an outdoor offsite
+    subheading: Why teams leave the conference room
+    description: |
+      Stronger collaboration in unfamiliar settings. Leadership conversations that happen on trails, not slides. Measurable engagement lift when people share challenge and recovery. Logistics handled so HR focuses on people, not vendors.
+    cta:
+      label: See Client Results
+      href: "#case-studies"
+    contentNotes: |
+      WF-BENEFITS-GRID—4 cards. Cross-link case studies anchor.
+    seoNotes: |
+      H2 benefits corporate retreat. Outcome-focused copy.
+    stockImage:
+      keywords:
+        - happy corporate team outdoor success
+        - team collaboration nature retreat
+      orientation: square
+      aspectRatio: "1:1"
+      usage: card
+
+  - id: team-building
+    heading: Team building
+    subheading: Facilitated games that strengthen real collaboration
+    description: |
+      Outdoor obstacle challenges, problem-solving circuits, and energiser games led by trained facilitators—scaled for departments of 20 to company-wide offsites of 200, with debriefs that connect play to workplace dynamics.
+    cta:
+      label: Build Your Program
+      href: "#rfp"
+    entityRefs:
+      - entityType: theme
+        entityId: team-building-leadership
+    contentNotes: |
+      WF-TEAM-BUILDING-GRID—module cards with duration and group size.
+    seoNotes: |
+      H2 team building ahmedabad / gujarat.
+    stockImage:
+      keywords:
+        - team building obstacle course outdoor
+        - corporate group challenge game india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+
+  - id: activities
+    heading: Corporate activities & programs
+    subheading: Leadership, engagement, adventure, and wellness—in one offsite
+    description: |
+      Mix facilitated leadership labs, employee engagement modules, adventure trekking, meditation, yoga, and CSR activities into a single program—designed around your objectives and cohort.
+    cta:
+      label: Design Your Activity Mix
+      href: "#rfp"
+    entityRefs:
+      - entityType: theme
+        entityId: adventure-trekking
+      - entityType: theme
+        entityId: wellness-yoga-meditation
+    contentNotes: |
+      WF-ACTIVITY-SHOWCASE—merged leadership, engagement, adventure, meditation, yoga, CSR rows.
+    seoNotes: |
+      H2 corporate activities offsite gujarat.
+    stockImage:
+      keywords:
+        - leadership workshop outdoor executive
+        - corporate adventure trek india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+
+  - id: corporate-retreats
+    heading: Corporate retreats & MICE
+    subheading: Offsites, conferences, and leadership away-days
+    description: |
+      Weekend and multi-day programs at Polo Forest, Udaipur, Jambughoda, Saputara, Jaisalmer, Diu, Daman, Matheran, and Lonavala—transport, meals, facilitation, and resort coordination handled end to end from Ahmedabad.
+    cta:
+      label: Discuss Your Offsite
+      href: "#rfp"
+    entityRefs:
+      - entityType: theme
+        entityId: corporate-retreats
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: udaipur
+      - entityType: destination
+        entityId: jambughoda
+      - entityType: destination
+        entityId: saputara
+      - entityType: destination
+        entityId: jaisalmer
+      - entityType: destination
+        entityId: diu
+      - entityType: destination
+        entityId: matheran
+      - entityType: destination
+        entityId: lonavala
+    contentNotes: |
+      Destination card grid from entityRefs.
+    seoNotes: |
+      H2 corporate retreats gujarat. MICE keyword in subheading.
+    stockImage:
+      keywords:
+        - mice conference outdoor venue india
+        - corporate resort offsite lake udaipur
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: case-studies
+    heading: How Gujarat enterprises use Polo Forest
+    subheading: Case studies from verified corporate clients
+    description: |
+      Real outcomes from Ahmedabad and Gujarat enterprises—team building, leadership labs, and MICE programs backed by appreciation letters and repeat bookings.
+    cta:
+      label: Request Similar Program
+      href: "#rfp"
+    entityRefs:
+      - entityType: client
+        entityId: client-bdhm
+      - entityType: client
+        entityId: client-digicorp
+      - entityType: client
+        entityId: client-fovera
+      - entityType: client
+        entityId: client-inextrix
+      - entityType: client
+        entityId: client-pragnakalp
+      - entityType: client
+        entityId: client-unison-globus
+    contentNotes: |
+      WF-CASE-STUDY-CARD—featured + secondary cards from cert-backed clients.
+    seoNotes: |
+      H2 corporate case studies gujarat. Real client names from appreciation letters.
+    stockImage:
+      keywords:
+        - corporate team building success india
+        - offsite team photo polo forest
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: corporate-clients
+    heading: Trusted by teams across Gujarat and India
+    subheading: IT, manufacturing, pharma, and financial services
+    description: |
+      From Ahmedabad enterprises to national brands—Polo Safari has delivered corporate programs for 30+ verified clients with permissioned logos.
+    contentNotes: |
+      WF-CLIENT-LOGO-GRID—all corporate clients with real logo images.
+    seoNotes: |
+      H2 polo safari corporate clients.
+    stockImage:
+      keywords:
+        - corporate client logo wall
+        - business partnership logos
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: packages
+    heading: Offsite tiers for every team size
+    subheading: All packages customised to your dates, dietary needs, and facilitation goals
+    description: |
+      Essential day offsites, Premium 2D/1N retreats, and Executive leadership programs—final quote within 48 hours. GST invoice available; transport from Ahmedabad optional.
+    cta:
+      label: Request Proposal
+      href: "#rfp"
+    contentNotes: |
+      WF-CORPORATE-PACKAGE-CARD—Essential, Premium, Executive tiers. Anchor id packages.
+    seoNotes: |
+      H2 corporate offsite packages gujarat.
+    stockImage:
+      keywords:
+        - corporate retreat package tiers
+        - team offsite resort india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: why-choose-polo-safari
+    heading: Why companies choose Polo Safari
+    subheading: Award-backed. Locally rooted. Repeat-booking proven.
+    description: |
+      Gujarat Tourism Best Inbound Corporate Tour Operator (Gujarat and Ahmedabad). Swiftnlift Best Corporate Tour Operator in Gujarat. Eleven years serving Ahmedabad enterprises—with Polo Forest heritage expertise no generic DMC can replicate.
+    cta:
+      label: View Awards
+      href: /awards
+    entityRefs:
+      - entityType: award
+        entityId: gt-season7-inbound-corporate-gujarat
+      - entityType: award
+        entityId: gt-season7-inbound-corporate-ahmedabad
+      - entityType: award
+        entityId: swiftnlift-best-corporate-gujarat
+    contentNotes: |
+      Trust strip + award entityRefs before RFP.
+    seoNotes: |
+      H2 why choose polo safari corporate.
+    stockImage:
+      keywords:
+        - award winning tour operator gujarat
+        - trusted corporate travel partner
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+
+  - id: appreciation-letters
+    heading: Appreciation letters
+    subheading: Written endorsements from corporate clients
+    description: |
+      Formal appreciation letters from enterprise HR teams and leadership—scanned originals for procurement files and internal approval.
+    entityRefs:
+      - entityType: testimonial
+        entityId: appreciation-letter-bdhm
+      - entityType: testimonial
+        entityId: appreciation-letter-digicorp
+      - entityType: testimonial
+        entityId: appreciation-letter-dynasoft
+      - entityType: testimonial
+        entityId: appreciation-letter-fovera
+      - entityType: testimonial
+        entityId: appreciation-letter-guhilot
+      - entityType: testimonial
+        entityId: appreciation-letter-inextrix
+      - entityType: testimonial
+        entityId: appreciation-letter-pragnakalp
+      - entityType: testimonial
+        entityId: appreciation-letter-raj-infotech
+      - entityType: testimonial
+        entityId: appreciation-letter-soham-erp
+      - entityType: testimonial
+        entityId: appreciation-letter-spx-flow
+      - entityType: testimonial
+        entityId: appreciation-letter-unison-globus
+    contentNotes: |
+      Lightbox gallery of 11 corporate appreciation letters. Exclude Google review screenshot.
+    seoNotes: |
+      H2 client appreciation letters polo safari corporate.
+    stockImage:
+      keywords:
+        - appreciation letter document scan
+        - formal client endorsement letter
+      orientation: portrait
+      aspectRatio: "4:5"
+      usage: gallery
+
+  - id: faq-corporate
+    heading: Corporate retreat questions
+    subheading: HR, procurement, and leadership FAQs
+    description: |
+      Answers for team size, destinations, facilitation, MICE support, dietary needs, and how custom proposals differ from instant online booking.
+    entityRefs:
+      - entityType: theme
+        entityId: corporate-retreats
+      - entityType: theme
+        entityId: team-building-leadership
+      - entityType: award
+        entityId: gt-season7-inbound-corporate-gujarat
+    contentNotes: |
+      Accordion Q&A (8 items):
+      Q1: What group sizes can Polo Safari handle?
+      A: Corporate programs typically range from 20 to 200 guests—scaled facilitation, meals, and transport. Share your headcount in an RFP on /corporate.
+      Q2: Which destinations do you recommend for Gujarat offsites?
+      A: Polo Forest, Udaipur, Jambughoda, Saputara, Jaisalmer, Diu, Daman, Matheran, Lonavala, and pan-India resort options—see /corporate and /india.
+      Q3: Is team-building facilitation included?
+      A: Yes—outdoor games, obstacle challenges, and debriefs led by trained facilitators. Leadership labs available for management cohorts.
+      Q4: Can you support MICE-style conferences?
+      A: Yes—AV coordination, breakout spaces, gala dinners, and delegate logistics for summits and annual meets. Scope in your proposal.
+      Q5: How is a corporate retreat different from booking online?
+      A: Corporate offsites are custom-quoted programs for 20+ guests. Standard experiences on /experiences use instant booking with login.
+      Q6: How quickly will I receive a proposal?
+      A: Our corporate team typically responds within 48 hours with itinerary options, pricing, and inclusions.
+      Q7: Do you provide transport from Ahmedabad?
+      A: Yes—coach and tempo traveller options from Ahmedabad and Gandhinagar, coordinated as part of your program.
+      Q8: Can you accommodate vegetarian and Jain dietary requirements?
+      A: Yes—dietary preferences are captured in your RFP and confirmed with resort and catering partners before travel.
+    seoNotes: |
+      H2 corporate offsite faq gujarat.
+    stockImage:
+      keywords:
+        - hr corporate offsite planning meeting
+        - team building corporate outdoor gujarat
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+
+  - id: corporate-rfp
+    heading: Tell us about your offsite
+    subheading: No login required · Response from our Ahmedabad team within 48 hours
+    description: |
+      Share your team size, preferred dates, departure point, destination interests, and program goals—we'll return a tailored proposal with itinerary options, facilitation plan, and transparent inclusions.
+    cta:
+      label: Submit Proposal Request
+      href: "#rfp"
+    contentNotes: |
+      Anchor id rfp — WF-FORM-RFP-CORPORATE. POST to /api/rfp/corporate with email + WhatsApp notification.
+    seoNotes: |
+      H2 request corporate proposal. Conversion section.
+    stockImage:
+      keywords:
+        - contact form business proposal
+        - corporate travel enquiry
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background

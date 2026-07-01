@@ -1,0 +1,506 @@
+$schema: ../schema/content-model.schema.json
+id: home
+slug: ""
+route: /
+title: Home
+status: review
+seo:
+  title: Polo Safari | Experiential Tours from Ahmedabad
+  metaDescription: Award-winning corporate retreats, school tours, and family travel from Ahmedabad. Heritage Polo Forest expertise, Gujarat Tourism honours since 2014.
+  slug: ""
+  primaryKeyword: polo safari tours ahmedabad
+  secondaryKeywords:
+    - corporate retreat gujarat
+    - school educational tours ahmedabad
+    - polo forest tours
+    - family tour packages india
+    - international tours from gujarat
+  internalLinks:
+    - label: Corporate Retreats
+      href: /corporate
+      anchor: "#rfp"
+    - label: Schools & Colleges
+      href: /schools-colleges
+      anchor: "#rfp"
+    - label: India Tour Packages
+      href: /india
+    - label: International Tours
+      href: /international
+    - label: Theme Tour Packages
+      href: /theme-tour-packages
+    - label: About Polo Safari
+      href: /about
+    - label: Awards & Recognition
+      href: /awards
+    - label: Our Clients
+      href: /clients
+  ctaSuggestions:
+    - label: Plan Your Visit
+      href: /contact
+    - label: Request Corporate Proposal
+      href: /corporate
+    - label: Request Educational Proposal
+      href: /schools-colleges
+    - label: Explore India Tours
+      href: /india
+
+sections:
+  - id: hero
+    heading: Journeys shaped around you—not a template
+    subheading: Corporate retreats · Educational tours · Family travel · Adventure
+    description: |
+      From our Ahmedabad headquarters, Polo Safari designs experiential travel across Gujarat, pan-India, and select international destinations. Eleven years of award-backed programs—rooted in authentic Polo Forest heritage.
+    cta:
+      label: Explore Experiences
+      href: /theme-tour-packages
+    contentNotes: |
+      Full-bleed hero with optional video loop. Primary visual: Polo Forest or mixed pillar collage. Secondary links to /corporate and /schools-colleges below fold. No transparent header—use surface header per wireframe.
+    seoNotes: |
+      Single H1 in hero. Primary keyword "polo safari tours ahmedabad" in first 100 words. Subheading carries pillar keywords without stuffing.
+    stockImage:
+      keywords:
+        - polo forest aravalli heritage sunrise
+        - experiential travel group india landscape
+        - gujarat nature retreat aerial
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Replace with Polo Safari hero film still or founder-led Polo Forest group shot from recent season.
+
+  - id: search
+    heading: Find your next journey
+    subheading: Search destinations, themes, and tour types
+    description: |
+      Looking for a corporate offsite, school field study, family getaway, or international escape? Start with a destination, theme, or travel style—we'll surface matching programs.
+    cta:
+      label: Browse All Themes
+      href: /theme-tour-packages
+    contentNotes: |
+      Sitewide search module—query routes to /theme-tour-packages, /india, /international with filters. Quick chips: Corporate, Schools, Family, Adventure, Polo Forest. Connect to future CMS search index.
+    seoNotes: |
+      H2 "Find your next journey". Secondary keywords in chip labels. Noindex on empty search results pages when implemented.
+    stockImage:
+      keywords:
+        - travel planning map india
+        - destination search tourism
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: Optional—section may be UI-only without photography; if used, Polo Safari destination map graphic from P.41 when asset ready.
+
+  - id: why-polo-safari
+    heading: Why Polo Safari
+    subheading: Heritage expertise. Award-backed execution. Every traveler is special.
+    description: |
+      We listen first, then design. Founded in Ahmedabad in 2014, Polo Safari grew from Polo Forest storytelling into pan-India and international programs—while corporate and educational groups remain our strongest pillars. MSME registered, GST certified, and recognised by Gujarat Tourism.
+    cta:
+      label: Our Story
+      href: /about
+    contentNotes: |
+      Three-column or split layout—Authenticity, Learning, Teamwork, Responsible Tourism (from company entity). Link credentials strip to /awards. Avoid PDF fluff phrases.
+    seoNotes: |
+      H2 "Why Polo Safari". Brand + trust keywords. Internal link to /about in body copy.
+    stockImage:
+      keywords:
+        - professional tour guide heritage storytelling
+        - corporate team outdoor gujarat
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Founder or lead naturalist briefing a group at Polo Forest—real on-trip photography.
+
+  - id: specializations
+    heading: What we specialise in
+    subheading: Six pillars. One team that executes end to end.
+    description: |
+      Corporate retreats and MICE. School and college educational tours. Adventure and trekking. Family getaways and 1-day picnics. International outbound and inbound hosting. Heritage experiences at Polo Forest—our home destination.
+    cta:
+      label: View Theme Packages
+      href: /theme-tour-packages
+    contentNotes: |
+      Card grid pulling from company.specializations and themes entity. Each card links to theme anchor on /theme-tour-packages. Icons per pillar colour from design system.
+    seoNotes: |
+      H2 with semantic H3 per specialization. Keywords: corporate retreat, educational tour, adventure trekking, family picnic gujarat.
+    stockImage:
+      keywords:
+        - six travel experience categories collage
+        - diverse group activities outdoor india
+      orientation: square
+      aspectRatio: "1:1"
+      usage: card
+    replacementNote: Six-tile mosaic using real Polo Safari trip categories—one photo per pillar.
+
+  - id: featured-tours
+    heading: Featured journeys
+    subheading: Curated programs our clients return to
+    description: |
+      Polo Forest weekends, Udaipur lake retreats, Manali adventure camps, and Southeast Asia outbound favourites—each itinerary balances logistics, learning, and time to breathe.
+    cta:
+      label: See All Destinations
+      href: /india
+    entityRefs:
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: udaipur
+      - entityType: destination
+        entityId: manali
+      - entityType: destination
+        entityId: singapore
+    contentNotes: |
+      Carousel or 4-up card grid from entityRefs. Show duration tags from destination summaries. Mix India + one international card. Link each card to /india or /international detail when Step 4 pages exist.
+    seoNotes: |
+      H2 "Featured journeys". Destination names as H3. Geo keywords: polo forest, udaipur corporate, manali adventure.
+    stockImage:
+      keywords:
+        - india travel destination collage
+        - resort weekend getaway card
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Replace each card image with Polo Safari trip photography per destination.
+
+  - id: corporate
+    heading: Corporate retreats that teams remember
+    subheading: Offsites, team building, and leadership programs for 20–200 guests
+    description: |
+      From Polo Forest campsites to Udaipur resorts and hill-station offsites—facilitated games, strategy blocks, yoga, and meditation woven into programs HR teams can defend. Gujarat Tourism Best Inbound Corporate Tour Operator.
+    cta:
+      label: Request Proposal
+      href: /corporate
+    contentNotes: |
+      Pillar band linking to /corporate#rfp (note anchor in implementation). Show 2–3 corporate destination cards. CTA is primary conversion for this section.
+    seoNotes: |
+      H2 corporate retreat gujarat. Link to /corporate and /awards. Mention team building and leadership keywords.
+    stockImage:
+      keywords:
+        - corporate team building outdoor india
+        - leadership offsite nature resort
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari corporate group at Polo Forest or Udaipur—facilitator-led activity, branded materials visible.
+
+  - id: educational
+    heading: Educational tours built for faculty
+    subheading: Curriculum-aligned field studies, industrial visits, and nature camps
+    description: |
+      Polo Forest heritage walks, Devs Camp ecology, Hyderabad and Chennai industrial circuits, and Manali outdoor learning—programs with safety briefings, faculty support, and learning outcomes you can document.
+    cta:
+      label: Request Educational Proposal
+      href: /schools-colleges
+    contentNotes: |
+      Mirror corporate pillar layout. Link to /schools-colleges#rfp. Flag safety and faculty copy as verify-with-ops on destination page.
+    seoNotes: |
+      H2 school college educational tours. Keywords: industrial visit, nature camp, curriculum tour gujarat.
+    stockImage:
+      keywords:
+        - school field trip outdoor learning india
+        - college educational tour students
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari school group at Polo Forest or Devs Camp with faculty liaison visible.
+
+  - id: international
+    heading: International escapes
+    subheading: Outbound tours and inbound cultural hosting from Ahmedabad
+    description: |
+      Singapore, Malaysia, Bali, Dubai, and Vietnam—curated for corporate incentives and family groups. We also host international delegations in Ahmedabad, including multi-year Vietnamese partnerships since 2023.
+    cta:
+      label: Explore International
+      href: /international
+    entityRefs:
+      - entityType: destination
+        entityId: singapore
+      - entityType: destination
+        entityId: bali
+      - entityType: destination
+        entityId: dubai
+      - entityType: destination
+        entityId: vietnam
+    contentNotes: |
+      Destination card row from entityRefs. Separate inbound callout for ahmedabad-inbound-hosting. Step 4 page will expand catalogue.
+    seoNotes: |
+      H2 international tours from ahmedabad. Country names as supporting keywords. Link /international.
+    stockImage:
+      keywords:
+        - southeast asia travel skyline
+        - international group tour airport
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari outbound group photos per destination; inbound hosting at Ahmedabad heritage sites.
+
+  - id: domestic
+    heading: Domestic tours across India
+    subheading: Gujarat roots. Pan-India reach.
+    description: |
+      Polo Forest and Jambughoda at home in Gujarat. Rajasthan's deserts and lake cities. Maharashtra hill stations. Himachal adventure. Coastal UT escapes to Diu and Daman—weekend and multi-day formats.
+    cta:
+      label: Browse India Packages
+      href: /india
+    entityRefs:
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: jaisalmer
+      - entityType: destination
+        entityId: lonavala
+      - entityType: destination
+        entityId: diu
+    contentNotes: |
+      Map or card grid referencing India destinations. Polo Forest hero position. Link state expansion slots when confirmed.
+    seoNotes: |
+      H2 india tour packages gujarat. State and destination keywords in card titles.
+    stockImage:
+      keywords:
+        - india map travel destinations
+        - gujarat rajasthan maharashtra tourism
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: India footprint map (P.41 asset) plus Polo Safari photos per featured state.
+
+  - id: adventure
+    heading: Adventure & trekking
+    subheading: Trails, camps, and outdoor challenges—with safety first
+    description: |
+      Gujarat Tourism Best Adventure & Trekking Tour Operator (Ahmedabad). Polo Forest trails, Bakor day programs, and Himalayan camps in Manali—guided treks, camping, and team challenges with trained facilitators.
+    cta:
+      label: Adventure Programs
+      href: /theme-tour-packages
+    entityRefs:
+      - entityType: theme
+        entityId: adventure-trekking
+      - entityType: destination
+        entityId: bakor
+      - entityType: destination
+        entityId: manali
+    contentNotes: |
+      Link to theme anchor adventure-trekking on /theme-tour-packages. Award badge from gt-season7-adventure-ahmedabad. Adventure surface colour band per design system.
+    seoNotes: |
+      H2 adventure trekking gujarat. Award mention for E-E-A-T. Link /india and theme page.
+    stockImage:
+      keywords:
+        - mountain trek group india
+        - adventure camping gujarat hills
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari trek groups on Bakor or Manali trails—helmets, guides, real gear visible.
+
+  - id: awards
+    heading: Award-winning experiential travel
+    subheading: Gujarat Tourism Season 7 · Swiftnlift Business Magazine
+    description: |
+      Triple recognition in Gujarat Tourism Season 7—Best Inbound Corporate (Gujarat and Ahmedabad) and Best Adventure & Trekking (Ahmedabad). Plus Best Corporate Tour Operator in Gujarat from Swiftnlift Business Magazine.
+    cta:
+      label: View All Awards
+      href: /awards
+    entityRefs:
+      - entityType: award
+        entityId: gt-season7-inbound-corporate-gujarat
+      - entityType: award
+        entityId: gt-season7-inbound-corporate-ahmedabad
+      - entityType: award
+        entityId: gt-season7-adventure-ahmedabad
+      - entityType: award
+        entityId: swiftnlift-best-corporate-gujarat
+    contentNotes: |
+      Certificate thumbnails using imagePlaceholder refs. Horizontal scroll on mobile. Link each to /awards detail when available.
+    seoNotes: |
+      H2 polo safari awards gujarat tourism. Issuer names for credibility. Internal link /awards.
+    stockImage:
+      keywords:
+        - tourism award trophy ceremony
+        - business recognition certificate stage
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Scan actual certificate images [Certificate_01] through [Certificate_05] from company assets.
+
+  - id: trust
+    heading: Trusted by thousands of travellers
+    subheading: Dual review sources—presented separately, never merged
+    description: |
+      4.7 · 1,304+ Google Reviews. 96% recommend · 253 reviews (platform attribution pending confirmation). Two distinct stats—each with clear source labelling once verified.
+    cta:
+      label: Read Client Stories
+      href: /clients
+    entityRefs:
+      - entityType: testimonial
+        entityId: google-reviews-stat
+      - entityType: testimonial
+        entityId: recommend-rate-stat
+    contentNotes: |
+      verify review stat source — see 01-REVIEW-STATS-PENDING.md. Display stats side by side with separate labels. Do NOT cite TripAdvisor without approval. Interim label for stat 2: "Guest recommendations (platform TBC)".
+    seoNotes: |
+      H2 trust signals. Review schema markup after Google URL confirmed. No aggregate rating combining both sources.
+    stockImage:
+      keywords:
+        - five star review trust badge
+        - happy travellers group photo
+      orientation: square
+      aspectRatio: "1:1"
+      usage: thumbnail
+    replacementNote: Optional—section is stat-led; if imagery used, real guest group photo with permission.
+
+  - id: clients
+    heading: Clients who return season after season
+    subheading: Manufacturing, IT, pharma, banking, FMCG, and more
+    description: |
+      Gujarat enterprises trust Polo Safari for offsites that deliver—repeat bookings across manufacturing, technology, healthcare, and financial services sectors.
+    cta:
+      label: See Client Logos
+      href: /clients
+    entityRefs:
+      - entityType: client
+        entityId: corporate-client-01
+      - entityType: client
+        entityId: corporate-client-02
+      - entityType: client
+        entityId: corporate-client-03
+      - entityType: client
+        entityId: corporate-client-04
+      - entityType: client
+        entityId: corporate-client-05
+      - entityType: client
+        entityId: corporate-client-06
+      - entityType: client
+        entityId: corporate-client-07
+      - entityType: client
+        entityId: corporate-client-08
+    contentNotes: |
+      Logo grid from entityRefs—placeholders until verified logos supplied. Industry labels from client names. Link to /clients for appreciation letters.
+    seoNotes: |
+      H2 polo safari corporate clients. Industry sector keywords in alt text when logos arrive.
+    stockImage:
+      keywords:
+        - corporate client logo wall grayscale
+        - enterprise partnership trust
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Replace placeholders [Corporate_Client_01–08] with permissioned client logos.
+
+  - id: testimonials
+    heading: What our guests say
+    subheading: Corporate, educational, and family voices
+    description: |
+      From HR leads who chose Polo Forest over hotel ballrooms to academic coordinators who measured learning outdoors—real feedback shapes how we design every program.
+    cta:
+      label: More Testimonials
+      href: /clients
+    entityRefs:
+      - entityType: testimonial
+        entityId: testimonial-corporate-placeholder
+      - entityType: testimonial
+        entityId: testimonial-education-placeholder
+      - entityType: testimonial
+        entityId: testimonial-family-placeholder
+    contentNotes: |
+      Carousel of 3 quotes from entityRefs. Rotate corporate / education / family. Link appreciation letters on /clients. Replace placeholders with verified quotes when available.
+    seoNotes: |
+      H2 guest testimonials. Quote text in blockquote markup for rich results eligibility when sourced.
+    stockImage:
+      keywords:
+        - testimonial portrait professional
+        - satisfied customer travel review
+      orientation: portrait
+      aspectRatio: "4:5"
+      usage: card
+    replacementNote: Client headshots or on-trip candid moments with written permission.
+
+  - id: gallery-preview
+    heading: Moments from the field
+    subheading: Corporate · Educational · Adventure · Polo Forest
+    description: |
+      A glimpse of offsites, field studies, treks, and heritage walks—photography, drone perspectives, and highlight reels from recent seasons.
+    cta:
+      label: View Full Gallery
+      href: /gallery
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-corporate
+      - entityType: gallery-category
+        entityId: gallery-educational
+      - entityType: gallery-category
+        entityId: gallery-adventure
+      - entityType: gallery-category
+        entityId: gallery-polo-forest
+    contentNotes: |
+      Masonry or 4-up preview from gallery categories. Dark surface band per design system. Drone category optional fifth tile.
+    seoNotes: |
+      H2 polo safari gallery. Category names as image alt roots. Link /gallery.
+    stockImage:
+      keywords:
+        - travel photography collage india
+        - outdoor group event sunset
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: gallery
+    replacementNote: Curated Polo Safari gallery selects—minimum 8 images across four categories.
+
+  - id: stories
+    heading: Stories & insights
+    subheading: Heritage notes, trip reports, and travel tips
+    description: |
+      Follow Polo Forest research, corporate offsite playbooks, and educational field-study ideas from the team that designs your journeys.
+    cta:
+      label: Read the Blog
+      href: /blog
+    contentNotes: |
+      3 latest blog posts when CMS live—placeholder cards with blog-category entity teasers until then. Categories from blog-categories entity file.
+    seoNotes: |
+      H2 polo safari travel blog. Category links for topical authority. Link /blog.
+    stockImage:
+      keywords:
+        - travel blog editorial photography
+        - heritage storytelling article header
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Featured blog hero images from published Polo Safari articles.
+
+  - id: newsletter-cta
+    heading: Stay in the loop
+    subheading: Trip ideas, seasonal offers, and Polo Forest updates
+    description: |
+      Join our mailing list for curated travel inspiration—or speak with our team today about your next corporate offsite, school tour, or family holiday.
+    cta:
+      label: Contact Us
+      href: /contact
+    contentNotes: |
+      Newsletter signup form + dual CTA row (Contact, /corporate, /schools-colleges). Merge newsletter and contact band per homepage wireframe v0.2. No login required.
+    seoNotes: |
+      H2 newsletter signup. Email capture only—no keyword stuffing in form labels.
+    stockImage:
+      keywords:
+        - email newsletter travel inspiration
+        - contact travel agency modern
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: Optional background—Polo Forest golden hour or team at Jagatpur office exterior.
+
+  - id: footer-content
+    heading: Polo Safari
+    subheading: Eleven years of experiential travel rooted in Polo Forest heritage
+    description: |
+      D-906, Ganesh Glory 11, Nr. BSNL Office, S.G. Highway, Jagatpur, Ahmedabad 382470 · +91 94085 10911 · Chirag@polo-safari.in · MSME Registered · GST Certified
+    cta:
+      label: Get Directions
+      href: /contact
+    contentNotes: |
+      Footer brand block—pull contact from company entity. Quick links mirror IA: About, Corporate, Schools, India, International, FAQ, Privacy. Social URLs flagged verify in Step 7.
+    seoNotes: |
+      NAP consistency with Google Business Profile. LocalBusiness schema on contact page; footer repeats canonical address.
+    stockImage:
+      keywords:
+        - polo safari logo brand mark
+        - ahmedabad office location map
+      orientation: square
+      aspectRatio: "1:1"
+      usage: thumbnail
+    replacementNote: Official Polo Safari logo files and verified map pin screenshot.

@@ -1,0 +1,296 @@
+$schema: ../schema/content-model.schema.json
+id: faq
+slug: faq
+route: /faq
+title: FAQ
+status: review
+seo:
+  title: Polo Safari FAQ | Tours, Booking & Safety
+  metaDescription: Answers for families, HR teams, schools, and adventure travellers—booking, payments, safety, and what Polo Safari includes. Ahmedabad tour operator since 2014.
+  slug: faq
+  primaryKeyword: polo safari faq
+  secondaryKeywords:
+    - corporate offsite faq gujarat
+    - school tour booking questions
+    - family tour packages india faq
+    - adventure trek safety polo safari
+    - polo safari payment terms
+  internalLinks:
+    - label: Contact Us
+      href: /contact
+    - label: Corporate Retreats
+      href: /corporate
+    - label: Schools & Colleges
+      href: /schools-colleges
+    - label: India Tours
+      href: /india
+    - label: Travel Services
+      href: /services
+  ctaSuggestions:
+    - label: Contact Polo Safari
+      href: /contact
+    - label: Request Corporate Proposal
+      href: /corporate
+    - label: Plan Educational Tour
+      href: /schools-colleges
+
+sections:
+  - id: hero
+    heading: Frequently asked questions
+    subheading: Families · HR & corporate · Schools · Adventure · Booking · Safety
+    description: |
+      Clear answers for the questions planners ask most—what Polo Safari includes, how booking works, and how we approach safety on every program. Cannot find your answer? Our Ahmedabad team responds on WhatsApp and email.
+    cta:
+      label: Contact Us
+      href: /contact
+    contentNotes: |
+      Hero with anchor jump links to six audience sections below. Accordion UI per group. Breadcrumb Home → FAQ.
+    seoNotes: |
+      Single H1 polo safari faq. Audience segments in subheading for long-tail coverage.
+    stockImage:
+      keywords:
+        - customer support travel questions help
+        - friendly tour operator consultation
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Polo Safari coordinator on phone or WhatsApp support moment.
+
+  - id: faq-families
+    heading: Families
+    subheading: Multi-generational holidays and leisure travel
+    description: |
+      Planning a family getaway from Ahmedabad? These answers cover pacing, destinations, and what to expect when travelling with children and grandparents.
+    entityRefs:
+      - entityType: theme
+        entityId: family-getaways
+      - entityType: company
+        entityId: polo-safari
+    contentNotes: |
+      Accordion Q&A (7 items):
+      Q1: What types of family trips does Polo Safari organise?
+      A: All-India family holidays, 1-day picnics, and nature-led getaways—paced for mixed age groups with clear logistics from Ahmedabad. See /theme-tour-packages and /india.
+      Q2: Can you customise an itinerary for our family's pace?
+      A: Yes. We design around your group—not a fixed catalogue. Heritage mornings, downtime afternoons, and transport suited to elders and children.
+      Q3: Are Polo Forest trips suitable for young children?
+      A: Many families enjoy Polo Forest with gentle trails and heritage walks. We brief you on terrain and seasonality before you commit.
+      Q4: What is included in a typical family package?
+      A: Itinerary design, on-ground coordination, meals and transport as scoped in your proposal, and facilitator support. We do not sell flights, hotels as standalone products, visas, or insurance—see /services#scope-clarity.
+      Q5: How far in advance should we book?
+      A: Peak seasons and school holidays fill early—four to eight weeks is sensible; more for long weekends and festivals.
+      Q6: Do you offer photography or keepsakes for family trips?
+      A: Photography, videography, and trip merchandise are available on request—scoped in your proposal on /services.
+      Q7: How do we get a quote?
+      A: Contact us with dates, group size, and destination preferences via /contact or WhatsApp +91 94085 10911.
+    seoNotes: |
+      H2 family tour faq polo safari. FAQ schema candidate when published.
+    stockImage:
+      keywords:
+        - family vacation india multi generational
+        - parents children nature holiday
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari family group at scenic destination—mixed ages.
+
+  - id: faq-corporate
+    heading: HR & corporate
+    subheading: Offsites, team-building, and leadership programs
+    description: |
+      HR and leadership teams ask about capacity, destinations, facilitation, and vendor credentials—the essentials for internal approval.
+    entityRefs:
+      - entityType: theme
+        entityId: corporate-retreats
+      - entityType: theme
+        entityId: team-building-leadership
+      - entityType: award
+        entityId: gt-season7-inbound-corporate-gujarat
+    contentNotes: |
+      Accordion Q&A (8 items):
+      Q1: What group sizes can Polo Safari handle?
+      A: Corporate programs typically range from 20 to 200 guests—scaled facilitation, meals, and transport. Share your headcount in an RFP on /corporate.
+      Q2: Which destinations do you recommend for Gujarat offsites?
+      A: Polo Forest, Udaipur, Jambughoda, Saputara, Jaisalmer, Diu, Daman, Matheran, Lonavala, and pan-India resort options—see /corporate and /india.
+      Q3: Is team-building facilitation included?
+      A: Yes—outdoor games, obstacle challenges, and debriefs led by trained facilitators. Leadership labs available for management cohorts.
+      Q4: Can you support MICE-style conferences?
+      A: We coordinate outdoor and resort venues for away-days and conference-style gatherings—scope depends on property and AV needs.
+      Q5: What awards or credentials should procurement know?
+      A: Gujarat Tourism Season 7 honours, Swiftnlift Best Corporate Tour Operator Gujarat, MSME registered, GST certified—details on /awards.
+      Q6: Do you provide photography and reels for internal comms?
+      A: Photography, videography, drone, and social reels are on-request add-ons—see /services.
+      Q7: How does the RFP process work?
+      A: Submit brief via /corporate#rfp—we respond with itinerary options, pricing, and inclusions. Typical turnaround communicated at enquiry.
+      Q8: Do you book flights and hotels directly?
+      A: We coordinate travel and stays through trusted partners as part of your program but do not sell airline tickets, hotel inventory, visas, or insurance as standalone services.
+    seoNotes: |
+      H2 corporate offsite faq gujarat. HR procurement keywords.
+    stockImage:
+      keywords:
+        - hr corporate offsite planning meeting
+        - team building corporate outdoor gujarat
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: HR lead reviewing proposal with Polo Safari coordinator.
+
+  - id: faq-schools-colleges
+    heading: Schools & colleges
+    subheading: Field studies, picnics, and industrial visits
+    description: |
+      Principals, coordinators, and faculty need clarity on learning outcomes, parent communication, and safety before approving a vendor.
+    entityRefs:
+      - entityType: theme
+        entityId: educational-industrial-visits
+    contentNotes: |
+      Accordion Q&A (7 items):
+      Q1: What educational programs does Polo Safari run?
+      A: Curriculum-aligned field studies, industrial visits, adventure camps, and annual picnics—for schools and colleges across Gujarat and pan-India routes like Hyderabad and Chennai.
+      Q2: How do you align trips with learning outcomes?
+      A: We brief faculty on itinerary links to syllabus themes—ecology, heritage, industry exposure—and provide pre-trip notes for parents.
+      Q3: What is the typical student group size?
+      A: From single-class picnics to multi-bus college tours—we scale logistics, meals, and facilitator ratios accordingly.
+      Q4: How do you communicate with parents?
+      A: Detailed itineraries, emergency contacts, and packing guidance—shared through the institution's preferred channel before departure.
+      Q5: Are industrial visits to factories arranged?
+      A: Yes, where host facilities permit—Hyderabad, Chennai, and Gujarat industrial corridors among past programs. Availability confirmed at booking.
+      Q6: What safety measures apply to student groups?
+      A: Pre-trip briefings, headcounts, trained facilitators, and gender-appropriate supervision ratios—see Safety section below.
+      Q7: How do we request a proposal?
+      A: Use /schools-colleges#rfp or contact us with dates, student count, and learning objectives.
+    seoNotes: |
+      H2 school college tour faq gujarat.
+    stockImage:
+      keywords:
+        - school field trip students outdoor learning
+        - college educational tour india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Faculty briefing students before Polo Safari field study.
+
+  - id: faq-adventure
+    heading: Adventure travellers
+    subheading: Trekking, camping, and outdoor challenges
+    description: |
+      Adventure guests ask about fitness, gear, destinations, and what separates a facilitated trek from a self-guided hike.
+    entityRefs:
+      - entityType: theme
+        entityId: adventure-trekking
+      - entityType: award
+        entityId: gt-season7-adventure-ahmedabad
+    contentNotes: |
+      Accordion Q&A (6 items):
+      Q1: Which adventure destinations does Polo Safari cover?
+      A: Manali, Polo Forest, Bakor, and other trekking and camping routes—see /theme-tour-packages#adventure-trekking and /india.
+      Q2: Do I need prior trekking experience?
+      A: Itineraries range from beginner-friendly forest trails to multi-day treks. We match difficulty to your group's fitness in the proposal.
+      Q3: What gear should I bring?
+      A: We provide a packing list—appropriate footwear, layers, and rain protection are essential. Some technical gear supplied on trip where noted.
+      Q4: Are adventure programs award-recognised?
+      A: Polo Safari holds Gujarat Tourism Best Adventure & Trekking Tour Operator (Ahmedabad), Season 7—see /awards.
+      Q5: Can corporates or colleges book adventure modules?
+      A: Yes—adventure segments integrate into offsites and campus tours, with safety briefings mandatory before activities.
+      Q6: Is drone footage available on adventure trips?
+      A: Drone coverage is on request, subject to permits and conditions—see /services#drone.
+    seoNotes: |
+      H2 adventure trek faq polo safari ahmedabad.
+    stockImage:
+      keywords:
+        - adventure trekking group india mountains
+        - outdoor camping hiking trail gujarat
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari trek group on trail—Manali or Polo Forest.
+
+  - id: faq-booking-payment
+    heading: Booking & payment
+    subheading: Enquiries, proposals, and commercial terms
+    description: |
+      How to start a conversation, what your proposal contains, and standard commercial expectations—before you confirm dates.
+    entityRefs:
+      - entityType: company
+        entityId: polo-safari
+    contentNotes: |
+      Accordion Q&A (7 items):
+      Q1: How do I start an enquiry?
+      A: WhatsApp +91 94085 10911 (primary), email Chirag@polo-safari.in, or the form on /contact. Corporate and educational RFPs have dedicated flows on /corporate and /schools-colleges.
+      Q2: What information should I include in my first message?
+      A: Preferred dates, group size, destination or trip type, and any must-have activities—helps us respond with relevant options quickly.
+      Q3: What does a proposal typically include?
+      A: Itinerary outline, inclusions and exclusions, pricing, payment schedule, cancellation terms, and emergency contacts—customised per segment.
+      Q4: Is a deposit required to confirm?
+      A: Yes—deposit terms are stated in your proposal. Balance timelines vary by trip length and lead time.
+      Q5: Can itineraries change after booking?
+      A: Reasonable adjustments are possible before departure—subject to availability and any cost difference. Major changes are re-quoted in writing.
+      Q6: Do you issue GST invoices?
+      A: Polo Safari is GST certified—invoices provided per company credentials on /about.
+      Q7: Who is my point of contact during the trip?
+      A: A dedicated coordinator from our Ahmedabad team—with on-ground lead facilitator contact shared before departure.
+    seoNotes: |
+      H2 polo safari booking payment terms.
+    stockImage:
+      keywords:
+        - travel booking payment invoice professional
+        - tour proposal document planning
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari proposal handoff or invoice process—office context.
+
+  - id: faq-safety
+    heading: Safety
+    subheading: Protocols every group can expect
+    description: |
+      Safety is non-negotiable on corporate, educational, family, and adventure programs—these answers summarise our standard approach. Detailed safety copy may expand in Step 7 verification.
+    entityRefs:
+      - entityType: company
+        entityId: polo-safari
+    contentNotes: |
+      Accordion Q&A (7 items):
+      Q1: What safety briefings happen before activities?
+      A: Every program opens with venue-specific briefings—terrain, weather, conduct rules, and emergency procedures—before trekking, water, or challenge activities.
+      Q2: Who supervises school and college groups?
+      A: Trained facilitators plus institution faculty maintain supervision ratios appropriate to student age and activity type.
+      Q3: How do you handle medical emergencies on trip?
+      A: Coordinators carry emergency contact protocols; guests are directed to nearest appropriate medical facilities. Institutions should share student health declarations where relevant.
+      Q4: Are adventure activities risk-assessed?
+      A: Modules are selected and paced for group capability—with gear checks and weather monitoring before high-exertion segments.
+      Q5: Is drone usage safety-regulated?
+      A: Drone operations follow applicable permissions and no-fly rules—offered only where legal and safe. See /services#drone.
+      Q6: What should corporates disclose about participants?
+      A: Fitness limitations, accessibility needs, and dietary requirements upfront—so we design inclusive programming.
+      Q7: Where can I raise a safety concern before booking?
+      A: Contact us directly on /contact—we address specific venue and activity questions in your proposal. [TBC: formal safety policy document in Step 7.]
+    seoNotes: |
+      H2 polo safari safety protocols tour groups. Flag Step 7 for expanded safety policy.
+    stockImage:
+      keywords:
+        - outdoor safety briefing group travel
+        - first aid emergency preparedness hiking
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari facilitator delivering safety briefing—visible headcount and gear check.
+
+  - id: cta
+    heading: Still have questions?
+    subheading: Our team replies on WhatsApp and email
+    description: |
+      Most planners prefer a five-minute conversation to a fifty-question form. Reach Polo Safari at +91 94085 10911 or Chirag@polo-safari.in—or submit a corporate or educational RFP for a detailed proposal.
+    cta:
+      label: Contact Polo Safari
+      href: /contact
+    contentNotes: |
+      Triple shortcut row: /corporate#rfp, /schools-colleges#rfp, /contact. Office hours [TBC] on contact page.
+    seoNotes: |
+      H2 contact polo safari faq close.
+    stockImage:
+      keywords:
+        - whatsapp customer support travel
+        - friendly phone consultation tour operator
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: background
+    replacementNote: WhatsApp chat screenshot or coordinator on call—brand-appropriate.

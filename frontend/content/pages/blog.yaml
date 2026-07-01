@@ -1,0 +1,170 @@
+$schema: ../schema/content-model.schema.json
+id: blog
+slug: blog
+route: /blog
+title: Blog
+status: review
+seo:
+  title: Polo Safari Travel Blog | Guides & Insights
+  metaDescription: Travel guides, Polo Forest heritage, corporate wellness, educational learning, and adventure tips from Ahmedabad's award-winning experiential tour operator. Articles coming soon.
+  slug: blog
+  primaryKeyword: polo safari travel blog
+  secondaryKeywords:
+    - polo forest travel guide
+    - corporate offsite planning tips
+    - school field trip ideas gujarat
+    - adventure trekking india blog
+    - gujarat travel tips
+  internalLinks:
+    - label: Polo Forest Tours
+      href: /india
+    - label: Corporate Retreats
+      href: /corporate
+    - label: Schools & Colleges
+      href: /schools-colleges
+    - label: Theme Packages
+      href: /theme-tour-packages
+    - label: Gallery
+      href: /gallery
+  ctaSuggestions:
+    - label: Contact Us
+      href: /contact
+    - label: Plan Corporate Offsite
+      href: /corporate
+    - label: Plan Educational Tour
+      href: /schools-colleges
+
+sections:
+  - id: hero
+    heading: Stories, guides, and field notes
+    subheading: Heritage research · Trip planning · Corporate and campus insights
+    description: |
+      The Polo Safari blog shares destination guides, Polo Forest heritage deep-dives, HR offsite playbooks, and educational field-study ideas—from the team that designs your journeys. Articles publish soon; explore categories below for what's coming.
+    cta:
+      label: Get Trip Ideas by Email
+      href: "#newsletter"
+    contentNotes: |
+      Categories only—no article content at Step 5. Hero positions blog as editorial authority, not news churn. Breadcrumb Home → Blog.
+    seoNotes: |
+      Single H1 polo safari travel blog. "Coming soon" honest without thin content penalty—substantive category descriptions below.
+    stockImage:
+      keywords:
+        - travel blog editorial photography heritage
+        - outdoor writing journal adventure india
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Polo Safari editorial hero—founder at Polo Forest or team planning session.
+
+  - id: category-grid
+    heading: Explore by topic
+    subheading: Ten editorial lanes—articles publishing on rolling basis
+    description: |
+      Each category below defines the stories Polo Safari will publish: practical guides for families and groups, heritage authority at Polo Forest, and specialist content for HR leaders and educators.
+    entityRefs:
+      - entityType: blog-category
+        entityId: blog-travel-guides
+      - entityType: blog-category
+        entityId: blog-polo-forest
+      - entityType: blog-category
+        entityId: blog-corporate-wellness
+      - entityType: blog-category
+        entityId: blog-educational-learning
+      - entityType: blog-category
+        entityId: blog-nature
+      - entityType: blog-category
+        entityId: blog-adventure
+      - entityType: blog-category
+        entityId: blog-travel-tips
+      - entityType: blog-category
+        entityId: blog-photography
+      - entityType: blog-category
+        entityId: blog-culture
+      - entityType: blog-category
+        entityId: blog-festivals
+    contentNotes: |
+      10-card category grid. Per-category suggested topics (no articles yet):
+      • Travel Guides — Best time for Polo Forest; 3-day Gujarat family circuit; Hill-station offsite seasonality
+      • Polo Forest — Temple trail history; Aravalli ecology primer; Founder heritage research notes
+      • Corporate Wellness — Nature-led rejuvenation ROI; Offsite agenda templates; Post-trip engagement ideas
+      • Educational Learning — NCERT-linked field study outcomes; Industrial visit briefing checklist; Parent communication templates
+      • Nature — Monsoon travel safety; Wildlife etiquette; Eco-tourism at Polo Forest
+      • Adventure — Trek fitness prep; Gear checklist; Manali vs Polo Forest adventure compare
+      • Travel Tips — Group packing lists; Budgeting school tours; Transport coordination for HR
+      • Photography — Golden hour at heritage sites; Drone permit basics; Trip album ideas for corporates
+      • Culture — Village homestay etiquette; Inbound hosting Ahmedabad; Regional cuisine on tour
+      • Festivals — Navratri group travel; Rann Utsav timing; Festival-friendly corporate calendars
+      Card CTA: "Articles coming soon" — disabled until CMS live.
+    seoNotes: |
+      H2 polo safari blog categories. Each category name as H3 with description from entity. Topic lists in contentNotes for writer briefs.
+    stockImage:
+      keywords:
+        - blog category grid travel topics
+        - editorial content cards lifestyle
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Category card thumbnails from first published article per lane.
+
+  - id: newsletter-cta
+    heading: Stay in the loop
+    subheading: Trip ideas, seasonal offers, and Polo Forest updates
+    description: |
+      Join our mailing list for curated travel inspiration—the first articles on Polo Forest heritage and corporate offsite planning land here before anywhere else.
+    cta:
+      label: Subscribe
+      href: "#newsletter"
+    contentNotes: |
+      Anchor #newsletter. Email capture form—no login. Privacy link to /legal/privacy when Step 6 complete. Merge with contact band pattern from home.yaml.
+    seoNotes: |
+      H2 polo safari newsletter signup.
+    stockImage:
+      keywords:
+        - newsletter signup travel inspiration
+        - email subscription outdoor lifestyle
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: Lifestyle still—travel journal, map, coffee; Polo Safari branded optional.
+
+  - id: future-articles
+    heading: Articles launching soon
+    subheading: Our editorial calendar is taking shape
+    description: |
+      Full articles—with destination detail, downloadable checklists, and founder-authored heritage notes—will appear here as our content team publishes. Until then, explore India tours, theme packages, and the gallery for trip inspiration.
+    cta:
+      label: Explore India Tours
+      href: /india
+    contentNotes: |
+      Placeholder article list UI—3 skeleton cards with "Coming soon" badges. No lorem article bodies. Links: /india, /theme-tour-packages, /gallery, /about. RSS/Atom feed stub for CMS phase.
+    seoNotes: |
+      H2 polo safari articles coming soon. Internal links to pillar pages for crawl path.
+    stockImage:
+      keywords:
+        - coming soon blog article placeholder
+        - editorial calendar travel content
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Replace skeleton cards with featured posts when CMS publishes.
+
+  - id: cta
+    heading: Rather plan a trip than read about one?
+    subheading: Speak with our Ahmedabad team today
+    description: |
+      Corporate offsites, school field studies, family holidays, and adventure programs—designed around your brief with eleven years of award-backed delivery.
+    cta:
+      label: Contact Polo Safari
+      href: /contact
+    contentNotes: |
+      Dual CTA: /corporate and /schools-colleges. Blog page close band.
+    seoNotes: |
+      H2 contact polo safari blog close.
+    stockImage:
+      keywords:
+        - travel planning consultation team
+        - ahmedabad tour operator office
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: background
+    replacementNote: Polo Safari team consultation moment.

@@ -1,0 +1,65 @@
+$schema: ../schema/content-model.schema.json
+entityFile: blog-categories
+version: 1.0.0
+updatedAt: 2026-07-01
+
+items:
+  - id: blog-travel-guides
+    entityType: blog-category
+    name: Travel Guides
+    description: Practical destination guides, seasonality, and planning tips for families and groups.
+    sortOrder: 1
+
+  - id: blog-polo-forest
+    entityType: blog-category
+    name: Polo Forest
+    description: Heritage deep-dives, ecology notes, and insider guides to Gujarat's Aravalli jewel.
+    sortOrder: 2
+
+  - id: blog-corporate-wellness
+    entityType: blog-category
+    name: Corporate Wellness
+    description: Offsite planning, team wellbeing, and nature-led rejuvenation for HR leaders.
+    sortOrder: 3
+
+  - id: blog-educational-learning
+    entityType: blog-category
+    name: Educational Learning
+    description: Field-study ideas, curriculum links, and outdoor learning outcomes for educators.
+    sortOrder: 4
+
+  - id: blog-nature
+    entityType: blog-category
+    name: Nature
+    description: Wildlife, landscapes, and conservation-minded travel across India.
+    sortOrder: 5
+
+  - id: blog-adventure
+    entityType: blog-category
+    name: Adventure
+    description: Trekking routes, safety essentials, and adventure itineraries for thrill-seekers.
+    sortOrder: 6
+
+  - id: blog-travel-tips
+    entityType: blog-category
+    name: Travel Tips
+    description: Packing, budgeting, group logistics, and smarter travel decisions.
+    sortOrder: 7
+
+  - id: blog-photography
+    entityType: blog-category
+    name: Photography
+    description: Capturing journeys—composition, golden hour, and trip documentation ideas.
+    sortOrder: 8
+
+  - id: blog-culture
+    entityType: blog-category
+    name: Culture
+    description: Heritage, local communities, and cultural context behind every itinerary.
+    sortOrder: 9
+
+  - id: blog-festivals
+    entityType: blog-category
+    name: Festivals
+    description: Seasonal festivals, regional celebrations, and timing your visit around culture.
+    sortOrder: 10

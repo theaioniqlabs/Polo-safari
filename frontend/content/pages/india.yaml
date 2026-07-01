@@ -1,0 +1,320 @@
+$schema: ../schema/content-model.schema.json
+id: india
+slug: india
+route: /india
+title: India Tour Packages
+status: review
+seo:
+  title: India Tour Packages Gujarat | Polo Safari
+  metaDescription: Polo Forest, Rajasthan, Maharashtra, and pan-India tours from Ahmedabad—corporate offsites, school trips, family getaways, and adventure. Award-winning since 2014.
+  slug: india
+  primaryKeyword: india tour packages gujarat
+  secondaryKeywords:
+    - polo forest tours
+    - gujarat weekend getaways
+    - rajasthan corporate retreat
+    - maharashtra hill station picnic
+    - himachal adventure camp
+    - diu daman coastal tour
+    - south india educational tour
+  internalLinks:
+    - label: Home
+      href: /
+    - label: Corporate Retreats
+      href: /corporate
+    - label: Schools & Colleges
+      href: /schools-colleges
+    - label: Theme Tour Packages
+      href: /theme-tour-packages
+    - label: International Tours
+      href: /international
+    - label: Gallery
+      href: /gallery
+    - label: Contact Us
+      href: /contact
+  ctaSuggestions:
+    - label: Request Proposal
+      href: /corporate
+    - label: Request Educational Proposal
+      href: /schools-colleges
+    - label: Browse Themes
+      href: /theme-tour-packages
+    - label: Plan Your Trip
+      href: /contact
+
+sections:
+  - id: hero
+    heading: India tour packages rooted in Gujarat
+    subheading: Polo Forest heritage · Pan-India reach · Weekend to multi-day formats
+    description: |
+      From our Ahmedabad headquarters, Polo Safari designs experiential journeys across Gujarat, Rajasthan, Maharashtra, Himachal Pradesh, coastal union territories, and South India educational circuits—corporate offsites, school field studies, family holidays, and adventure programs with award-backed execution.
+    cta:
+      label: Explore by Theme
+      href: /theme-tour-packages
+    contentNotes: |
+      WF-GEO-HERO. Breadcrumb Home → India. Optional India footprint map graphic (P.41) as background layer—not a destination list. Quick-filter chips: Gujarat, Corporate, Family, Adventure, 1-Day.
+    seoNotes: |
+      Single H1 india tour packages gujarat. Polo Forest in first 100 words. Secondary geo keywords in subheading without stuffing.
+    stockImage:
+      keywords:
+        - india travel landscape gujarat heritage
+        - polo forest aravalli panoramic aerial
+        - pan india tour group experiential
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Polo Safari hero—mixed India collage or Polo Forest golden-hour group shot with Aravalli backdrop.
+
+  - id: by-state
+    heading: Browse by state and region
+    subheading: Gujarat at the centre. Rajasthan deserts. Western Ghats hills. Himalayas. Coastal UT escapes. South India learning hubs.
+    description: |
+      Start where your group is based—or where the experience demands. Gujarat remains our home turf; every other region is delivered with the same logistics discipline and on-ground teams you expect from an Ahmedabad operator.
+    cta:
+      label: Contact for Custom Route
+      href: /contact
+    entityRefs:
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: jambughoda
+      - entityType: destination
+        entityId: saputara
+      - entityType: destination
+        entityId: ahmedabad
+      - entityType: destination
+        entityId: bakor
+      - entityType: destination
+        entityId: devs-camp
+      - entityType: destination
+        entityId: destination-state-gujarat
+      - entityType: destination
+        entityId: udaipur
+      - entityType: destination
+        entityId: jaisalmer
+      - entityType: destination
+        entityId: destination-state-rajasthan
+      - entityType: destination
+        entityId: matheran
+      - entityType: destination
+        entityId: lonavala
+      - entityType: destination
+        entityId: destination-state-maharashtra
+      - entityType: destination
+        entityId: manali
+      - entityType: destination
+        entityId: destination-state-himachal
+      - entityType: destination
+        entityId: diu
+      - entityType: destination
+        entityId: daman
+      - entityType: destination
+        entityId: hyderabad
+      - entityType: destination
+        entityId: chennai
+      - entityType: destination
+        entityId: destination-state-south
+    contentNotes: |
+      Six accordion or tab groups—Gujarat (6 PDF + 1 placeholder), Rajasthan (2 + placeholder), Maharashtra (2 + placeholder), Himachal (1 + placeholder), UT (Diu + Daman), South India (2 + placeholder). PDF-confirmed cards first; expansion slots labelled [Destination_State_*]. Each card links to entity summary and theme tags.
+    seoNotes: |
+      H2 browse by state. H3 per region: Gujarat, Rajasthan, Maharashtra, Himachal Pradesh, Union Territories, South India. State names as geo keywords.
+    stockImage:
+      keywords:
+        - india map states travel regions
+        - gujarat rajasthan maharashtra tourism collage
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: India footprint map from P.41 when asset ready; per-state Polo Safari trip photography for card backgrounds.
+
+  - id: by-theme
+    heading: Browse by travel theme
+    subheading: Corporate · Educational · Adventure · Family · Heritage · Nature · Wellness
+    description: |
+      The same destination can serve different audiences—a Polo Forest weekend for HR, a heritage walk for schools, or a family nature break. Filter by what your group needs, then match duration and season below.
+    cta:
+      label: View All Theme Packages
+      href: /theme-tour-packages
+    entityRefs:
+      - entityType: theme
+        entityId: corporate-retreats
+      - entityType: theme
+        entityId: team-building-leadership
+      - entityType: theme
+        entityId: educational-industrial-visits
+      - entityType: theme
+        entityId: adventure-trekking
+      - entityType: theme
+        entityId: family-getaways
+      - entityType: theme
+        entityId: one-day-picnics
+      - entityType: theme
+        entityId: heritage-polo-forest
+      - entityType: destination
+        entityId: jambughoda
+      - entityType: destination
+        entityId: saputara
+      - entityType: theme
+        entityId: wellness-yoga-meditation
+    contentNotes: |
+      Seven theme cards—Corporate (corporate-retreats + team-building), Educational, Adventure, Family (family-getaways + one-day-picnics), Heritage, Nature (jambughoda + saputara as nature-led destinations—no separate nature theme entity), Wellness. Each card CTA to /theme-tour-packages#{anchorSlug} or /corporate /schools-colleges as appropriate.
+    seoNotes: |
+      H2 browse by theme. H3 per pillar keyword cluster. Cross-link /corporate and /schools-colleges in card copy.
+    stockImage:
+      keywords:
+        - diverse travel themes collage india
+        - corporate educational family adventure outdoor
+      orientation: square
+      aspectRatio: "1:1"
+      usage: card
+    replacementNote: Seven-tile mosaic—one Polo Safari on-trip photo per theme pillar.
+
+  - id: by-duration
+    heading: Browse by trip duration
+    subheading: 1-day escapes · 2–3 day weekends · 4–7 day circuits · 7+ day expeditions
+    description: |
+      Match your calendar to the experience. Day picnics from Ahmedabad, weekend offsites at hill stations and heritage forests, week-long Rajasthan or Himachal programs, and extended South India educational circuits—each bucket lists PDF-confirmed destinations only.
+    cta:
+      label: Discuss Dates
+      href: /contact
+    entityRefs:
+      - entityType: destination
+        entityId: ahmedabad
+      - entityType: destination
+        entityId: bakor
+      - entityType: destination
+        entityId: devs-camp
+      - entityType: destination
+        entityId: matheran
+      - entityType: destination
+        entityId: lonavala
+      - entityType: destination
+        entityId: daman
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: jambughoda
+      - entityType: destination
+        entityId: saputara
+      - entityType: destination
+        entityId: udaipur
+      - entityType: destination
+        entityId: diu
+      - entityType: destination
+        entityId: jaisalmer
+      - entityType: destination
+        entityId: manali
+      - entityType: destination
+        entityId: hyderabad
+      - entityType: destination
+        entityId: chennai
+    contentNotes: |
+      Four duration bands with entityRef groupings from destination summary duration tags. 1-day: ahmedabad, bakor, devs-camp, matheran, lonavala, daman. 2–3 day: polo-forest, jambughoda, saputara, udaipur, diu, daman, matheran, lonavala, bakor, devs-camp. 4–7 day: jaisalmer, manali, hyderabad, chennai, udaipur, polo-forest, diu. 7+ day: manali, hyderabad, chennai (extended educational/adventure). Show duration tags on cards.
+    seoNotes: |
+      H2 trip duration india tours. Long-tail: 1 day picnic gujarat, weekend getaway ahmedabad, week long rajasthan tour.
+    stockImage:
+      keywords:
+        - weekend getaway calendar travel planning
+        - multi day india tour itinerary
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Optional—UI may use icons only; if imagery used, Polo Safari day-trip vs multi-day camp comparison shots.
+
+  - id: popular-destinations
+    heading: Popular destinations
+    subheading: PDF-confirmed programs our clients book again
+    description: |
+      Polo Forest remains our flagship—heritage storytelling at the destination our founder calls home. Beyond Gujarat, Udaipur lake retreats, Jaisalmer desert camps, Manali adventure circuits, and Maharashtra monsoon hills anchor repeat corporate and family bookings.
+    cta:
+      label: Request a Custom Itinerary
+      href: /contact
+    entityRefs:
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: udaipur
+      - entityType: destination
+        entityId: jaisalmer
+      - entityType: destination
+        entityId: manali
+      - entityType: destination
+        entityId: lonavala
+      - entityType: destination
+        entityId: saputara
+      - entityType: destination
+        entityId: jambughoda
+      - entityType: destination
+        entityId: diu
+    contentNotes: |
+      Featured 8-card grid—all pdfConfirmed: true only. Polo Forest hero position (larger card or first). Show themes and duration tags from entity summaries. No placeholder destinations in this section.
+    seoNotes: |
+      H2 popular india destinations. H3 per destination name. Polo forest tours as supporting keyword in Polo Forest card.
+    stockImage:
+      keywords:
+        - india popular tourist destination card
+        - gujarat rajasthan himachal travel highlight
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Replace each card with Polo Safari trip photography per destination—minimum Polo Forest, Udaipur, Manali.
+
+  - id: seasonal-destinations
+    heading: Seasonal picks
+    subheading: Monsoon greens · Winter heritage · Summer cool escapes
+    description: |
+      Gujarat and western India shift character through the year. These seasonal suggestions lean Gujarat-centric where our PDF catalogue supports them—monsoon Western Ghats, winter desert and forest heritage, summer hill stations and coastal UT breaks.
+    cta:
+      label: Ask About Best Travel Window
+      href: /contact
+    entityRefs:
+      - entityType: destination
+        entityId: lonavala
+      - entityType: destination
+        entityId: matheran
+      - entityType: destination
+        entityId: saputara
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: jaisalmer
+      - entityType: destination
+        entityId: manali
+      - entityType: destination
+        entityId: diu
+      - entityType: destination
+        entityId: daman
+    contentNotes: |
+      Three seasonal tabs. Monsoon (PDF-supported): lonavala, matheran, saputara—Western Ghats + Gujarat hill station. Winter: polo-forest, jaisalmer, saputara. Summer: manali, saputara, diu, daman. Flag speculative: exact monsoon window copy and any slots beyond listed entities need ops verification—label "Suggested season" not guaranteed availability.
+    seoNotes: |
+      H2 seasonal india tours gujarat. Season names in H3. Monsoon picnic maharashtra, winter rajasthan desert, summer hill station keywords.
+    stockImage:
+      keywords:
+        - monsoon western ghats green hills india
+        - winter desert rajasthan golden hour
+        - summer hill station cool retreat
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Seasonal Polo Safari photography—monsoon Lonavala group, winter Jaisalmer dunes, summer Saputara or Manali.
+
+  - id: cta-band
+    heading: Ready to plan your India journey?
+    subheading: Corporate offsites · School tours · Family holidays · Adventure camps
+    description: |
+      Tell us your group size, dates, and objectives—we'll propose destinations, duration, and a program structure you can share with leadership or faculty. Eleven years of award-backed execution from Ahmedabad.
+    cta:
+      label: Contact Polo Safari
+      href: /contact
+    contentNotes: |
+      Full-width CTA band with dual secondary links: /corporate#rfp, /schools-colleges#rfp, /theme-tour-packages. Surface or accent colour per design system. Phone numbers from company entity optional inline.
+    seoNotes: |
+      H2 plan india tour. Conversion-focused—primary keyword in body once. internalLinks to /contact, /corporate, /schools-colleges.
+    stockImage:
+      keywords:
+        - travel planning consultation india
+        - happy group tour departure ahmedabad
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: Polo Safari team with guests at Jagatpur office or pre-departure briefing—warm, professional tone.

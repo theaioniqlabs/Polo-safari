@@ -1,0 +1,366 @@
+$schema: ../schema/content-model.schema.json
+id: international
+slug: international
+route: /international
+title: International Tours
+status: review
+seo:
+  title: International Tours from Ahmedabad | Polo Safari
+  metaDescription: Outbound tours to Singapore, Malaysia, Bali, Dubai, and Vietnam—plus inbound cultural hosting in Ahmedabad. Corporate incentives and family travel from Gujarat.
+  slug: international
+  primaryKeyword: international tours from ahmedabad
+  secondaryKeywords:
+    - singapore tour package gujarat
+    - bali corporate retreat
+    - dubai incentive travel
+    - vietnam heritage tour
+    - inbound tourism ahmedabad
+    - southeast asia family holiday
+  internalLinks:
+    - label: Home
+      href: /
+    - label: India Tour Packages
+      href: /india
+    - label: Theme Tour Packages
+      href: /theme-tour-packages
+    - label: Corporate Retreats
+      href: /corporate
+    - label: Schools & Colleges
+      href: /schools-colleges
+    - label: Gallery
+      href: /gallery
+    - label: Contact Us
+      href: /contact
+  ctaSuggestions:
+    - label: Request International Quote
+      href: /contact
+    - label: Corporate Incentive Programs
+      href: /corporate
+    - label: Browse Theme Packages
+      href: /theme-tour-packages
+
+sections:
+  - id: hero
+    heading: International tours from Ahmedabad
+    subheading: Southeast Asia · Middle East · Inbound cultural hosting
+    description: |
+      Polo Safari curates outbound journeys for Gujarat corporate incentives, family holidays, and cultural explorers—Singapore, Malaysia, Bali, Dubai, and Vietnam with end-to-end coordination from our Ahmedabad headquarters. We also host international guest groups in India, including multi-year Vietnamese partnerships since 2023.
+    cta:
+      label: Explore Destinations
+      href: "#asia"
+    contentNotes: |
+      WF-GEO-HERO international variant. Breadcrumb Home → International. Anchor jump to #asia region grid. Dual value prop: outbound + inbound in hero subcopy. No Europe/Africa/Australia in hero—those are expansion placeholders below.
+    seoNotes: |
+      Single H1 international tours from ahmedabad. PDF-confirmed country names in first 120 words. Inbound hosting as differentiator keyword.
+    stockImage:
+      keywords:
+        - international travel skyline southeast asia
+        - group tour departure airport india
+        - cultural exchange tourism global
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Polo Safari outbound group at airport or destination landmark; alternate inbound hosting shot at Ahmedabad heritage site.
+
+  - id: asia
+    heading: Asia
+    subheading: Singapore · Malaysia · Bali · Vietnam — plus expansion destinations
+    description: |
+      Our strongest outbound corridor—city-state precision in Singapore, Kuala Lumpur and nature combos in Malaysia, wellness-led resort retreats in Bali, and heritage-rich Vietnam itineraries. Singapore–Malaysia twin-centre programs are popular with corporate and family groups from Gujarat.
+    cta:
+      label: Request Asia Itinerary
+      href: /contact
+    entityRefs:
+      - entityType: destination
+        entityId: singapore
+      - entityType: destination
+        entityId: malaysia
+      - entityType: destination
+        entityId: bali
+      - entityType: destination
+        entityId: vietnam
+      - entityType: destination
+        entityId: international-destination-asia
+    contentNotes: |
+      Card grid—4 PDF-confirmed destinations plus [International_Destination_Asia] placeholder labelled "Coming soon". Duration tags from entity summaries (multi-day). Link vietnam card to inbound section anchor #inbound-hosting for dual narrative.
+    seoNotes: |
+      H2 asia tour packages from gujarat. H3 per country. Singapore malaysia bali vietnam as supporting keywords.
+    stockImage:
+      keywords:
+        - singapore malaysia bali vietnam travel collage
+        - southeast asia tourism landmarks
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari outbound photography per Asia destination—minimum Singapore skyline group and Bali resort.
+
+  - id: europe
+    heading: Europe
+    subheading: Expansion catalogue — destinations to be confirmed
+    description: |
+      Europe programs are on our roadmap for corporate incentives and family heritage travel. Contact our team to discuss custom routing—we'll share sample itineraries as our catalogue expands beyond current PDF-confirmed destinations.
+    cta:
+      label: Enquire About Europe
+      href: /contact
+    entityRefs:
+      - entityType: destination
+        entityId: international-destination-europe
+    contentNotes: |
+      Placeholder-only section—single [International_Destination_Europe] card with pdfConfirmed: false badge. No fabricated country names. Greyed or "Notify me" CTA pattern until catalogue confirmed.
+    seoNotes: |
+      H2 europe tours from india—honest placeholder copy; no false destination claims. Long-tail reserved for future content.
+    stockImage:
+      keywords:
+        - europe travel landmarks collage placeholder
+        - european city heritage tourism
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Replace placeholder when first Europe program is PDF-confirmed—real Polo Safari group photography only.
+
+  - id: middle-east
+    heading: Middle East
+    subheading: Dubai — premium urban and desert experiences
+    description: |
+      Dubai anchors our Middle East offering—skyline experiences, desert safaris, and incentive-ready programs for corporate groups seeking a premium short-haul escape from Ahmedabad. Additional Middle East destinations are in planning.
+    cta:
+      label: Request Dubai Quote
+      href: /contact
+    entityRefs:
+      - entityType: destination
+        entityId: dubai
+      - entityType: destination
+        entityId: international-destination-middle-east
+    contentNotes: |
+      Dubai card (pdfConfirmed) prominent; [International_Destination_Middle_East] placeholder for future expansion beyond Dubai. Corporate incentive angle in card copy.
+    seoNotes: |
+      H2 dubai tour package gujarat. Dubai as primary keyword; Middle East as region keyword.
+    stockImage:
+      keywords:
+        - dubai skyline desert safari corporate
+        - middle east luxury travel incentive
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Polo Safari corporate group in Dubai—desert safari or skyline backdrop when available.
+
+  - id: africa
+    heading: Africa
+    subheading: Expansion catalogue — destinations to be confirmed
+    description: |
+      Africa safaris and cultural circuits are a future growth area for Polo Safari outbound programs. Register interest with our team—we'll notify you when PDF-confirmed itineraries become available.
+    cta:
+      label: Register Interest
+      href: /contact
+    entityRefs:
+      - entityType: destination
+        entityId: international-destination-africa
+    contentNotes: |
+      Placeholder-only—[International_Destination_Africa]. No fabricated safari or country names. Same visual treatment as Europe placeholder.
+    seoNotes: |
+      H2 africa tours from india—placeholder only; avoid ranking claims until destinations confirmed.
+    stockImage:
+      keywords:
+        - africa safari landscape travel placeholder
+        - african wildlife tourism scenic
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Replace when first Africa program confirmed—authentic Polo Safari trip photography required.
+
+  - id: australia
+    heading: Australia
+    subheading: Expansion catalogue — destinations to be confirmed
+    description: |
+      Australia family and corporate programs are planned for future seasons. Speak with our international desk about custom routing or join the waitlist for catalogue launch.
+    cta:
+      label: Enquire About Australia
+      href: /contact
+    entityRefs:
+      - entityType: destination
+        entityId: international-destination-australia
+    contentNotes: |
+      Placeholder-only—[International_Destination_Australia]. Consistent expansion-slot pattern with Europe and Africa sections.
+    seoNotes: |
+      H2 australia tour from ahmedabad—placeholder; no false package claims.
+    stockImage:
+      keywords:
+        - australia landmarks travel placeholder
+        - sydney opera house tourism scenic
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Replace when Australia catalogue is PDF-confirmed.
+
+  - id: by-audience-family
+    heading: International tours for families
+    subheading: Child-friendly pacing · Shared memories · Hassle-free logistics
+    description: |
+      Southeast Asia suits multi-generational travel—clean cities, resort clusters, and attractions that keep children engaged without exhausting parents. Singapore, Malaysia, and Bali are our most-requested family outbound combinations from Gujarat.
+    cta:
+      label: Family Theme Packages
+      href: /theme-tour-packages
+    entityRefs:
+      - entityType: theme
+        entityId: family-getaways
+      - entityType: destination
+        entityId: singapore
+      - entityType: destination
+        entityId: malaysia
+      - entityType: destination
+        entityId: bali
+    contentNotes: |
+      Copy block with theme entityRef family-getaways. Link to /theme-tour-packages#family-getaways. Three destination cards—not Europe/Africa/Australia placeholders.
+    seoNotes: |
+      H2 international family tour packages. Link /theme-tour-packages and /india for domestic family alternative.
+    stockImage:
+      keywords:
+        - family vacation southeast asia happy
+        - multigenerational travel resort pool
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari family group at Southeast Asia attraction—children and parents visible.
+
+  - id: by-audience-corporate
+    heading: International tours for corporate groups
+    subheading: Incentives · MICE · Team rewards beyond Gujarat
+    description: |
+      Reward top performers or host leadership offsites abroad—Singapore precision, Dubai premium urban experiences, and Bali wellness-led retreats. Programs integrate team activities, gala dinners, and logistics your HR team can document.
+    cta:
+      label: Request Corporate Proposal
+      href: /corporate
+    entityRefs:
+      - entityType: theme
+        entityId: corporate-retreats
+      - entityType: theme
+        entityId: international-escapes
+      - entityType: destination
+        entityId: singapore
+      - entityType: destination
+        entityId: dubai
+      - entityType: destination
+        entityId: bali
+    contentNotes: |
+      Copy block linking to /corporate#rfp. Theme refs corporate-retreats + international-escapes. Award mention optional (Gujarat Tourism corporate honours). Cross-link /awards when Step 5 live.
+    seoNotes: |
+      H2 corporate international incentive travel. Link /corporate. Dubai singapore corporate tour keywords.
+    stockImage:
+      keywords:
+        - corporate incentive travel international skyline
+        - business team reward trip abroad
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari corporate incentive group abroad—branded materials or team photo at landmark.
+
+  - id: by-audience-educational
+    heading: International tours for schools and colleges
+    subheading: Cultural exchange · Heritage exposure · Curriculum-aligned travel
+    description: |
+      International educational travel requires careful planning—visa coordination, faculty ratios, and learning outcomes. Vietnam heritage circuits are PDF-confirmed; broader international edu catalogue is limited—contact us to discuss exchange programs and inbound hosting models.
+    cta:
+      label: Request Educational Proposal
+      href: /schools-colleges
+    entityRefs:
+      - entityType: theme
+        entityId: educational-industrial-visits
+      - entityType: destination
+        entityId: vietnam
+    contentNotes: |
+      Honest scope—Vietnam as primary edu/cultural outbound reference from PDF. Flag: full international school tour catalogue not PDF-confirmed beyond Vietnam cultural angle. Link /schools-colleges#rfp. Domestic edu alternative via /india (Hyderabad, Chennai).
+    seoNotes: |
+      H2 international educational tour—scoped honestly. Link /schools-colleges and /india for domestic edu strength.
+    stockImage:
+      keywords:
+        - students cultural exchange international tour
+        - educational travel heritage learning
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari student group on cultural exchange—or Vietnam partnership photography when cleared.
+
+  - id: inbound-hosting
+    heading: Inbound hosting in Ahmedabad
+    subheading: Vietnamese delegations · Heritage walks · Cultural exchange since 2023
+    description: |
+      Polo Safari hosts international guest groups in Ahmedabad and Gujarat—city heritage programs, Polo Forest excursions, and curated cultural itineraries. Vietnamese delegations have partnered with us across 2023, 2024, and 2025, reflecting our bidirectional expertise beyond outbound sales.
+    cta:
+      label: Discuss Inbound Partnership
+      href: /contact
+    entityRefs:
+      - entityType: destination
+        entityId: ahmedabad-inbound-hosting
+      - entityType: destination
+        entityId: vietnam
+      - entityType: destination
+        entityId: ahmedabad
+      - entityType: destination
+        entityId: polo-forest
+    contentNotes: |
+      Section id anchor #inbound-hosting for cross-links from Asia/Vietnam cards. Timeline callout: 2023–2025 Vietnamese partnerships (PDF-confirmed). Link ahmedabad + polo-forest for domestic hosting venues. Distinct from outbound Vietnam tours.
+    seoNotes: |
+      H2 inbound tourism ahmedabad. Vietnam cultural exchange keyword. Differentiator for E-E-A-T vs generic OTAs.
+    stockImage:
+      keywords:
+        - international guests ahmedabad heritage walk
+        - cultural exchange delegation india hosting
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari hosting Vietnamese delegation—Ahmedabad heritage site or Polo Forest welcome; permissions required.
+
+  - id: highlights-gallery
+    heading: International highlights
+    subheading: Outbound moments · Inbound welcomes · Destination galleries
+    description: |
+      Browse photography and reels from recent international programs—outbound groups at Southeast Asian landmarks, Dubai desert evenings, and inbound cultural exchanges in Ahmedabad. Full gallery categories expand in Step 5.
+    cta:
+      label: View Full Gallery
+      href: /gallery
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-international
+      - entityType: destination
+        entityId: singapore
+      - entityType: destination
+        entityId: bali
+      - entityType: destination
+        entityId: dubai
+      - entityType: destination
+        entityId: vietnam
+      - entityType: destination
+        entityId: ahmedabad-inbound-hosting
+    contentNotes: |
+      Masonry or 5-up preview structure—one tile per PDF-confirmed international destination plus inbound hosting. Pull from gallery-international category entity when /gallery authored (Step 5). Placeholder tiles until assets ingested. Link /gallery for full experience.
+    seoNotes: |
+      H2 polo safari international gallery. Destination names in image alt roots. Link /gallery.
+    stockImage:
+      keywords:
+        - international travel photography collage
+        - outbound inbound tourism gallery mosaic
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: gallery
+    replacementNote: Curated Polo Safari international gallery—minimum 5 images across outbound and inbound programs.
+
+  - id: cta-band
+    heading: Plan your international journey
+    subheading: Outbound tours · Inbound partnerships · Custom routing
+    description: |
+      Whether you're rewarding a corporate team in Dubai, planning a family holiday in Southeast Asia, or hosting international guests in Ahmedabad—our international desk coordinates visas guidance, flights liaison, and on-ground programs from enquiry to return.
+    cta:
+      label: Contact International Desk
+      href: /contact
+    contentNotes: |
+      Full-width CTA band. Secondary links: /corporate, /theme-tour-packages#international-escapes, /india. Note: flights, visa, passport, insurance excluded per services scope—refer to /services when Step 5 live.
+    seoNotes: |
+      H2 book international tour ahmedabad. Conversion copy with primary keyword once. internalLinks to /contact.
+    stockImage:
+      keywords:
+        - international travel consultation modern office
+        - world map travel planning desk
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: Polo Safari international desk team or pre-departure briefing with outbound group.

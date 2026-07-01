@@ -1,0 +1,299 @@
+$schema: ../schema/content-model.schema.json
+id: clients
+slug: clients
+route: /clients
+title: Our Clients
+status: review
+seo:
+  title: Polo Safari Clients | Corporate & Education Partners
+  metaDescription: Eleven years serving Gujarat corporates, schools, and colleges—thousands of travellers, appreciation letters, and award-backed trust. View our client community.
+  slug: clients
+  primaryKeyword: polo safari corporate clients
+  secondaryKeywords:
+    - school tour operator gujarat clients
+    - corporate offsite testimonials ahmedabad
+    - educational tour appreciation letters
+    - gujarat enterprise travel partner
+    - polo safari reviews
+  internalLinks:
+    - label: Corporate Retreats
+      href: /corporate
+    - label: Schools & Colleges
+      href: /schools-colleges
+    - label: Awards & Recognition
+      href: /awards
+    - label: Gallery
+      href: /gallery
+    - label: FAQ
+      href: /faq
+  ctaSuggestions:
+    - label: Request Corporate Proposal
+      href: /corporate
+    - label: Plan Educational Tour
+      href: /schools-colleges
+    - label: Contact Us
+      href: /contact
+
+sections:
+  - id: hero
+    heading: Trusted by teams and campuses across Gujarat
+    subheading: Corporate enterprises · Schools & colleges · Repeat seasons
+    description: |
+      Polo Safari's client community spans manufacturing and IT, pharmaceuticals and banking, senior secondary schools and degree colleges—organisations that return because execution, safety, and communication meet the bar their stakeholders expect.
+    cta:
+      label: Join Our Client Community
+      href: /contact
+    contentNotes: |
+      Premium hero—not a logo dump. Breadcrumb Home → Clients. Subtle logo watermark collage optional behind copy.
+    seoNotes: |
+      Single H1 polo safari corporate clients. Segment keywords in subheading.
+    stockImage:
+      keywords:
+        - corporate client partnership handshake outdoor
+        - school college group travel gujarat
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Montage of Polo Safari client groups—corporate and educational—with permission.
+
+  - id: statistics-strip
+    heading: By the numbers
+    subheading: Eleven years · Thousands of travellers
+    description: |
+      Since 2014, Polo Safari has welcomed thousands of travellers across corporate, family, group, and educational segments—programs delivered from our Ahmedabad headquarters with the consistency award seasons recognise.
+    entityRefs:
+      - entityType: company
+        entityId: polo-safari
+      - entityType: timeline-event
+        entityId: timeline-2025-eleven-years
+    contentNotes: |
+      Stat strip: "11+ years" | "Thousands of travellers" | "Gujarat Tourism Season 7 — 3 awards". Pull foundedYear 2014 from company entity. Link /awards for award detail.
+    seoNotes: |
+      H2 polo safari experience statistics. Milestone keywords.
+    stockImage:
+      keywords:
+        - travel statistics infographic professional
+        - years experience tour operator badge
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: Optional animated counter—numbers sourced from company milestone, not inflated.
+
+  - id: corporate-clients
+    heading: Corporate clients
+    subheading: Gujarat enterprises across sectors
+    description: |
+      HR and leadership teams from manufacturing, IT, pharmaceuticals, banking, FMCG, infrastructure, automotive, and energy sectors trust Polo Safari for offsites, team-building retreats, and employee engagement programs—often booking repeat seasons at Polo Forest, Udaipur, and pan-India destinations.
+    cta:
+      label: Request Corporate Proposal
+      href: /corporate
+    entityRefs:
+      - entityType: client
+        entityId: corporate-client-01
+      - entityType: client
+        entityId: corporate-client-02
+      - entityType: client
+        entityId: corporate-client-03
+      - entityType: client
+        entityId: corporate-client-04
+      - entityType: client
+        entityId: corporate-client-05
+      - entityType: client
+        entityId: corporate-client-06
+      - entityType: client
+        entityId: corporate-client-07
+      - entityType: client
+        entityId: corporate-client-08
+    contentNotes: |
+      Logo grid from entityRefs—placeholders [Corporate_Client_01] through [08]. Sector labels from client names until real logos verified. verified:false flag in CMS. Link /corporate#rfp.
+    seoNotes: |
+      H2 corporate clients gujarat polo safari. Sector names as accessible alt text until logos live.
+    stockImage:
+      keywords:
+        - corporate logo wall partner companies
+        - business client showcase grid
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Replace placeholders with verified client logos and written permissions.
+
+  - id: educational-institutions
+    heading: Educational institutions
+    subheading: Schools and colleges that return year after year
+    description: |
+      Campus coordinators and principals choose Polo Safari for field studies, industrial visits, adventure camps, and annual picnics—programs with clear faculty briefings, parent communication, and safety protocols discipline demands.
+    cta:
+      label: Plan Educational Tour
+      href: /schools-colleges
+    entityRefs:
+      - entityType: client
+        entityId: edu-institution-01
+      - entityType: client
+        entityId: edu-institution-02
+      - entityType: client
+        entityId: edu-institution-03
+      - entityType: client
+        entityId: edu-institution-04
+      - entityType: client
+        entityId: edu-institution-05
+      - entityType: client
+        entityId: edu-institution-06
+      - entityType: client
+        entityId: edu-institution-07
+      - entityType: client
+        entityId: edu-institution-08
+    contentNotes: |
+      Logo grid [Edu_Institution_01]–[08]. Names TBC from client. Link Hyderabad/Chennai 2025 programs on /schools-colleges when referenced.
+    seoNotes: |
+      H2 school college clients polo safari gujarat.
+    stockImage:
+      keywords:
+        - school college logo partnership education
+        - students field trip group photo
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Verified institution logos from PDF pages 6–7 with permission.
+
+  - id: government-associations-placeholder
+    heading: Government associations
+    subheading: Public-sector and association partnerships — assets pending
+    description: |
+      Polo Safari collaborates with government-aligned bodies and tourism associations that strengthen professional standards. Association logos and partnership details will be published once confirmed with issuing organisations.
+    contentNotes: |
+      Placeholder slot [Gov_Association_01] plus future slots. Do not invent body names. May overlap with /awards memberships when verified.
+    seoNotes: |
+      H2 government association tour operator gujarat. Draft until assets supplied.
+    stockImage:
+      keywords:
+        - government association logo india
+        - public sector partnership emblem
+      orientation: square
+      aspectRatio: "1:1"
+      usage: card
+    replacementNote: "[Gov_Association_01] and additional logos when client confirms."
+
+  - id: industry-partners
+    heading: Industry partners
+    subheading: Associations and peers in the travel ecosystem
+    description: |
+      Professional relationships with industry associations, media partners, and ecosystem collaborators support Polo Safari's standards for corporate and educational group travel—logos published here as partnerships are confirmed.
+    entityRefs:
+      - entityType: partner
+        entityId: partner-01
+      - entityType: partner
+        entityId: partner-02
+      - entityType: partner
+        entityId: partner-03
+      - entityType: partner
+        entityId: partner-04
+      - entityType: partner
+        entityId: partner-05
+      - entityType: partner
+        entityId: partner-06
+    contentNotes: |
+      Logo row from partners entity—[Partner_01] through [06]. Type badges: association, industry, media. Names TBC.
+    seoNotes: |
+      H2 polo safari industry partners.
+    stockImage:
+      keywords:
+        - business partnership logos travel industry
+        - association member badge display
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Verified partner logos from PDF page 5.
+
+  - id: success-stories
+    heading: Success stories
+    subheading: Outcomes clients describe in their own words
+    description: |
+      From HR leaders who measure team cohesion after Polo Forest offsites to academic coordinators who need field studies parents trust—these voices reflect the delivery standards behind our logo wall.
+    entityRefs:
+      - entityType: testimonial
+        entityId: testimonial-corporate-placeholder
+      - entityType: testimonial
+        entityId: testimonial-education-placeholder
+      - entityType: testimonial
+        entityId: testimonial-family-placeholder
+    contentNotes: |
+      Three featured quote cards—corporate, education, family. Rotate on carousel. Replace placeholders with verified quotes and attribution when available. Link /corporate and /schools-colleges.
+    seoNotes: |
+      H2 polo safari client success stories. Blockquote markup for quotes.
+    stockImage:
+      keywords:
+        - satisfied corporate client testimonial portrait
+        - teacher coordinator outdoor education
+      orientation: portrait
+      aspectRatio: "4:5"
+      usage: card
+    replacementNote: Client headshots or on-trip candids with written permission.
+
+  - id: appreciation-letters
+    heading: Appreciation letters
+    subheading: Written endorsements from corporate and campus clients
+    description: |
+      Formal appreciation letters from enterprise HR teams, school administrations, and group organisers—scanned originals for procurement files and principal review.
+    entityRefs:
+      - entityType: testimonial
+        entityId: appreciation-letter-01
+      - entityType: testimonial
+        entityId: appreciation-letter-02
+      - entityType: testimonial
+        entityId: appreciation-letter-03
+    contentNotes: |
+      Lightbox gallery: [Appreciation_Letter_01] corporate, [02] education, [03] group. PDF download when scans ready. Redact sensitive client details if required.
+    seoNotes: |
+      H2 client appreciation letters polo safari.
+    stockImage:
+      keywords:
+        - appreciation letter document scan
+        - formal client endorsement letter
+      orientation: portrait
+      aspectRatio: "4:5"
+      usage: gallery
+    replacementNote: High-res scans from PDF pages 32–34.
+
+  - id: review-stats
+    heading: Guest reviews
+    subheading: Dual sources — platform attribution pending confirmation
+    description: |
+      Polo Safari maintains strong public review performance—presented as separate metrics, never merged into a single headline number. Google Reviews and a second recommendation rate await final platform confirmation before live publication.
+    entityRefs:
+      - entityType: testimonial
+        entityId: google-reviews-stat
+      - entityType: testimonial
+        entityId: recommend-rate-stat
+    contentNotes: |
+      Two stat cards side by side: (1) "4.7 · 1,304+ Google Reviews" (2) "96% recommend · 253 reviews — Platform TBC". See 01-REVIEW-STATS-PENDING.md. Do NOT cite TripAdvisor without approval. Placeholder link buttons until URLs confirmed.
+    seoNotes: |
+      H2 polo safari reviews. Honest dual-stat presentation per audit doc.
+    stockImage:
+      keywords:
+        - online review rating stars professional
+        - customer satisfaction survey results
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Screenshot or live embed from verified Google Business Profile when URL confirmed.
+
+  - id: cta
+    heading: Become our next success story
+    subheading: Corporate offsites · Educational tours · Family journeys
+    description: |
+      Whether you are an HR manager planning Q3 offsites or a principal scheduling the annual picnic, our Ahmedabad team will scope a program with the professionalism our clients expect—and return for.
+    cta:
+      label: Contact Polo Safari
+      href: /contact
+    contentNotes: |
+      Triple CTA row: /corporate, /schools-colleges, /contact. Trust link /awards.
+    seoNotes: |
+      H2 contact polo safari clients page close.
+    stockImage:
+      keywords:
+        - diverse client group travel celebration
+        - team success outdoor corporate event
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: background
+    replacementNote: Polo Safari mixed client group photo—corporate and students.

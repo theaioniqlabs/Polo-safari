@@ -3,7 +3,24 @@ import path from "path";
 import { parse } from "yaml";
 import type { EntityFile, EntityRecord, Page } from "./types";
 
-const CONTENT_ROOT = path.join(process.cwd(), "..", "docs", "content");
+function resolveContentRoot(): string {
+  const candidates = [
+    path.join(process.cwd(), "content"),
+    path.join(process.cwd(), "..", "docs", "content"),
+  ];
+
+  for (const candidate of candidates) {
+    if (fs.existsSync(path.join(candidate, "pages"))) {
+      return candidate;
+    }
+  }
+
+  throw new Error(
+    "Content root not found. Run `pnpm run sync:content` or ensure docs/content exists.",
+  );
+}
+
+const CONTENT_ROOT = resolveContentRoot();
 
 function readYaml<T>(filePath: string): T {
   const raw = fs.readFileSync(filePath, "utf8");

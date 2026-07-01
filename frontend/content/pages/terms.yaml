@@ -1,0 +1,238 @@
+$schema: ../schema/content-model.schema.json
+id: terms
+slug: terms
+route: /legal/terms
+title: Terms of Service
+status: review
+seo:
+  title: Terms of Service | Polo Safari
+  metaDescription: Terms for booking Polo Safari corporate retreats, school tours, family holidays, and adventure programs. Ahmedabad tour operator—Gujarat, India governing law.
+  slug: terms
+  primaryKeyword: polo safari terms of service
+  secondaryKeywords:
+    - tour booking terms india
+    - corporate retreat cancellation policy
+    - school tour terms gujarat
+    - travel operator liability india
+    - polo safari booking conditions
+  internalLinks:
+    - label: Privacy Policy
+      href: /legal/privacy
+    - label: Contact Polo Safari
+      href: /contact
+    - label: FAQ
+      href: /faq
+    - label: Corporate RFP
+      href: /corporate
+      anchor: "#rfp"
+    - label: Educational RFP
+      href: /schools-colleges
+      anchor: "#rfp"
+  ctaSuggestions:
+    - label: Request a Proposal
+      href: /contact
+    - label: Read Privacy Policy
+      href: /legal/privacy
+
+sections:
+  - id: hero
+    heading: Terms of Service
+    subheading: The agreement between you and Polo Safari
+    description: |
+      These terms govern your use of polo-safari.in and your relationship with Polo Safari when you enquire about, book, or participate in our experiential travel programs.
+    contentNotes: |
+      Requires solicitor review before production. Legal page layout—TOC anchor links. Breadcrumb Home → Terms of Service. Cross-link /legal/privacy.
+    seoNotes: |
+      Single H1 polo safari terms of service. Canonical /legal/terms.
+    stockImage:
+      keywords:
+        - professional travel agreement handshake
+        - corporate travel planning meeting india
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Polo Safari coordinator with client reviewing proposal—professional, warm tone.
+
+  - id: agreement
+    heading: Agreement to terms
+    subheading: Who these terms apply to
+    description: |
+      Polo Safari ("we", "us", "our") is an experiential travel operator based in Ahmedabad, Gujarat, India. By accessing our website, submitting an enquiry, signing a proposal, or participating in a tour, you ("you", "client", "participant", or "booker") agree to these Terms of Service.
+
+      If you book on behalf of an organisation—such as a company HR team, school, or college—you confirm you have authority to bind that organisation. Participants under 18 on educational tours must be enrolled through an authorised institution with appropriate faculty supervision.
+
+      If you do not agree to these terms, do not use our services or submit bookings.
+    entityRefs:
+      - entityType: company
+        entityId: polo-safari
+    contentNotes: |
+      Requires solicitor review before production. Reference proposal/confirmation document as controlling where terms conflict—solicitor to advise hierarchy.
+    seoNotes: |
+      H2 agreement to terms polo safari.
+
+  - id: services-description
+    heading: Services description
+    subheading: What Polo Safari provides
+    description: |
+      Polo Safari designs and delivers experiential travel programs, including:
+
+      • **Corporate retreats and offsites** — Team-building, wellness, adventure, and rejuvenation programs; request proposals via /corporate
+      • **School and college educational tours** — Curriculum-aligned field studies, industrial visits, nature camps, and adventure learning; request proposals via /schools-colleges
+      • **Family holidays and group tours** — Domestic India itineraries and select international outbound programs
+      • **Theme-based packages** — Heritage, adventure, wellness, and seasonal programs as described on /theme-tour-packages
+      • **Add-on services (PDF-confirmed)** — On-trip photography, videography, drone coverage (on request), social reels, branded merchandise, and printed collateral via /services
+
+      **What we do not provide as standalone products:** airline tickets, hotel room inventory, visa processing, passport services, or travel insurance. We coordinate resorts, transport, and activities through trusted partners as part of packaged programs—you remain responsible for independent travel arrangements unless explicitly included in your signed proposal.
+
+      Program details, inclusions, exclusions, and pricing are specified in your written proposal or booking confirmation—not inferred from website marketing copy alone.
+    contentNotes: |
+      Requires solicitor review before production. Scope aligned with PDF and services.yaml. No flights/visa claims. RFP flows link to corporate and schools-colleges anchors.
+    seoNotes: |
+      H2 polo safari services scope booking.
+
+  - id: booking-payment
+    heading: Booking and payment
+    subheading: From enquiry to confirmation
+    description: |
+      **Enquiries** — Submit details via /contact, WhatsApp, email, or our corporate/educational RFP forms. We respond with a scoped proposal including itinerary outline, inclusions, pricing, and payment schedule.
+
+      **Confirmation** — A booking is confirmed when you accept the proposal in writing (email, signed document, or agreed digital confirmation) and pay any required deposit by the stated deadline.
+
+      **Payment** — Amounts, instalments, and accepted methods are set out in your proposal. Late payment may delay confirmation or release of final travel documents.
+
+      **Changes** — Itinerary changes requested after confirmation are subject to availability and may incur additional costs. We will communicate revisions before proceeding.
+
+      **Group minimums** — Some programs require minimum participant numbers; if thresholds are not met, we may offer alternatives, reschedule, or adjust pricing as agreed.
+    contentNotes: |
+      Requires solicitor review before production. Payment gateway, GST invoice format, and deposit percentages to be defined in commercial schedule—not invented here.
+    seoNotes: |
+      H2 booking payment terms tour operator.
+
+  - id: cancellations-refunds
+    heading: Cancellations and refunds
+    subheading: "[TBC — standard policy needed]"
+    description: |
+      Cancellation and refund terms depend on the program type, destination, advance commitments to partners, and timing of your notice. Your signed proposal or booking confirmation will include the applicable cancellation schedule.
+
+      **General principles (subject to proposal-specific terms):**
+
+      • Cancellations must be submitted in writing to Chirag@polo-safari.in
+      • Refunds, if any, are calculated after deducting non-recoverable costs already committed to resorts, transport, permits, and third-party vendors
+      • No-shows and late cancellations typically forfeit deposits or attract higher charges
+      • Force majeure events may be handled under separate provisions in your proposal
+
+      A standard Polo Safari cancellation and refund policy for corporate, educational, and family segments is **pending finalisation**—do not publish specific percentages until client and solicitor approve. Flag: [TBC — standard policy needed].
+    contentNotes: |
+      Requires solicitor review before production. FLAG TBC — standard cancellation policy needed from ops and solicitor. Replace placeholder principles with tiered schedule (e.g. 60/30/15 days) once approved. Step 7 verification backlog item.
+    seoNotes: |
+      H2 cancellation refund policy polo safari. Thin until policy finalised—acceptable with TBC flag.
+
+  - id: liability
+    heading: Limitation of liability
+    subheading: Responsibilities and risks
+    description: |
+      Polo Safari exercises reasonable care in designing itineraries, selecting partners, and briefing participants. Adventure activities, outdoor travel, and third-party services involve inherent risks.
+
+      To the fullest extent permitted by applicable Indian law:
+
+      • We are not liable for indirect, incidental, or consequential losses
+      • Our total liability for any claim arising from a confirmed booking is limited to the fees paid to Polo Safari for that specific program, unless a higher limit is required by mandatory law
+      • We are not responsible for loss or damage caused by events outside our reasonable control, including weather, natural disasters, strikes, government actions, or participant negligence
+      • Third-party providers (resorts, transport operators, activity vendors) are engaged on terms that may limit recourse—we will assist with reasonable coordination but are not a substitute for insurance you may choose to obtain independently
+
+      Nothing in these terms excludes liability that cannot be excluded under Indian law.
+    contentNotes: |
+      Requires solicitor review before production. Insurance disclaimer—Polo Safari does not sell travel insurance. Align with ops safety protocols (Step 7 TBC).
+    seoNotes: |
+      H2 tour operator liability india.
+
+  - id: travel-documents
+    heading: Travel documents and eligibility
+    subheading: Your responsibilities
+    description: |
+      Participants are responsible for valid government-issued identification and any permits or venue access documents required for domestic travel.
+
+      For international programs, you are responsible for valid passports, visas, health requirements, and customs compliance unless your signed proposal explicitly states Polo Safari will coordinate specific documentation—and even then, issuance remains with relevant authorities.
+
+      Polo Safari does not process visa applications or passport services. We may provide general guidance in proposals; ultimate compliance is yours.
+
+      Participants with medical conditions, mobility needs, or dietary requirements must disclose them during booking so we can assess suitability and make reasonable arrangements.
+    contentNotes: |
+      Requires solicitor review before production. No visa/passport service claims. Cross-link FAQ safety audience when relevant.
+    seoNotes: |
+      H2 travel documents requirements polo safari.
+
+  - id: conduct
+    heading: Participant conduct
+    subheading: Respect for people, places, and safety
+    description: |
+      All participants must follow instructions from Polo Safari coordinators and on-ground partners, respect local communities and ecology, and behave in a manner that does not endanger themselves or others.
+
+      We may remove a participant from a program without refund if conduct is unlawful, abusive, intoxicated to a degree that impairs safety, or otherwise incompatible with group travel—particularly on educational tours where institutional standards apply.
+
+      Damage to property caused by a participant may be charged to the booker or institution responsible for the booking.
+    contentNotes: |
+      Requires solicitor review before production. Align with schools-colleges supervision policies and corporate code-of-conduct expectations.
+    seoNotes: |
+      H2 participant conduct group tours.
+
+  - id: intellectual-property
+    heading: Intellectual property
+    subheading: Website content and trip media
+    description: |
+      Content on polo-safari.in—including text, logos, itineraries, and marketing materials—is owned by Polo Safari or used under licence. You may not copy, scrape, or redistribute it without written permission.
+
+      **Trip photography and videography** — When you purchase media services, usage rights are defined in your proposal (e.g. internal corporate use, institutional yearbook, social media with credit). Raw files and commercial licensing beyond agreed scope may incur additional fees.
+
+      **Your submissions** — Testimonials, photos, or feedback you voluntarily provide may be used by Polo Safari for marketing with your consent or institutional approval.
+    contentNotes: |
+      Requires solicitor review before production. Media licensing tiers to align with services.yaml deliverables.
+    seoNotes: |
+      H2 intellectual property polo safari.
+
+  - id: governing-law
+    heading: Governing law and disputes
+    subheading: Gujarat, India
+    description: |
+      These Terms of Service are governed by the laws of India. Courts in Ahmedabad, Gujarat shall have exclusive jurisdiction over disputes arising from or relating to these terms or our services, subject to any mandatory consumer protection provisions that apply to you.
+
+      We encourage good-faith resolution through direct contact at Chirag@polo-safari.in before formal proceedings.
+    contentNotes: |
+      Requires solicitor review before production. Arbitration clause optional—solicitor to advise for B2B corporate contracts vs B2C family bookings.
+    seoNotes: |
+      H2 governing law gujarat india tour operator.
+
+  - id: changes-to-terms
+    heading: Changes to these terms
+    subheading: Policy updates
+    description: |
+      We may update these Terms of Service to reflect legal, operational, or business changes. The "Last updated" date at the bottom of this page will be revised when material changes are posted.
+
+      Confirmed bookings remain subject to the terms in effect at the time of your written acceptance, unless we notify you of changes that affect your specific program and you agree to them.
+    contentNotes: |
+      Requires solicitor review before production. Version control in CMS recommended.
+    seoNotes: |
+      H2 terms of service updates.
+
+  - id: contact
+    heading: Contact
+    subheading: Questions about these terms
+    description: |
+      **Polo Safari**  
+      D-906, Ganesh Glory 11, Nr. BSNL Office, S.G. Highway, Jagatpur, Ahmedabad 382470, Gujarat, India
+
+      **Email:** Chirag@polo-safari.in  
+      **Phone:** +91 94085 10911 · +91 87990 17801 · +91 93285 65243  
+      **Web:** https://www.polo-safari.in
+
+      For trip planning, visit /contact. For legal or contractual questions, email with "Terms Enquiry" in the subject line.
+    entityRefs:
+      - entityType: company
+        entityId: polo-safari
+    cta:
+      label: Contact Polo Safari
+      href: /contact
+    contentNotes: |
+      Requires solicitor review before production. Last updated date: 1 July 2026—mirror in CMS metadata alongside privacy.yaml.
+    seoNotes: |
+      H2 contact polo safari terms. dateModified schema when published.

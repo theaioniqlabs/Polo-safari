@@ -1,0 +1,344 @@
+$schema: ../schema/content-model.schema.json
+id: schools-colleges
+slug: schools-colleges
+route: /schools-colleges
+title: Schools & Colleges
+status: review
+seo:
+  title: School & College Tours | Polo Safari Educational Travel
+  metaDescription: Educational tours, industrial visits, and nature camps for schools and colleges from Ahmedabad—Polo Forest, Devs Camp, and South India. Request a proposal.
+  slug: schools-colleges
+  primaryKeyword: school college educational tours
+  secondaryKeywords:
+    - school picnic gujarat
+    - industrial visit ahmedabad
+    - nature camp students
+    - college field trip india
+    - curriculum based tour
+  internalLinks:
+    - label: Our Educational Clients
+      href: /clients
+    - label: India Destinations
+      href: /india
+    - label: Polo Forest
+      href: /india
+    - label: FAQ
+      href: /faq
+    - label: Contact Us
+      href: /contact
+  ctaSuggestions:
+    - label: Request Educational Proposal
+      href: /schools-colleges
+    - label: View Gallery
+      href: /gallery
+    - label: About Polo Safari
+      href: /about
+
+sections:
+  - id: hero
+    heading: Educational tours for schools and colleges
+    subheading: Field studies, industrial visits, and nature camps—with faculty in mind
+    description: |
+      Polo Safari designs curriculum-aligned programs across Polo Forest, Devs Camp, Bakor, Manali, Hyderabad, and Chennai—safety briefings, faculty liaison, and learning outcomes your institution can document and defend.
+    cta:
+      label: Request Proposal
+      href: "#rfp"
+    contentNotes: |
+      WF-PILLAR-HERO for education pillar. Route /schools-colleges with RFP at #rfp. Breadcrumb Home → Schools & Colleges. 301 from legacy /education.
+    seoNotes: |
+      Single H1 school college educational tours. Primary keyword in hero. Faculty-focused subheading.
+    stockImage:
+      keywords:
+        - school field trip outdoor learning india
+        - college students educational tour nature
+      orientation: landscape
+      aspectRatio: "21:9"
+      usage: hero
+    replacementNote: Polo Safari school group at Polo Forest or Devs Camp—students with faculty liaison.
+
+  - id: educational-tours
+    heading: Educational tours
+    subheading: Day trips, weekend camps, and multi-day field studies
+    description: |
+      Single-day picnics from Ahmedabad to Polo Forest and Saputara. Weekend nature camps at Devs Camp and Bakor. Multi-day South India circuits in Hyderabad and Chennai—each format scaled to age group and institution type.
+    cta:
+      label: Plan Your Tour
+      href: "#rfp"
+    entityRefs:
+      - entityType: theme
+        entityId: educational-industrial-visits
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: devs-camp
+      - entityType: destination
+        entityId: hyderabad
+      - entityType: destination
+        entityId: chennai
+    contentNotes: |
+      Program type cards linked to destination entityRefs. Duration tags from summaries. 2025 Hyderabad/Chennai programs highlighted.
+    seoNotes: |
+      H2 educational tours gujarat. School picnic and college trip keywords in cards.
+    stockImage:
+      keywords:
+        - students outdoor classroom india
+        - educational tour bus field trip
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Mixed-age Polo Safari educational groups—primary, secondary, and college cohorts.
+
+  - id: industrial-visits
+    heading: Industrial visits
+    subheading: Factory floors, tech campuses, and real-world exposure
+    description: |
+      Structured industrial visits as part of broader educational itineraries—Hyderabad and Chennai metro programs for 2025, coordinated with site permissions, safety protocols, and faculty learning guides.
+    cta:
+      label: Request Industrial Visit
+      href: "#rfp"
+    entityRefs:
+      - entityType: destination
+        entityId: hyderabad
+      - entityType: destination
+        entityId: chennai
+      - entityType: destination
+        entityId: ahmedabad
+    contentNotes: |
+      Site names not listed in PDF—scope per proposal. Verify industrial partners with ops before naming on live site. Ahmedabad gateway logistics for Gujarat institutions.
+    seoNotes: |
+      H2 industrial visit ahmedabad / south india. STEM and commerce exposure keywords.
+    stockImage:
+      keywords:
+        - students industrial visit factory
+        - college engineering field trip
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Permissioned industrial visit photos—students with safety gear at partner site.
+
+  - id: nature-camps
+    heading: Nature camps
+    subheading: Ecology, teamwork, and outdoor skills
+    description: |
+      Hands-on ecology at Devs Camp and Polo Forest—birding, nature trails, camping basics, and team challenges that build resilience without compromising supervision ratios or safety briefings.
+    cta:
+      label: Book a Nature Camp
+      href: "#rfp"
+    entityRefs:
+      - entityType: destination
+        entityId: devs-camp
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: destination
+        entityId: bakor
+    contentNotes: |
+      Supervision ratio and age guidelines TBC verify with ops. Link adventure safety FAQs when Step 5 complete.
+    seoNotes: |
+      H2 nature camp students gujarat. Ecology and outdoor learning keywords.
+    stockImage:
+      keywords:
+        - nature camp students ecology india
+        - outdoor camping school group forest
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Devs Camp or Polo Forest nature session—students journaling or trail activity.
+
+  - id: heritage-learning
+    heading: Heritage learning at Polo Forest
+    subheading: Authentic Aravalli history—told by people who grew up here
+    description: |
+      Temple archaeology, village culture, and founder-researched storytelling at our home destination. Heritage walks designed for students who need more than textbook dates—context, respect, and local voice.
+    cta:
+      label: Explore Heritage Programs
+      href: "#rfp"
+    entityRefs:
+      - entityType: theme
+        entityId: heritage-polo-forest
+      - entityType: destination
+        entityId: polo-forest
+      - entityType: founder
+        entityId: chirag-shah
+    contentNotes: |
+      Cross-link /about for founder story. Heritage module distinct from generic picnic. Link /india for Polo Forest detail.
+    seoNotes: |
+      H2 polo forest heritage education. History and archaeology keywords for curriculum alignment.
+    stockImage:
+      keywords:
+        - heritage walk students ancient temple
+        - polo forest archaeology learning gujarat
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Students on Polo Forest heritage trail with Polo Safari guide at ruins.
+
+  - id: curriculum-based-tours
+    heading: Curriculum-based tours
+    subheading: Align field studies to your syllabus
+    description: |
+      We work with faculty coordinators to map learning objectives—science ecology units, history modules, geography fieldwork, and leadership outcomes—into day-wise programs with pre-trip briefings and post-trip reflection prompts.
+    cta:
+      label: Share Your Syllabus
+      href: "#rfp"
+    contentNotes: |
+      Offer sample learning objective templates in RFP follow-up—not on page until ops approves. Link faculty support section below.
+    seoNotes: |
+      H2 curriculum based educational tour. CBSE/ICSE/GSEB agnostic—institution-specific in proposals.
+    stockImage:
+      keywords:
+        - curriculum planning teachers students
+        - field study worksheet outdoor
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Faculty coordinator reviewing field workbook with Polo Safari liaison.
+
+  - id: safety
+    heading: Safety first
+    subheading: Protocols every parent and principal expects
+    description: |
+      Pre-trip safety briefings, trained facilitators, first-aid readiness, transport vetting, and clear student supervision standards on every program. Detailed safety documentation available on request for institutional approval workflows.
+    cta:
+      label: Ask About Safety
+      href: "#rfp"
+    contentNotes: |
+      verify with ops — confirm supervision ratios, insurance scope, emergency protocols, and night-stay rules before publish. Flag in Step 7. Link /faq audience schools-colleges when live. Do not claim certifications not on file.
+    seoNotes: |
+      H2 school tour safety gujarat. Trust keywords for principal audience—supervision, first aid, transport.
+    stockImage:
+      keywords:
+        - school trip safety briefing students
+        - first aid outdoor education supervisor
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Polo Safari safety briefing circle—students, faculty, and lead facilitator with kit visible.
+
+  - id: faculty-support
+    heading: Faculty support
+    subheading: We coordinate so teachers can teach
+    description: |
+      Dedicated faculty liaison from enquiry through execution—pre-trip coordination calls, on-ground support during activities, rooming and dietary coordination, and post-trip documentation for institutional records.
+    cta:
+      label: Speak With Our Team
+      href: /contact
+    contentNotes: |
+      verify with ops — confirm liaison availability model (single point vs on-ground ratio). Document turnaround times for proposals. Cross-reference corporate service standards for consistency.
+    seoNotes: |
+      H2 faculty support educational tours. Principal and coordinator decision-maker keywords.
+    stockImage:
+      keywords:
+        - teacher faculty school trip support
+        - academic coordinator travel planning
+      orientation: portrait
+      aspectRatio: "4:5"
+      usage: card
+    replacementNote: Polo Safari faculty liaison with school teachers on-trip—coordination moment.
+
+  - id: student-learning-outcomes
+    heading: Student learning outcomes
+    subheading: Experiences your institution can measure
+    description: |
+      Programs designed with observable outcomes—teamwork, environmental awareness, historical literacy, and confidence in outdoor settings—with reflection activities and optional documentation for school records.
+    cta:
+      label: Define Your Outcomes
+      href: "#rfp"
+    contentNotes: |
+      verify with ops — supply sample outcome rubrics per program type (nature camp, heritage, industrial). Avoid unverifiable learning gain statistics. Pair with curriculum section.
+    seoNotes: |
+      H2 student learning outcomes field trip. Outcome-based education keywords.
+    stockImage:
+      keywords:
+        - students learning outdoor reflection
+        - educational outcomes group discussion
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: full-width
+    replacementNote: Students in guided reflection session post-activity—journals or group debrief.
+
+  - id: institutions-served
+    heading: Institutions we've served
+    subheading: Schools and colleges across Gujarat and beyond
+    description: |
+      Trusted by campuses for repeat seasonal tours—logos and names to be confirmed with institutional permission before publication.
+    cta:
+      label: See All Clients
+      href: /clients
+    entityRefs:
+      - entityType: client
+        entityId: edu-institution-01
+      - entityType: client
+        entityId: edu-institution-02
+      - entityType: client
+        entityId: edu-institution-03
+      - entityType: client
+        entityId: edu-institution-04
+      - entityType: client
+        entityId: edu-institution-05
+      - entityType: client
+        entityId: edu-institution-06
+      - entityType: client
+        entityId: edu-institution-07
+      - entityType: client
+        entityId: edu-institution-08
+    contentNotes: |
+      Logo grid from clients-education entityRefs—all placeholders [Edu_Institution_01–08] until names verified. verified:false on all items. Appreciation letter [Appreciation_Letter_02] on /clients.
+    seoNotes: |
+      H2 school college clients polo safari. Institution names in alt text when confirmed.
+    stockImage:
+      keywords:
+        - school college logo wall education
+        - institution partnership trust
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: card
+    replacementNote: Replace [Edu_Institution_01–08] with permissioned school/college logos.
+
+  - id: educational-gallery
+    heading: Educational gallery
+    subheading: Field studies, camps, and campus trips in the field
+    description: |
+      Moments from Polo Forest heritage walks, Devs Camp ecology sessions, industrial visit days, and multi-day South India circuits—see how students learn outdoors with Polo Safari.
+    cta:
+      label: Full Gallery
+      href: /gallery
+    entityRefs:
+      - entityType: gallery-category
+        entityId: gallery-educational
+      - entityType: gallery-category
+        entityId: gallery-polo-forest
+      - entityType: gallery-category
+        entityId: gallery-nature
+    contentNotes: |
+      Masonry from gallery-educational keywords. Filter /gallery by educational category when CMS supports.
+    seoNotes: |
+      H2 educational tour photos. Alt roots from gallery entity descriptions.
+    stockImage:
+      keywords:
+        - school field trip photo gallery
+        - students outdoor learning india
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: gallery
+    replacementNote: Minimum 6 Polo Safari educational images across Polo Forest, Devs Camp, and South India.
+
+  - id: educational-rfp
+    heading: Request an educational proposal
+    subheading: For principals, coordinators, and faculty leads · No login required
+    description: |
+      Share your institution, student count, grade levels, preferred dates, destinations, and learning objectives—we'll respond with a tailored itinerary, safety overview, and faculty support plan.
+    cta:
+      label: Submit RFP
+      href: "#rfp"
+    contentNotes: |
+      Anchor id rfp — education RFP form distinct from corporate. Fields: institution, coordinator, student count, grades, dates, program type, destinations, learning goals, special needs. 301 from /education#rfp. Phone/email from company.contact.
+    seoNotes: |
+      H2 request educational tour proposal. Conversion section—clear form labels, local Ahmedabad contact NAP.
+    stockImage:
+      keywords:
+        - school administrator proposal form
+        - educational travel enquiry
+      orientation: landscape
+      aspectRatio: "16:9"
+      usage: background
+    replacementNote: Optional—coordinator call at Polo Safari office; form remains focal.
