@@ -1,0 +1,13 @@
+{
+  "name": "polo-safari",
+  "private": true,
+  "packageManager": "pnpm@10.28.0",
+  "scripts": {
+    "dev": "pnpm --dir frontend dev",
+    "build": "pnpm --dir frontend build",
+    "start": "pnpm --dir frontend start",
+    "lint": "pnpm --dir frontend lint",
+    "sync:content": "pnpm --dir frontend sync:content",
+    "install:frontend": "pnpm --dir frontend install"
+  }
+}

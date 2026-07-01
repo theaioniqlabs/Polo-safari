@@ -9,6 +9,7 @@ export function useFocusTrap(
   containerRef: RefObject<HTMLElement | null>,
   active: boolean,
   onEscape?: () => void,
+  autoFocus = true,
 ) {
   useEffect(() => {
     if (!active || !containerRef.current) return;
@@ -18,7 +19,9 @@ export function useFocusTrap(
     const first = focusable[0];
     const last = focusable[focusable.length - 1];
 
-    first?.focus();
+    if (autoFocus) {
+      first?.focus({ preventScroll: true });
+    }
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -31,17 +34,17 @@ export function useFocusTrap(
       if (event.shiftKey) {
         if (document.activeElement === first) {
           event.preventDefault();
-          last?.focus();
+          last?.focus({ preventScroll: true });
         }
       } else if (document.activeElement === last) {
         event.preventDefault();
-        first?.focus();
+        first?.focus({ preventScroll: true });
       }
     };
 
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
-  }, [active, containerRef, onEscape]);
+  }, [active, autoFocus, containerRef, onEscape]);
 }
 
 export function useBodyScrollLock(locked: boolean) {

@@ -85,8 +85,8 @@ function EntityCard({ entity }: { entity: EntityRecord }) {
     case "theme": {
       const t = entity as ThemeEntity;
       const href = t.anchorSlug
-        ? `/theme-tour-packages#${t.anchorSlug}`
-        : "/theme-tour-packages";
+        ? `/tour-packages#${t.anchorSlug}`
+        : "/tour-packages";
       return (
         <Link
           href={href}

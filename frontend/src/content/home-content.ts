@@ -1,6 +1,7 @@
 import { getEntity, getPage, getSection, resolveEntityRefs } from "@/content/load";
 import { parseFaqFromContentNotes } from "@/content/parse-faq";
 import { stockImageUrl, stockImageUrlFromKeywords } from "@/content/stock-images";
+import { homeImages } from "@/lib/home-images";
 import type {
   AwardEntity,
   ClientEntity,
@@ -87,6 +88,7 @@ function destinationImage(d: DestinationEntity): string {
 }
 
 function destinationHref(d: DestinationEntity): string {
+  if (d.id === "polo-forest") return "/destinations/india/polo-forest";
   return d.region === "india" ? "/india" : "/international";
 }
 
@@ -123,50 +125,25 @@ export type HeroSlideContent = {
 };
 
 export function getHeroSlides(): HeroSlideContent[] {
-  const configs: { sectionId: HomeSectionId; id: string; overline: string; caption: string }[] = [
-    { sectionId: "hero", id: "heritage", overline: "POLO FOREST HERITAGE", caption: "Eleven years · Award-backed programs since 2014" },
-    { sectionId: "corporate", id: "corporate", overline: "CORPORATE RETREATS", caption: "Custom pricing · Tailored proposal" },
-    { sectionId: "educational", id: "education", overline: "EDUCATIONAL TOURS", caption: "Custom proposal — faculty-supported planning" },
-  ];
-
+  const section = getSection("home", "hero")!;
+  const { title, titleItalic } = splitHeroHeading(section.heading ?? "");
   const company = getEntity("company", "polo-safari") as CompanyEntity | undefined;
+  const body =
+    trimText(section.subheading) ?? trimText(section.description) ?? company?.tagline ?? "";
 
-  return configs.map(({ sectionId, id, overline, caption }) => {
-    const section = getSection("home", sectionId)!;
-    const { title, titleItalic } = splitHeroHeading(section.heading ?? "");
-    const image = section.stockImage
-      ? stockImageUrl(section.stockImage)
-      : stockImageUrlFromKeywords(["polo forest"], "hero");
+  const slideImages = [homeImages.heroPoloForestRiver, homeImages.heroPoloForestHills] as const;
 
-    const secondaryHref =
-      sectionId === "hero"
-        ? "/about"
-        : sectionId === "corporate"
-          ? "/corporate"
-          : "/schools-colleges";
-
-    const secondaryLabel =
-      sectionId === "hero"
-        ? "Our story →"
-        : sectionId === "corporate"
-          ? "View Corporate Programs →"
-          : "Learn More →";
-
-    return {
-      id,
-      overline,
-      title,
-      titleItalic,
-      body: trimText(section.description) ?? company?.tagline ?? "",
-      primary: {
-        label: section.cta?.label ?? "Explore",
-        href: section.cta?.href ?? "/",
-      },
-      secondary: { label: secondaryLabel, href: secondaryHref },
-      caption,
-      image,
-    };
-  });
+  return slideImages.map((image, index) => ({
+    id: index === 0 ? "polo-forest-river" : "polo-forest-hills",
+    overline: "POLO FOREST HERITAGE",
+    title,
+    titleItalic,
+    body,
+    primary: { label: "Plan My Journey", href: "/plan-my-journey" },
+    secondary: { label: "Our story →", href: "/about" },
+    caption: "Eleven years · Award-backed programs since 2014",
+    image,
+  }));
 }
 
 export type SearchChip = { label: string; href: string };
@@ -176,11 +153,11 @@ export function getSearchContent() {
   const chips: SearchChip[] = [
     { label: "Corporate", href: "/corporate" },
     { label: "Schools", href: "/schools-colleges" },
-    { label: "Family", href: "/theme-tour-packages#family-getaways" },
-    { label: "Adventure", href: "/theme-tour-packages#adventure-trekking" },
-    { label: "Polo Forest", href: "/india" },
+    { label: "Family", href: "/tour-packages#family-getaways" },
+    { label: "Adventure", href: "/tour-packages#adventure-trekking" },
+    { label: "Polo Forest", href: "/destinations/india/polo-forest" },
   ];
-  return { ...section, chips, browseHref: section.cta?.href ?? "/theme-tour-packages" };
+  return { ...section, chips, browseHref: section.cta?.href ?? "/tour-packages" };
 }
 
 export function getSpecializationsContent() {
@@ -386,7 +363,7 @@ export function getAdventureContent() {
         title: t.name,
         slug: t.id,
         image: stockImageUrlFromKeywords(["adventure trek"], "card"),
-        href: `/theme-tour-packages#${t.anchorSlug ?? t.id}`,
+        href: `/tour-packages#${t.anchorSlug ?? t.id}`,
       };
     });
 
@@ -486,10 +463,11 @@ export function getNewsletterCtaContent() {
   const section = homeSectionContent("newsletter-cta");
   return {
     ...section,
+    cta: { label: "Plan My Journey", href: "/plan-my-journey" },
     backgroundImage: section.image ?? stockImageUrlFromKeywords(["email newsletter travel"], "background"),
     secondaryCtas: [
+      { label: "Enquire Now", href: "/enquire" },
       { label: "Corporate RFP", href: "/corporate#rfp" },
-      { label: "Educational RFP", href: "/schools-colleges#rfp" },
       { label: "WhatsApp", href: "https://wa.me/919408510911" },
     ],
   };
@@ -546,7 +524,7 @@ export function getFamilyContent() {
     description: trimText(section?.description) ?? trimText(theme?.summary) ?? "",
     cta: section?.cta ?? {
       label: "View family packages",
-      href: "/theme-tour-packages#family-getaways",
+      href: "/tour-packages#family-getaways",
     },
     image,
   };
@@ -581,7 +559,7 @@ export function getPackagesContent() {
       image:
         themeSectionImage(id) ??
         stockImageUrlFromKeywords(section?.stockImage?.keywords ?? [id], "card"),
-      href: `/theme-tour-packages#${anchor}`,
+      href: `/tour-packages#${anchor}`,
     };
   });
 
@@ -589,7 +567,7 @@ export function getPackagesContent() {
     heading: themeHero?.heading ?? "Theme tour packages",
     subheading: themeHero?.subheading ?? "Curated programs",
     description: trimText(themeHero?.description),
-    cta: themeHero?.cta ?? { label: "Compare themes", href: "/theme-tour-packages" },
+    cta: themeHero?.cta ?? { label: "Compare themes", href: "/tour-packages" },
     cards,
   };
 }

@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
+import { getSectionAnchorAliases } from "@/components/layout/navigation/section-anchors";
 import { MediaImage } from "@/components/home/MediaImage";
 import type { Cta, Section } from "@/content/types";
 import { aspectRatioClass, stockImageUrl } from "@/content/stock-images";
@@ -11,19 +12,22 @@ type PageHeroProps = {
   dark?: boolean;
   trustStats?: StatItem[];
   secondaryCta?: Cta;
+  /** Override hero background when section has no stockImage */
+  imageSrc?: string;
 };
 
-export function PageHero({ section, dark = true, trustStats, secondaryCta }: PageHeroProps) {
-  const imageSrc = section.stockImage ? stockImageUrl(section.stockImage) : null;
+export function PageHero({ section, dark = true, trustStats, secondaryCta, imageSrc }: PageHeroProps) {
+  const imageSrcResolved =
+    imageSrc ?? (section.stockImage ? stockImageUrl(section.stockImage) : null);
 
   return (
     <section
       className={`relative overflow-hidden ${dark ? "text-text-inverse" : "bg-surface-muted text-text-heading"}`}
       aria-labelledby={`hero-${section.id}`}
     >
-      {imageSrc && (
+      {imageSrcResolved && (
         <div className="absolute inset-0">
-          <MediaImage src={imageSrc} alt="" priority sizes="100vw" />
+          <MediaImage src={imageSrcResolved} alt="" priority sizes="100vw" />
           {dark && (
             <div
               className="absolute inset-0 bg-gradient-to-t from-[#1e2a24]/95 via-[#1e2a24]/50 to-[#1e2a24]/30"
@@ -95,13 +99,30 @@ type SectionBlockProps = {
   variant?: "default" | "muted" | "dark";
   imagePosition?: "left" | "right" | "none" | "top";
   children?: ReactNode;
+  /** Additional hash ids for nav mega menu anchors */
+  anchorAliases?: string[];
+  /** When set, merges aliases from section-anchors.ts for this page */
+  pageId?: string;
 };
+
+function SectionAnchorAliases({ ids }: { ids: string[] }) {
+  if (ids.length === 0) return null;
+  return (
+    <>
+      {ids.map((id) => (
+        <span key={id} id={id} className="scroll-mt-24 block" aria-hidden />
+      ))}
+    </>
+  );
+}
 
 export function SectionBlock({
   section,
   variant = "default",
   imagePosition = "right",
   children,
+  anchorAliases = [],
+  pageId,
 }: SectionBlockProps) {
   const bg =
     variant === "muted"
@@ -112,13 +133,19 @@ export function SectionBlock({
 
   const imageSrc = section.stockImage ? stockImageUrl(section.stockImage) : null;
   const hasImage = imagePosition !== "none" && imageSrc;
+  const resolvedAnchors = [
+    ...anchorAliases,
+    ...(pageId ? getSectionAnchorAliases(pageId, section.id) : []),
+  ];
 
   return (
-    <section
-      id={section.id}
-      className={`py-[var(--space-12)] md:py-[var(--space-15)] ${bg}`}
-      aria-labelledby={section.heading ? `section-${section.id}` : undefined}
-    >
+    <>
+      <SectionAnchorAliases ids={resolvedAnchors} />
+      <section
+        id={section.id}
+        className={`scroll-mt-24 py-[var(--space-12)] md:py-[var(--space-15)] ${bg}`}
+        aria-labelledby={section.heading ? `section-${section.id}` : undefined}
+      >
       <Container>
         {imagePosition === "top" && hasImage && (
           <div
@@ -183,5 +210,6 @@ export function SectionBlock({
         {children && imagePosition === "top" && <div className="mt-8">{children}</div>}
       </Container>
     </section>
+    </>
   );
 }

@@ -54,8 +54,8 @@ export function SearchOverlay({ open, onClose }: SearchOverlayProps) {
           <input
             type="search"
             role="searchbox"
-            aria-label="Search experiences"
-            placeholder="Search Polo Forest experiences, stories..."
+            aria-label="Search site"
+            placeholder="Search tours, destinations, Polo Forest..."
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             className="w-full bg-transparent text-base text-text outline-none placeholder:text-text-subtle"
@@ -92,7 +92,7 @@ export function SearchOverlay({ open, onClose }: SearchOverlayProps) {
         ) : (
           <div className="pt-4">
             <p className="text-xs font-semibold uppercase tracking-widest text-text-subtle">
-              Experiences
+              Suggested
             </p>
             {filtered.length > 0 ? (
               <ul className="mt-2 space-y-1">
@@ -110,11 +110,11 @@ export function SearchOverlay({ open, onClose }: SearchOverlayProps) {
               </ul>
             ) : (
               <p className="mt-2 px-3 py-2 text-sm text-text-muted">
-                No experiences match &ldquo;{query}&rdquo;
+                No results match &ldquo;{query}&rdquo;
               </p>
             )}
             <Link
-              href={`/experiences?q=${encodeURIComponent(query.trim())}`}
+              href={`/tour-packages?q=${encodeURIComponent(query.trim())}`}
               onClick={onClose}
               className="mt-4 inline-block text-sm font-medium text-primary hover:text-primary-hover"
             >

@@ -2,22 +2,46 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Container } from "./Container";
-import { DiscoverDropdown } from "./navigation/DiscoverDropdown";
-import { ExperiencesMegaMenu } from "./navigation/ExperiencesMegaMenu";
-import { SearchIcon } from "./navigation/icons";
+import { MegaMenu } from "./navigation/MegaMenu";
 import { MobileDrawer, MobileHeaderControls } from "./navigation/MobileDrawer";
-import { ProfileDropdown } from "./navigation/ProfileDropdown";
+import { NavDropdown } from "./navigation/NavDropdown";
+import { NAV_MENU_CLOSE_DELAY_MS } from "./navigation/nav-menu-hover";
+import { SearchIcon } from "./navigation/icons";
 import { SearchOverlay } from "./navigation/SearchOverlay";
+import {
+  isNavItemActive,
+  primaryNavItems,
+  type PrimaryNavItem,
+  utilityNav,
+} from "./navigation/nav-config";
 
 export function Header({ transparent = false }: { transparent?: boolean }) {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
-  const [experiencesOpen, setExperiencesOpen] = useState(false);
-  const [discoverOpen, setDiscoverOpen] = useState(false);
-  const [profileOpen, setProfileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [openMenuId, setOpenMenuId] = useState<string | null>(null);
+  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const cancelCloseMenu = useCallback(() => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+  }, []);
+
+  const scheduleCloseMenu = useCallback(() => {
+    cancelCloseMenu();
+    closeTimerRef.current = setTimeout(() => {
+      setOpenMenuId(null);
+      closeTimerRef.current = null;
+    }, NAV_MENU_CLOSE_DELAY_MS);
+  }, [cancelCloseMenu]);
+
+  useEffect(() => () => cancelCloseMenu(), [cancelCloseMenu]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -33,29 +57,31 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
     );
   }, [scrolled]);
 
+  useEffect(() => {
+    setOpenMenuId(null);
+  }, [pathname]);
+
   const isSolid = scrolled || !transparent;
 
-  const closeMenus = () => {
-    setExperiencesOpen(false);
-    setDiscoverOpen(false);
-    setProfileOpen(false);
+  const hideClass = (hideBelow?: "xl" | "lg") => {
+    if (hideBelow === "xl") return "hidden xl:inline-flex";
+    if (hideBelow === "lg") return "hidden lg:inline-flex";
+    return "inline-flex";
   };
 
-  const openExperiences = () => {
-    setDiscoverOpen(false);
-    setProfileOpen(false);
-    setExperiencesOpen(true);
-  };
+  const triggerActiveClass = isSolid
+    ? "bg-primary-subtle text-primary shadow-sm"
+    : "bg-white/20 text-text-inverse shadow-none";
 
-  const openDiscover = () => {
-    setExperiencesOpen(false);
-    setProfileOpen(false);
-    setDiscoverOpen(true);
-  };
+  const navLinkClass = (item: PrimaryNavItem, active: boolean) => {
+    const hide = hideClass(item.kind === "link" ? item.hideBelow : item.hideBelow);
+    const activeClass = active ? triggerActiveClass : "";
+    const colorClass = isSolid
+      ? "text-text-muted"
+      : "text-text-inverse [text-shadow:0_1px_2px_rgba(0,0,0,0.3)]";
 
-  const navLinkClass = `inline-flex min-h-10 items-center whitespace-nowrap rounded-[var(--radius-button)] px-2 text-[13px] font-medium transition-colors hover:text-primary md:px-2.5 md:text-[14px] xl:px-3 xl:text-[15px] ${
-    isSolid ? "text-text-muted" : "text-text-inverse [text-shadow:0_1px_2px_rgba(0,0,0,0.3)]"
-  }`;
+    return `${hide} inline-flex min-h-10 items-center whitespace-nowrap rounded-[var(--radius-button)] px-2 text-[13px] font-medium transition-colors hover:text-primary md:px-2.5 md:text-[14px] xl:px-3 xl:text-[15px] ${colorClass} ${activeClass}`;
+  };
 
   const utilityClass = `flex h-11 w-11 shrink-0 items-center justify-center rounded-full transition-colors ${
     isSolid
@@ -64,8 +90,65 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
   }`;
 
   const pillClass = isSolid
-    ? "border border-border bg-surface-muted/90"
-    : "border border-white/20 bg-white/10 backdrop-blur-md";
+    ? "border border-border/80 bg-surface/95 backdrop-blur-[var(--glass-blur)]"
+    : "border border-white/20 bg-white/10 backdrop-blur-[var(--glass-blur)]";
+
+  const openMenu = useCallback(
+    (id: string) => {
+      cancelCloseMenu();
+      setOpenMenuId(id);
+    },
+    [cancelCloseMenu],
+  );
+  const closeMenu = useCallback(() => {
+    cancelCloseMenu();
+    setOpenMenuId(null);
+  }, [cancelCloseMenu]);
+
+  const menuHoverHandlers = { cancelCloseMenu, scheduleCloseMenu };
+
+  const renderNavItem = (item: PrimaryNavItem) => {
+    const active = isNavItemActive(pathname, item);
+    const linkClass = navLinkClass(item, active);
+
+    if (item.kind === "mega") {
+      return (
+        <MegaMenu
+          key={item.config.id}
+          config={item.config}
+          open={openMenuId === item.config.id}
+          active={active}
+          onOpen={() => openMenu(item.config.id)}
+          onClose={closeMenu}
+          linkClassName={linkClass}
+          triggerActiveClassName={triggerActiveClass}
+          menuHoverHandlers={menuHoverHandlers}
+        />
+      );
+    }
+
+    if (item.kind === "dropdown") {
+      return (
+        <NavDropdown
+          key={item.config.id}
+          config={item.config}
+          open={openMenuId === item.config.id}
+          active={active}
+          onOpen={() => openMenu(item.config.id)}
+          onClose={closeMenu}
+          linkClassName={linkClass}
+          triggerActiveClassName={triggerActiveClass}
+          menuHoverHandlers={menuHoverHandlers}
+        />
+      );
+    }
+
+    return (
+      <Link key={item.href} href={item.href} className={linkClass}>
+        {item.label}
+      </Link>
+    );
+  };
 
   return (
     <>
@@ -73,7 +156,7 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
         data-zone="header-band"
         className={`transition-all duration-[var(--duration-normal)] ease-[var(--ease-default)] ${
           isSolid
-            ? "border-b border-border bg-surface shadow-[var(--shadow-header)]"
+            ? "border-b border-border bg-surface/95 shadow-[var(--shadow-header)] backdrop-blur-[var(--glass-blur)]"
             : "border-b border-[var(--glass-border)] bg-[var(--glass-bg)] backdrop-blur-[var(--glass-blur)]"
         }`}
         style={{
@@ -98,75 +181,38 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
           </Link>
 
           <nav
-            className={`hidden min-w-0 justify-self-center md:flex md:items-center md:gap-0.5 md:rounded-[var(--radius-button)] md:px-1.5 md:py-1 ${pillClass}`}
+            className={`relative z-[1] hidden min-w-0 max-w-full justify-self-center overflow-visible md:flex md:items-center md:gap-0.5 md:rounded-[var(--radius-button)] md:px-1.5 md:py-1 ${pillClass}`}
             aria-label="Primary navigation"
           >
-            <ExperiencesMegaMenu
-              open={experiencesOpen}
-              onOpen={openExperiences}
-              onClose={() => setExperiencesOpen(false)}
-              linkClassName={navLinkClass}
-            />
-            <DiscoverDropdown
-              open={discoverOpen}
-              onOpen={openDiscover}
-              onClose={() => setDiscoverOpen(false)}
-              linkClassName={navLinkClass}
-            />
-            <Link href="/polo-forest" className={navLinkClass}>
-              Polo Forest
-            </Link>
-            <Link href="/plan" className={navLinkClass}>
-              Plan
-            </Link>
-            <Link href="/about" className={`${navLinkClass} hidden xl:inline-flex`}>
-              About
-            </Link>
+            {primaryNavItems.map(renderNavItem)}
           </nav>
 
-          <div className="flex shrink-0 items-center justify-end gap-1.5 lg:gap-2 xl:gap-3">
+          <div className="flex shrink-0 items-center justify-end gap-1 sm:gap-1.5 lg:gap-2">
             <button
               type="button"
-              onClick={() => {
-                closeMenus();
-                setSearchOpen(true);
-              }}
+              onClick={() => setSearchOpen(true)}
               className={`${utilityClass} hidden md:flex`}
               aria-label="Open search"
             >
               <SearchIcon />
             </button>
 
-            <div className="hidden md:block">
-              <ProfileDropdown
-                open={profileOpen}
-                onOpen={() => {
-                  setExperiencesOpen(false);
-                  setDiscoverOpen(false);
-                  setProfileOpen(true);
-                }}
-                onClose={() => setProfileOpen(false)}
-                isSolid={isSolid}
-              />
-            </div>
-
             <Link
-              href="/plan"
-              className="hidden h-11 shrink-0 items-center rounded-[var(--radius-button)] bg-primary px-3 text-sm font-semibold text-text-inverse transition-colors hover:bg-primary-hover md:inline-flex xl:px-5"
+              href={utilityNav.planJourney.href}
+              className="inline-flex h-9 shrink-0 items-center rounded-[var(--radius-button)] bg-primary px-2.5 text-xs font-semibold text-text-inverse transition-colors hover:bg-primary-hover sm:h-10 sm:px-3 sm:text-sm md:h-11 xl:px-5"
             >
-              <span className="xl:hidden">Plan</span>
-              <span className="hidden xl:inline">Plan Your Visit</span>
+              <span className="sm:hidden">Plan</span>
+              <span className="hidden sm:inline xl:hidden">Plan Journey</span>
+              <span className="hidden xl:inline">{utilityNav.planJourney.label}</span>
             </Link>
 
             <MobileHeaderControls
               isSolid={isSolid}
               onMenuOpen={() => {
-                closeMenus();
                 setSearchOpen(false);
                 setMobileOpen(true);
               }}
               onSearchOpen={() => {
-                closeMenus();
                 setMobileOpen(false);
                 setSearchOpen(true);
               }}

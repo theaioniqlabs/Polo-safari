@@ -1,5 +1,7 @@
 /** Curated Unsplash placeholders until CMS photography is wired. */
 export const homeImages = {
+  heroPoloForestRiver: "/images/hero/polo-forest-river.png",
+  heroPoloForestHills: "/images/hero/polo-forest-hills.png",
   heroMonsoon:
     "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=2400&q=80",
   heroCorporate:

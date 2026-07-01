@@ -165,7 +165,7 @@ function SectionRenderer({
 
   if (section.id === "team-building") {
     return (
-      <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="top">
+      <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="top">
         <TeamBuildingGrid />
       </SectionBlock>
     );
@@ -173,7 +173,7 @@ function SectionRenderer({
 
   if (section.id === "activities") {
     return (
-      <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="none">
         <ActivityShowcase />
       </SectionBlock>
     );
@@ -182,7 +182,7 @@ function SectionRenderer({
   if (section.id === "case-studies") {
     const clients = entities.filter((e) => e.entityType === "client") as ClientEntity[];
     return (
-      <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="none">
         <CaseStudyGrid clients={clients} />
       </SectionBlock>
     );
@@ -190,7 +190,7 @@ function SectionRenderer({
 
   if (section.id === "packages") {
     return (
-      <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="none">
         <CorporatePackageGrid />
       </SectionBlock>
     );
@@ -201,7 +201,7 @@ function SectionRenderer({
       (e) => e.entityType === "destination",
     ) as DestinationEntity[];
     return (
-      <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="none">
         <CorporateDestinationCarousel destinations={destinations} />
       </SectionBlock>
     );
@@ -212,7 +212,7 @@ function SectionRenderer({
       (e) => e.entityType === "testimonial",
     ) as TestimonialEntity[];
     return (
-      <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="none">
         <AppreciationLettersGrid letters={letters} />
       </SectionBlock>
     );
@@ -224,7 +224,7 @@ function SectionRenderer({
     ) as TestimonialEntity[];
     const stats = buildReviewStats(testimonialEntities);
     return (
-      <SectionBlock section={section} variant="muted" imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant="muted" imagePosition="none">
         <StatStrip stats={stats} />
       </SectionBlock>
     );
@@ -234,7 +234,7 @@ function SectionRenderer({
     const parsedFaq = parseFaqFromContentNotes(section.contentNotes);
     if (parsedFaq.length > 0) {
       return (
-        <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="none">
+        <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="none">
           <ContentFaqAccordion items={parsedFaq} />
         </SectionBlock>
       );
@@ -245,7 +245,7 @@ function SectionRenderer({
         : getEntitiesByType<FaqItemEntity>("faq-item");
     if (faqItems.length === 0) return null;
     return (
-      <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="none">
         <FaqAccordion items={faqItems} />
       </SectionBlock>
     );
@@ -258,7 +258,7 @@ function SectionRenderer({
         : (getEntity("company", "polo-safari") as CompanyEntity | undefined)
             ?.milestones ?? [];
     return (
-      <SectionBlock section={section} variant="muted" imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant="muted" imagePosition="none">
         {events.length > 0 && <TimelineStepper events={events} />}
       </SectionBlock>
     );
@@ -270,7 +270,7 @@ function SectionRenderer({
       8,
     );
     return (
-      <SectionBlock section={section} variant="dark" imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant="dark" imagePosition="none">
         <GalleryGrid images={images} />
       </SectionBlock>
     );
@@ -288,7 +288,7 @@ function SectionRenderer({
     if (section.id === "corporate-clients") {
       const variant = sectionVariant(index);
       return (
-        <SectionBlock section={section} variant={variant} imagePosition="none">
+        <SectionBlock pageId={pageId} section={section} variant={variant} imagePosition="none">
           {clients.length > 0 && <CorporateLogoLoop clients={clients} variant={variant} />}
         </SectionBlock>
       );
@@ -301,7 +301,7 @@ function SectionRenderer({
           ? partnerLogos(partners)
           : [];
     return (
-      <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="none">
         {logos.length > 0 && <LogoGrid items={logos} columns={4} />}
       </SectionBlock>
     );
@@ -353,7 +353,7 @@ function SectionRenderer({
       },
     ];
     return (
-      <SectionBlock section={section} variant="muted" imagePosition="top">
+      <SectionBlock pageId={pageId} section={section} variant="muted" imagePosition="top">
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {benefits.map((b) => (
             <div
@@ -373,7 +373,7 @@ function SectionRenderer({
     const company = getEntity("company", "polo-safari") as CompanyEntity | undefined;
     const awards = entities.filter((e) => e.entityType === "award") as AwardEntity[];
     return (
-      <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="right">
+      <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="right">
         {company?.credentials && (
           <div className="mt-6 flex flex-wrap gap-2">
             {company.credentials.map((c) => (
@@ -396,7 +396,7 @@ function SectionRenderer({
       (e) => e.entityType === "testimonial" && !e.id.includes("stat"),
     );
     return (
-      <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="none">
         {testimonials.length > 0 && (
           <CardGrid entities={testimonials as EntityRecord[]} columns={2} />
         )}
@@ -408,7 +408,7 @@ function SectionRenderer({
     const company = getEntity("company", "polo-safari") as CompanyEntity | undefined;
     const contact = company?.contact;
     return (
-      <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="right">
+      <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="right">
         {contact && (
           <address className="mt-6 not-italic text-text-muted">
             <p>
@@ -443,7 +443,7 @@ function SectionRenderer({
       : "Ganesh Glory 11, Jagatpur, Ahmedabad";
     const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
     return (
-      <SectionBlock section={section} variant="muted" imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant="muted" imagePosition="none">
         <a
           href={mapsUrl}
           target="_blank"
@@ -458,7 +458,7 @@ function SectionRenderer({
 
   if (section.id === "whatsapp") {
     return (
-      <SectionBlock section={section} variant={sectionVariant(index)} imagePosition="left">
+      <SectionBlock pageId={pageId} section={section} variant={sectionVariant(index)} imagePosition="left">
         <a
           href="https://wa.me/919408510911"
           target="_blank"
@@ -474,7 +474,7 @@ function SectionRenderer({
   if (section.id === "vision-mission-values" || section.id === "values") {
     const company = getEntity("company", "polo-safari") as CompanyEntity | undefined;
     return (
-      <SectionBlock section={section} variant="muted" imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant="muted" imagePosition="none">
         <div className="mt-8 grid gap-8 md:grid-cols-2">
           {company?.vision && (
             <div>
@@ -496,7 +496,7 @@ function SectionRenderer({
   if (section.id === "stats" || section.id.includes("company-stats")) {
     const company = getEntity("company", "polo-safari") as CompanyEntity | undefined;
     return (
-      <SectionBlock section={section} variant="muted" imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant="muted" imagePosition="none">
         <StatStrip stats={buildCompanyStats(company?.foundedYear)} />
       </SectionBlock>
     );
@@ -514,6 +514,7 @@ function SectionRenderer({
       const cols = hasDestinations ? 3 : hasAwards ? 2 : 3;
       return (
         <SectionBlock
+          pageId={pageId}
           section={section}
           variant={sectionVariant(index)}
           imagePosition={entities.length > 2 ? "none" : imagePosition(index)}
@@ -526,7 +527,7 @@ function SectionRenderer({
 
   if (pageId === "privacy" || pageId === "terms") {
     return (
-      <SectionBlock section={section} variant="default" imagePosition="none">
+      <SectionBlock pageId={pageId} section={section} variant="default" imagePosition="none">
         {section.contentNotes && (
           <p className="mt-4 text-sm text-text-subtle italic">{section.contentNotes}</p>
         )}
@@ -536,7 +537,7 @@ function SectionRenderer({
 
   if (pageId === "not-found") {
     return (
-      <SectionBlock section={section} variant="default" imagePosition="top">
+      <SectionBlock pageId={pageId} section={section} variant="default" imagePosition="top">
         {section.cta && (
           <a
             href={section.cta.href}
@@ -551,6 +552,7 @@ function SectionRenderer({
 
   return (
     <SectionBlock
+      pageId={pageId}
       section={section}
       variant={sectionVariant(index)}
       imagePosition={section.stockImage ? imagePosition(index) : "none"}

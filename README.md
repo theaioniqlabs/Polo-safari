@@ -23,16 +23,26 @@ Experiential travel platform for **Polo Forest, Idar, Gujarat**. Public website 
 
 ## Quick start
 
+From the **repo root** (recommended):
+
+```bash
+pnpm install:frontend
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+> Use `pnpm dev` or `pnpm run dev` from the repo root.  
+> `npm dev` is not valid — use `npm run dev` if you prefer npm.
+
 ### 1. Frontend (Next.js)
 
 ```bash
 cd frontend
-npm install
+pnpm install
 cp .env.example .env.local
-npm run dev
+pnpm dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000)
 
 ### 2. Backend (Laravel)
 

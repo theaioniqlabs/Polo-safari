@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { Hero } from "@/components/home/Hero";
-import { QuickSearch } from "@/components/home/QuickSearch";
 import { CategoryScroll } from "@/components/home/CategoryScroll";
 import { FeaturedExperiences } from "@/components/home/FeaturedExperiences";
 import { TrustStatsBar } from "@/components/home/TrustStatsBar";
@@ -43,9 +42,8 @@ export default function HomePage() {
   const faqPreview = getFaqPreviewContent();
 
   return (
-    <SiteShell transparentHeader>
-      <Hero slides={heroSlides} />
-      <QuickSearch content={searchContent} />
+    <SiteShell>
+      <Hero slides={heroSlides} searchContent={searchContent} />
       <CategoryScroll />
       <FeaturedExperiences />
       <StorySection content={whyPoloSafari} />

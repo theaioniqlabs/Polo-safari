@@ -34,6 +34,7 @@
   --shadow-soft: var(--ps-shadow-soft);
   --shadow-medium: var(--ps-shadow-medium);
   --shadow-header: var(--ps-shadow-header);
+  --shadow-hero-search: var(--ps-shadow-hero-search);
   --font-heading: var(--ps-font-display);
   --default-font-family: var(--ps-font-body);
   /* shadcn/ui tokens */
@@ -103,6 +104,17 @@ body {
   }
 }
 
+@keyframes mega-fade-slide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-\[marquee_40s_linear_infinite\] {
     animation: none;
@@ -113,6 +125,16 @@ body {
   .animate-\[drawer-slide-in_300ms_var\(--ease-default\)\] {
     animation: none;
   }
+
+  .animate-\[mega-fade-slide_180ms_var\(--ease-default\)\] {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.shadow-hero-search {
+  box-shadow: var(--ps-shadow-hero-search);
 }
 
 .text-on-dark h1,

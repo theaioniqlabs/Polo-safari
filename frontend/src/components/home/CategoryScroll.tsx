@@ -25,7 +25,7 @@ export function CategoryScroll() {
   const items = [...experiencePillars, destinationsCard];
 
   return (
-    <section className="bg-surface-muted py-[var(--space-12)] md:py-[var(--space-15)]">
+    <section className="bg-surface-muted pt-6 pb-[var(--space-12)] md:pt-8 md:pb-[var(--space-15)]">
       <Container>
         <h2 className="max-w-2xl type-display text-3xl md:text-4xl">
           {content.heading}

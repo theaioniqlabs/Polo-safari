@@ -1,21 +1,7 @@
 import Link from "next/link";
 import { Container } from "./Container";
-import { experiencePillars, primaryNav } from "./navigation/nav-config";
+import { deferredServicesLinks, footerNav, utilityNav } from "./navigation/nav-config";
 import { getFooterContent } from "@/content/home-content";
-
-const destinations = [
-  { href: "/india", label: "India Tours" },
-  { href: "/polo-forest", label: "Polo Forest" },
-  { href: "/international", label: "International" },
-  { href: "/theme-tour-packages", label: "Theme Packages" },
-];
-
-const planLinks = [
-  { href: "/contact", label: "Plan Your Visit" },
-  { href: "/corporate#rfp", label: "Corporate RFP" },
-  { href: "/schools-colleges#rfp", label: "Educational RFP" },
-  { href: "/contact", label: "Contact" },
-];
 
 const awards = [
   "Gujarat Tourism S7",
@@ -50,23 +36,21 @@ export function Footer() {
           <p className="text-2xl font-semibold">{footer.heading}</p>
           <p className="mt-2 max-w-md text-sm text-text-on-dark/80">{footer.subheading}</p>
           <p className="mt-3 max-w-xl text-sm text-text-on-dark/70">{footer.contactLine}</p>
-          {footer.cta && (
-            <Link
-              href={footer.cta.href}
-              className="mt-4 inline-block text-sm font-semibold text-primary hover:underline"
-            >
-              {footer.cta.label} →
-            </Link>
-          )}
+          <Link
+            href={utilityNav.planJourney.href}
+            className="mt-5 inline-flex rounded-[var(--radius-button)] bg-primary px-6 py-3 text-sm font-semibold text-text-inverse transition-colors hover:bg-primary-hover"
+          >
+            {utilityNav.planJourney.label} →
+          </Link>
         </div>
 
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-text-on-dark/60">
-              Destinations
+              Explore
             </p>
             <ul className="mt-4 space-y-2">
-              {destinations.map((link) => (
+              {footerNav.explore.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -81,11 +65,11 @@ export function Footer() {
 
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-text-on-dark/60">
-              Experiences
+              Tours
             </p>
             <ul className="mt-4 space-y-2">
-              {experiencePillars.map((link) => (
-                <li key={link.href}>
+              {footerNav.tours.map((link) => (
+                <li key={link.href + link.label}>
                   <Link
                     href={link.href}
                     className="text-sm text-text-on-dark/85 transition-colors hover:text-text-inverse"
@@ -94,14 +78,6 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link
-                  href="/theme-tour-packages"
-                  className="text-sm font-semibold text-text-on-dark/85 transition-colors hover:text-text-inverse"
-                >
-                  View all themes
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -110,7 +86,7 @@ export function Footer() {
               Company
             </p>
             <ul className="mt-4 space-y-2">
-              {primaryNav.slice(6).map((link) => (
+              {footerNav.company.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -120,14 +96,18 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-              {planLinks.map((link) => (
-                <li key={`${link.href}-${link.label}`}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-text-on-dark/85 transition-colors hover:text-text-inverse"
-                  >
-                    {link.label}
-                  </Link>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-text-on-dark/60">
+              Future Services
+            </p>
+            <p className="mt-2 text-xs text-text-on-dark/50">Coming soon — enquiry-only MVP</p>
+            <ul className="mt-3 space-y-2">
+              {deferredServicesLinks.map((link) => (
+                <li key={link.href}>
+                  <span className="text-sm text-text-on-dark/50">{link.label}</span>
                 </li>
               ))}
             </ul>
@@ -148,16 +128,26 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              {footerNav.convert.slice(1).map((link) => (
+                <li key={`${link.href}-${link.label}`}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-text-on-dark/85 transition-colors hover:text-text-inverse"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
         <Link
-          href="/india"
+          href="/destinations/india/polo-forest"
           className="mt-10 block overflow-hidden rounded-[var(--radius-md)] border border-white/10"
         >
           <div className="flex h-32 items-center justify-center bg-primary-subtle/20 text-sm text-text-on-dark/70">
-            India tour footprint — Gujarat roots, pan-India reach
+            Polo Forest — heritage heartland and flagship destination
           </div>
         </Link>
 

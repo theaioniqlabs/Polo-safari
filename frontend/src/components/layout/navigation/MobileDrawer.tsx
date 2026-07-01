@@ -3,12 +3,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRef, useState } from "react";
-import {
-  discoverLinks,
-  experiencePillars,
-} from "./nav-config";
-import { CloseIcon, MenuIcon, SearchIcon, UserIcon } from "./icons";
+import { mobileNavSections, utilityNav } from "./nav-config";
+import { CloseIcon, ChevronDownIcon, MenuIcon, SearchIcon } from "./icons";
 import { useBodyScrollLock, useFocusTrap } from "./useFocusTrap";
+import type { MegaMenuConfig, NavDropdownConfig } from "./nav-config";
 
 type MobileDrawerProps = {
   open: boolean;
@@ -16,25 +14,23 @@ type MobileDrawerProps = {
   onSearchOpen: () => void;
 };
 
-type AccordionSection = "experiences" | "discover" | null;
-
 export function MobileDrawer({
   open,
   onClose,
   onSearchOpen,
 }: MobileDrawerProps) {
   const panelRef = useRef<HTMLDivElement>(null);
-  const [expanded, setExpanded] = useState<AccordionSection>("experiences");
   const [searchQuery, setSearchQuery] = useState("");
+  const [expandedId, setExpandedId] = useState<string | null>(null);
 
   useBodyScrollLock(open);
   useFocusTrap(panelRef, open, onClose);
 
-  const toggleSection = (section: AccordionSection) => {
-    setExpanded((current) => (current === section ? null : section));
-  };
-
   if (!open) return null;
+
+  const toggleSection = (id: string) => {
+    setExpandedId((current) => (current === id ? null : id));
+  };
 
   return (
     <div className="fixed inset-0 z-[100] md:hidden" role="presentation">
@@ -75,13 +71,13 @@ export function MobileDrawer({
         <div className="flex-1 overflow-y-auto">
           <div className="border-b border-border p-4">
             <label className="relative block">
-              <span className="sr-only">Search experiences</span>
+              <span className="sr-only">Search</span>
               <SearchIcon className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-text-subtle" />
               <input
                 type="search"
                 value={searchQuery}
                 onChange={(event) => setSearchQuery(event.target.value)}
-                placeholder="Search experiences, stories..."
+                placeholder="Search destinations, packages…"
                 className="h-12 w-full rounded-[var(--radius-input)] border border-border bg-surface-muted pl-11 pr-4 text-sm text-text outline-none focus:shadow-[var(--focus-ring)]"
               />
             </label>
@@ -100,87 +96,151 @@ export function MobileDrawer({
           </div>
 
           <nav aria-label="Mobile navigation">
-            <AccordionItem
-              title="Experiences"
-              expanded={expanded === "experiences"}
-              onToggle={() => toggleSection("experiences")}
-            >
-              {experiencePillars.map((pillar) => (
-                <DrawerLink key={pillar.href} href={pillar.href} onNavigate={onClose}>
-                  {pillar.label}
-                </DrawerLink>
-              ))}
-              <DrawerLink href="/experiences" onNavigate={onClose}>
-                View all experiences
+            <DrawerLink href="/" onNavigate={onClose} topLevel>
+              Home
+            </DrawerLink>
+
+            {mobileNavSections.megas.map((mega) => (
+              <MegaAccordion
+                key={mega.id}
+                mega={mega}
+                expanded={expandedId === mega.id}
+                onToggle={() => toggleSection(mega.id)}
+                onNavigate={onClose}
+              />
+            ))}
+
+            {mobileNavSections.dropdowns.map((dropdown) => (
+              <DropdownAccordion
+                key={dropdown.id}
+                dropdown={dropdown}
+                expanded={expandedId === dropdown.id}
+                onToggle={() => toggleSection(dropdown.id)}
+                onNavigate={onClose}
+              />
+            ))}
+
+            {mobileNavSections.links.map((link) => (
+              <DrawerLink key={link.href} href={link.href} onNavigate={onClose} topLevel>
+                {link.label}
               </DrawerLink>
-            </AccordionItem>
-
-            <AccordionItem
-              title="Discover"
-              expanded={expanded === "discover"}
-              onToggle={() => toggleSection("discover")}
-            >
-              {discoverLinks.map((link) => (
-                <DrawerLink key={link.href} href={link.href} onNavigate={onClose}>
-                  {link.label}
-                </DrawerLink>
-              ))}
-            </AccordionItem>
-
-            <DrawerLink href="/polo-forest" onNavigate={onClose} topLevel>
-              Polo Forest
-            </DrawerLink>
-            <DrawerLink href="/plan" onNavigate={onClose} topLevel>
-              Plan
-            </DrawerLink>
-            <DrawerLink href="/about" onNavigate={onClose} topLevel>
-              About
-            </DrawerLink>
+            ))}
           </nav>
         </div>
 
         <div className="sticky bottom-0 shrink-0 border-t border-border bg-surface p-4 pb-[max(16px,env(safe-area-inset-bottom))]">
           <Link
-            href="/plan"
+            href={utilityNav.planJourney.href}
             onClick={onClose}
             className="flex h-12 w-full items-center justify-center rounded-[var(--radius-button)] bg-primary px-5 text-sm font-semibold text-text-inverse transition-colors hover:bg-primary-hover"
           >
-            Plan Your Visit
+            {utilityNav.planJourney.label}
           </Link>
-          <div className="mt-3 flex flex-col items-center gap-2 text-center text-sm">
-            <p className="text-xs text-text-muted">Login required to book</p>
-            <div className="flex items-center justify-center gap-4">
-              <Link
-                href="/contact"
-                onClick={onClose}
-                className="font-medium text-text-muted hover:text-primary"
-              >
-                Contact
-              </Link>
-              <span className="text-border" aria-hidden>
-                ·
-              </span>
-              <Link
-                href="/login"
-                onClick={onClose}
-                className="inline-flex items-center gap-1.5 font-medium text-text-muted hover:text-primary"
-              >
-                <UserIcon className="h-4 w-4" />
-                Login
-              </Link>
-              <span className="text-border" aria-hidden>
-                ·
-              </span>
-              <Link
-                href="/register"
-                onClick={onClose}
-                className="font-medium text-text-muted hover:text-primary"
-              >
-                Create account
-              </Link>
-            </div>
+          <div className="mt-3 flex items-center justify-center gap-4 text-sm">
+            <Link
+              href={utilityNav.enquire.href}
+              onClick={onClose}
+              className="font-medium text-text-muted hover:text-primary"
+            >
+              {utilityNav.enquire.label}
+            </Link>
+            <span className="text-border" aria-hidden>
+              ·
+            </span>
+            <Link
+              href="/contact"
+              onClick={onClose}
+              className="font-medium text-text-muted hover:text-primary"
+            >
+              Contact
+            </Link>
           </div>
         </div>
+      </div>
+    </div>
+  );
+}
+
+function MegaAccordion({
+  mega,
+  expanded,
+  onToggle,
+  onNavigate,
+}: {
+  mega: MegaMenuConfig;
+  expanded: boolean;
+  onToggle: () => void;
+  onNavigate: () => void;
+}) {
+  const panelId = `mobile-mega-${mega.id}`;
+
+  return (
+    <div className="border-b border-border">
+      <button
+        type="button"
+        className="flex min-h-11 w-full items-center justify-between px-4 py-3 text-base font-semibold text-text-heading"
+        aria-expanded={expanded}
+        aria-controls={panelId}
+        onClick={onToggle}
+      >
+        {mega.label}
+        <ChevronDownIcon
+          className={`shrink-0 transition-transform duration-200 ${expanded ? "rotate-180" : ""}`}
+        />
+      </button>
+      <div
+        id={panelId}
+        hidden={!expanded}
+        className="pb-2"
+      >
+        {mega.leftLinks.map((link) => (
+          <DrawerLink key={link.href + link.label} href={link.href} onNavigate={onNavigate}>
+            {link.label}
+          </DrawerLink>
+        ))}
+        {mega.leftCta && (
+          <DrawerLink href={mega.leftCta.href} onNavigate={onNavigate} accent>
+            {mega.leftCta.label}
+          </DrawerLink>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function DropdownAccordion({
+  dropdown,
+  expanded,
+  onToggle,
+  onNavigate,
+}: {
+  dropdown: NavDropdownConfig;
+  expanded: boolean;
+  onToggle: () => void;
+  onNavigate: () => void;
+}) {
+  const panelId = `mobile-dropdown-${dropdown.id}`;
+
+  return (
+    <div className="border-b border-border">
+      <button
+        type="button"
+        className="flex min-h-11 w-full items-center justify-between px-4 py-3 text-base font-semibold text-text-heading"
+        aria-expanded={expanded}
+        aria-controls={panelId}
+        onClick={onToggle}
+      >
+        {dropdown.label}
+        <ChevronDownIcon
+          className={`shrink-0 transition-transform duration-200 ${expanded ? "rotate-180" : ""}`}
+        />
+      </button>
+      <div id={panelId} hidden={!expanded} className="pb-2">
+        {dropdown.links.map((link) => (
+          <DrawerLink key={link.href + link.label} href={link.href} onNavigate={onNavigate}>
+            {link.label}
+          </DrawerLink>
+        ))}
       </div>
     </div>
   );
@@ -219,64 +279,29 @@ export function MobileHeaderControls({
   );
 }
 
-function AccordionItem({
-  title,
-  expanded,
-  onToggle,
-  children,
-}: {
-  title: string;
-  expanded: boolean;
-  onToggle: () => void;
-  children: React.ReactNode;
-}) {
-  const panelId = `drawer-${title.toLowerCase()}`;
-
-  return (
-    <div className="border-b border-border">
-      <button
-        type="button"
-        className="flex min-h-12 w-full items-center justify-between px-4 py-3 text-left text-base font-semibold text-text-heading"
-        aria-expanded={expanded}
-        aria-controls={panelId}
-        onClick={onToggle}
-      >
-        {title}
-        <span
-          className={`text-text-muted transition-transform duration-200 ${expanded ? "rotate-180" : ""}`}
-          aria-hidden
-        >
-          ▾
-        </span>
-      </button>
-      <div
-        id={panelId}
-        hidden={!expanded}
-        className="pb-2"
-      >
-        {children}
-      </div>
-    </div>
-  );
-}
-
 function DrawerLink({
   href,
   onNavigate,
   children,
   topLevel = false,
+  accent = false,
 }: {
   href: string;
   onNavigate: () => void;
   children: React.ReactNode;
   topLevel?: boolean;
+  accent?: boolean;
 }) {
   return (
     <Link
       href={href}
       onClick={onNavigate}
       className={`flex min-h-11 items-center text-base text-text transition-colors hover:bg-primary-subtle hover:text-primary ${
-        topLevel ? "border-b border-border px-4 py-3 font-semibold text-text-heading" : "pl-8 pr-4 py-2.5"
+        topLevel
+          ? "border-b border-border px-4 py-3 font-semibold text-text-heading"
+          : accent
+            ? "pl-8 pr-4 py-2.5 text-sm font-semibold text-primary"
+            : "pl-8 pr-4 py-2.5"
       }`}
     >
       {children}

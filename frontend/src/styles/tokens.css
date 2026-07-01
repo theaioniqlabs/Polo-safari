@@ -14,16 +14,18 @@
   --color-logo-orange: #ec6602;
   --color-logo-slate: #346982;
 
-  --ps-primary: #005ca9;
-  --ps-primary-hover: #004a88;
-  --ps-primary-active: #003d70;
-  --ps-primary-subtle: #e6f0f8;
+  --ps-primary: #14261e;
+  --ps-primary-hover: #1e2a24;
+  --ps-primary-active: #0f1a16;
+  --ps-primary-subtle: #eef4ed;
   --ps-primary-on: #ffffff;
 
-  --ps-secondary: #00963f;
-  --ps-secondary-hover: #007a33;
-  --ps-secondary-subtle: #e8f5ed;
+  --ps-secondary: #005ca9;
+  --ps-secondary-hover: #004a88;
+  --ps-secondary-subtle: #e6f0f8;
   --ps-secondary-on: #ffffff;
+
+  --color-accent-gold: #c9a227;
 
   --ps-surface: #ffffff;
   --ps-surface-muted: #f9f7f2;
@@ -100,11 +102,19 @@
   --ps-radius-md: 16px;
   --ps-radius-lg: 24px;
   --ps-radius-button: 999px;
+  --hero-radius: 32px;
+  --hero-search-overlap: 48px;
   --radius-input: 12px;
 
   --ps-shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
   --ps-shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.08);
   --ps-shadow-header: 0 1px 0 rgba(0, 0, 0, 0.06);
+  --ps-shadow-hero-search:
+    0 1px 0 rgba(255, 255, 255, 0.95) inset,
+    0 4px 8px rgba(30, 42, 36, 0.1),
+    0 12px 32px rgba(30, 42, 36, 0.14),
+    0 28px 60px rgba(30, 42, 36, 0.18),
+    0 48px 96px rgba(30, 42, 36, 0.12);
 
   --glass-bg: rgba(255, 255, 255, 0.12);
   --glass-border: rgba(255, 255, 255, 0.18);
@@ -150,6 +160,7 @@
   --shadow-soft: var(--ps-shadow-soft);
   --shadow-medium: var(--ps-shadow-medium);
   --shadow-header: var(--ps-shadow-header);
+  --shadow-hero-search: var(--ps-shadow-hero-search);
 }
 
 [data-pillar="heritage"] {
